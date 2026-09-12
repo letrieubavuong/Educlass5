@@ -117,6 +117,7 @@ export const storageService = {
       username: studentData.username,
       password: studentData.password,
       className: studentData.className || '5A',
+      parentPhone: studentData.parentPhone || '',
       stars: 0,
       xp: 0,
       completedLessons: [],
@@ -144,7 +145,7 @@ export const storageService = {
 
   loginAdmin: (password) => {
     if (password !== 'admin123') {
-      throw new Error('Mật khẩu Quản trị (Admin) không đúng! (Mặc định: admin123)');
+      throw new Error('Mật khẩu Quản trị (Admin) không đúng! Vui lòng thử lại.');
     }
     const adminUser = {
       id: 'admin_001',
@@ -154,6 +155,63 @@ export const storageService = {
     };
     setJSON(KEYS.CURRENT_USER, adminUser);
     return adminUser;
+  },
+
+  // --- CLOUD MULTI-DEVICE SYNC ENGINE ---
+  pushToCloudSync: async () => {
+    try {
+      const CLOUD_SYNC_URL = 'https://api.restful-api.dev/objects/ff808181a067127101a093c800377ec3';
+      const lock_overwrites = getJSON(KEYS.LESSON_LOCK_OVERWRITES, {});
+      const notifications = getJSON(KEYS.NOTIFICATIONS, []);
+      const custom_curriculum = getJSON(KEYS.CUSTOM_CURRICULUM, null);
+
+      await fetch(CLOUD_SYNC_URL, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: 'educlass5_class_sync_v1',
+          data: {
+            lock_overwrites,
+            notifications,
+            custom_curriculum,
+            lastSync: new Date().toISOString()
+          }
+        })
+      });
+    } catch (e) {
+      console.warn('Cloud sync push offline:', e);
+    }
+  },
+
+  fetchFromCloudSync: async () => {
+    try {
+      const CLOUD_SYNC_URL = 'https://api.restful-api.dev/objects/ff808181a067127101a093c800377ec3';
+      const res = await fetch(CLOUD_SYNC_URL);
+      if (!res.ok) return null;
+      const result = await res.json();
+      const cloudData = result?.data;
+      if (cloudData) {
+        if (cloudData.lock_overwrites) {
+          setJSON(KEYS.LESSON_LOCK_OVERWRITES, cloudData.lock_overwrites);
+        }
+        if (cloudData.notifications && Array.isArray(cloudData.notifications)) {
+          const localNotifs = getJSON(KEYS.NOTIFICATIONS, []);
+          const mergedMap = {};
+          [...localNotifs, ...cloudData.notifications].forEach(n => {
+            if (!mergedMap[n.id]) mergedMap[n.id] = n;
+          });
+          const mergedList = Object.values(mergedMap).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+          setJSON(KEYS.NOTIFICATIONS, mergedList.slice(0, 30));
+        }
+        if (cloudData.custom_curriculum) {
+          setJSON(KEYS.CUSTOM_CURRICULUM, cloudData.custom_curriculum);
+        }
+        return cloudData;
+      }
+    } catch (e) {
+      console.warn('Cloud sync fetch offline:', e);
+    }
+    return null;
   },
 
   // --- ADMIN LOCK & UNLOCK LESSONS ---
@@ -195,6 +253,9 @@ export const storageService = {
       });
     }
 
+    // Push state to Cloud for all student devices
+    storageService.pushToCloudSync();
+
     return isNowLocked;
   },
 
@@ -213,6 +274,9 @@ export const storageService = {
       message: 'Thầy/Cô đã mở khóa toàn bộ bài học trên hệ thống. Em có thể tự do lựa chọn môn học yêu thích!',
       type: 'unlock_all'
     });
+
+    // Push state to Cloud for all student devices
+    storageService.pushToCloudSync();
 
     return overwrites;
   },

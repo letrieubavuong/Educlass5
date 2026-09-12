@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, UserCheck, UserPlus, ShieldCheck, AlertCircle, KeyRound } from 'lucide-react';
+import { X, UserCheck, UserPlus, ShieldCheck, AlertCircle, KeyRound, Phone } from 'lucide-react';
 import { storageService } from '../services/storageService';
 
 export const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
@@ -11,6 +11,7 @@ export const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [className, setClassName] = useState('5A');
+  const [parentPhone, setParentPhone] = useState('');
 
   // Admin Form state
   const [adminPass, setAdminPass] = useState('');
@@ -36,8 +37,12 @@ export const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
       setError('Vui lòng điền đầy đủ các thông tin!');
       return;
     }
+    if (!parentPhone.trim()) {
+      setError('Vui lòng nhập Số điện thoại Phụ huynh để liên hệ!');
+      return;
+    }
     try {
-      const newUser = storageService.registerStudent({ name, username, password, className });
+      const newUser = storageService.registerStudent({ name, username, password, className, parentPhone });
       onAuthSuccess(newUser);
       onClose();
     } catch (err) {
@@ -217,6 +222,20 @@ export const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
                 />
               </div>
 
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1 flex items-center gap-1">
+                  <Phone size={14} className="text-amber-500" />
+                  Số điện thoại Phụ huynh
+                </label>
+                <input
+                  type="tel"
+                  placeholder="0912 345 678 (Tùy chọn/Bắt buộc)"
+                  value={parentPhone}
+                  onChange={(e) => setParentPhone(e.target.value)}
+                  className="w-full px-3.5 py-2 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-sm"
+                />
+              </div>
+
               <button
                 type="submit"
                 className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm shadow-md hover:from-emerald-600 hover:to-teal-700 transition-all mt-2"
@@ -250,10 +269,6 @@ export const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
                   />
                   <KeyRound className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
                 </div>
-              </div>
-
-              <div className="bg-purple-50 p-3 rounded-xl border border-purple-100 text-xs text-purple-800">
-                🔑 <strong>Mật khẩu Admin thử nghiệm:</strong> <code className="bg-white px-1.5 py-0.5 rounded font-mono border border-purple-200">admin123</code>
               </div>
 
               <button
