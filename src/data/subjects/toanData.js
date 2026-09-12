@@ -72,12 +72,265 @@ export const toanSubject = {
       },
       "exercises": [
         {
-          "id": "q_2_1",
-          "type": "short_answer",
-          "question": "Tính hợp lý: $25 \\times 38 \\times 4 = ?$",
-          "explanation": "3800",
-          "answer": "3800"
-        }
+    "id": "q_nat_1",
+    "type": "mcq",
+    "question": "Tính: $354 + 268 = ?$",
+    "explanation": "Thực hiện phép cộng: 4 + 8 = 12 (viết 2 nhớ 1), 5 + 6 + 1 = 12 (viết 2 nhớ 1), 3 + 2 + 1 = 6. Kết quả là 622.",
+    "options": [
+      "622",
+      "612",
+      "522",
+      "632"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_nat_2",
+    "type": "mcq",
+    "question": "Tính: $1\\,000 - 347 = ?$",
+    "explanation": "Thực hiện phép trừ: 1000 - 347 = 653.",
+    "options": [
+      "753",
+      "663",
+      "653",
+      "643"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_nat_3",
+    "type": "mcq",
+    "question": "Tính: $45 \\times 11 = ?$",
+    "explanation": "Nhân với 11: viết chữ số 4 ở hàng trăm, 4 + 5 = 9 ở hàng chục, chữ số 5 ở hàng đơn vị. Ta được 495.",
+    "options": [
+      "455",
+      "495",
+      "505",
+      "485"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_4",
+    "type": "mcq",
+    "question": "Tìm thương và số dư của phép chia: $157 : 5$",
+    "explanation": "Ta có: 157 = 5 \\times 31 + 2. Vậy thương là 31 và số dư là 2.",
+    "options": [
+      "Thương 30, dư 7",
+      "Thương 31, dư 2",
+      "Thương 31, dư 3",
+      "Thương 32, dư 2"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_5",
+    "type": "mcq",
+    "question": "Tính giá trị biểu thức: $40 + 20 \\times 3 = ?$",
+    "explanation": "Thực hiện nhân trước, cộng sau: 40 + (20 \\times 3) = 40 + 60 = 100.",
+    "options": [
+      "180",
+      "100",
+      "120",
+      "80"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_6",
+    "type": "mcq",
+    "question": "Tính giá trị biểu thức: $(75 - 15) : 3 = ?$",
+    "explanation": "Thực hiện phép tính trong ngoặc trước: (75 - 15) : 3 = 60 : 3 = 20.",
+    "options": [
+      "70",
+      "25",
+      "20",
+      "15"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_nat_7",
+    "type": "mcq",
+    "question": "Tính nhanh: $25 \\times 37 \\times 4 = ?$",
+    "explanation": "Áp dụng tính chất giao hoán và kết hợp: (25 \\times 4) \\times 37 = 100 \\times 37 = 3\\,700.",
+    "options": [
+      "3\\,700",
+      "370",
+      "7\\,400",
+      "1\\,480"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_nat_8",
+    "type": "mcq",
+    "question": "Tính nhanh: $48 \\times 26 + 48 \\times 74 = ?$",
+    "explanation": "Đặt thừa số chung: 48 \\times (26 + 74) = 48 \\times 100 = 4\\,800.",
+    "options": [
+      "480",
+      "4\\,800",
+      "5\\,000",
+      "9\\,600"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_9",
+    "type": "mcq",
+    "question": "Tìm số tự nhiên $x$, biết: $x - 128 = 372$",
+    "explanation": "Muốn tìm số bị trừ, ta lấy hiệu cộng với số trừ: x = 372 + 128 = 500.",
+    "options": [
+      "244",
+      "490",
+      "500",
+      "510"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_nat_10",
+    "type": "mcq",
+    "question": "Tìm số tự nhiên $x$, biết: $84 : x = 6$",
+    "explanation": "Muốn tìm số chia, ta lấy số bị chia chia cho thương: x = 84 : 6 = 14.",
+    "options": [
+      "14",
+      "12",
+      "16",
+      "504"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_nat_11",
+    "type": "mcq",
+    "question": "Tính: $125 \\times 80 = ?$",
+    "explanation": "Ta có: 125 \\times 8 = 1\\,000, do đó 125 \\times 80 = 10\\,000.",
+    "options": [
+      "1\\,000",
+      "10\\,000",
+      "8\\,000",
+      "100\\,000"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_12",
+    "type": "mcq",
+    "question": "Tính giá trị biểu thức: $120 - 20 \\times 4 + 10 = ?$",
+    "explanation": "Thực hiện phép nhân trước: 120 - 80 + 10. Sau đó tính từ trái sang phải: 40 + 10 = 50.",
+    "options": [
+      "410",
+      "50",
+      "30",
+      "25"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_13",
+    "type": "mcq",
+    "question": "Trong phép chia có dư với số chia là 7, số dư lớn nhất có thể là bao nhiêu?",
+    "explanation": "Số dư luôn luôn bé hơn số chia. Vì số chia là 7 nên số dư lớn nhất có thể là 6.",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "1"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_14",
+    "type": "mcq",
+    "question": "Tính nhanh: $67 \\times 99 = ?$",
+    "explanation": "Ta đưa về phép trừ: 67 \\times (100 - 1) = 6\\,700 - 67 = 6\\,633.",
+    "options": [
+      "6\\,633",
+      "6\\,623",
+      "6\\,733",
+      "6\\,533"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_nat_15",
+    "type": "mcq",
+    "question": "Tìm số tự nhiên $x$, biết: $2 \\times x + 15 = 45$",
+    "explanation": "Ta có: 2 \\times x = 45 - 15 = 30. Vậy x = 30 : 2 = 15.",
+    "options": [
+      "30",
+      "20",
+      "15",
+      "10"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_nat_16",
+    "type": "mcq",
+    "question": "Tính: $2\\,400 : 60 = ?$",
+    "explanation": "Cùng bớt một chữ số 0 ở cả số bị chia và số chia: 240 : 6 = 40.",
+    "options": [
+      "400",
+      "40",
+      "4",
+      "24"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_17",
+    "type": "mcq",
+    "question": "Tính giá trị biểu thức: $100 : [2 \\times (17 - 12)] = ?$",
+    "explanation": "Thực hiện phép tính trong ngoặc tròn trước: 17 - 12 = 5. Tiếp theo ngoặc vuông: 2 \\times 5 = 10. Cuối cùng: 100 : 10 = 10.",
+    "options": [
+      "10",
+      "20",
+      "25",
+      "5"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_nat_18",
+    "type": "mcq",
+    "question": "Tìm một số biết rằng lấy số đó chia cho 8 thì được thương là 12 và số dư là 5.",
+    "explanation": "Số bị chia = Thương \\times Số chia + Số dư = 12 \\times 8 + 5 = 96 + 5 = 101.",
+    "options": [
+      "96",
+      "101",
+      "106",
+      "91"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_19",
+    "type": "mcq",
+    "question": "Tính nhanh: $125 \\times 32 = ?$",
+    "explanation": "Tách 32 = 8 \\times 4. Ta có: 125 \\times 8 \\times 4 = 1\\,000 \\times 4 = 4\\,000.",
+    "options": [
+      "3\\,000",
+      "4\\,000",
+      "5\\,000",
+      "4\\,500"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_nat_20",
+    "type": "mcq",
+    "question": "Tính giá trị biểu thức: $3^2 + 4 \\times 2 = ?$",
+    "explanation": "Tính lũy thừa trước: 3^2 = 9. Nhân: 4 \\times 2 = 8. Cuối cùng cộng: 9 + 8 = 17.",
+    "options": [
+      "26",
+      "17",
+      "14",
+      "25"
+    ],
+    "answerIndex": 1
+  }
       ]
     },
     {
