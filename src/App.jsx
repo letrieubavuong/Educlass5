@@ -18,6 +18,7 @@ export function App() {
 
   // Lock overwrites tick state to trigger rerender when admin changes locks or cloud sync updates
   const [lockTick, setLockTick] = useState(0);
+  const [toastAlert, setToastAlert] = useState(null);
 
   useEffect(() => {
     // Load persisted user session if any
@@ -69,6 +70,15 @@ export function App() {
     };
     window.addEventListener('storage', handleStorageEvent);
 
+    // 6. Listen for new real-time notifications to show instant toast alert
+    const handleNewRealtimeNotification = (e) => {
+      if (e.detail) {
+        setToastAlert(e.detail);
+        setTimeout(() => setToastAlert(null), 6000);
+      }
+    };
+    window.addEventListener('new-realtime-notification', handleNewRealtimeNotification);
+
     return () => {
       unsubscribeFirebase();
       clearInterval(syncInterval);
@@ -76,6 +86,7 @@ export function App() {
       document.removeEventListener('visibilitychange', handleFocusOrVisibility);
       window.removeEventListener('cloud-sync-updated', handleCloudSyncUpdated);
       window.removeEventListener('storage', handleStorageEvent);
+      window.removeEventListener('new-realtime-notification', handleNewRealtimeNotification);
     };
   }, []);
 
@@ -182,6 +193,17 @@ export function App() {
         onClose={() => setIsAuthOpen(false)}
         onAuthSuccess={handleAuthSuccess}
       />
+
+      {/* Realtime Global Toast Notification Alert */}
+      {toastAlert && (
+        <div className="fixed top-20 right-4 z-50 bg-slate-900/95 text-white p-4 rounded-2xl shadow-2xl border border-sky-500 max-w-sm animate-bounce">
+          <div className="flex items-center justify-between gap-2">
+            <h4 className="font-extrabold text-xs sm:text-sm text-sky-300">{toastAlert.title}</h4>
+            <button onClick={() => setToastAlert(null)} className="text-slate-400 hover:text-white text-xs font-bold px-1">✕</button>
+          </div>
+          <p className="text-xs text-slate-200 mt-1 leading-relaxed">{toastAlert.message}</p>
+        </div>
+      )}
 
     </div>
   );

@@ -30,19 +30,15 @@ export const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
     }
   };
 
-  const handleSubmitStudentRegister = (e) => {
+  const handleSubmitStudentRegister = async (e) => {
     e.preventDefault();
     setError('');
     if (!name.trim() || !username.trim() || !password.trim()) {
-      setError('Vui lòng điền đầy đủ các thông tin!');
-      return;
-    }
-    if (!parentPhone.trim()) {
-      setError('Vui lòng nhập Số điện thoại Phụ huynh để liên hệ!');
+      setError('Vui lòng điền đầy đủ các thông tin: Họ tên, Tên đăng nhập và Mật khẩu!');
       return;
     }
     try {
-      const newUser = storageService.registerStudent({ name, username, password, className, parentPhone });
+      const newUser = await storageService.registerStudent({ name, username, password, className, parentPhone });
       onAuthSuccess(newUser);
       onClose();
     } catch (err) {

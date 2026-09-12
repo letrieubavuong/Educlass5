@@ -149,7 +149,7 @@ export const storageService = {
     return students;
   },
 
-  registerStudent: (studentData) => {
+  registerStudent: async (studentData) => {
     const students = storageService.getStudents();
     if (students.some(s => s.username.toLowerCase() === studentData.username.toLowerCase())) {
       throw new Error('Tên đăng nhập này đã tồn tại!');
@@ -172,7 +172,7 @@ export const storageService = {
     setJSON(KEYS.CURRENT_USER, newStudent);
     
     // Add Notification for Admin & Teachers
-    storageService.addNotification({
+    const newNotif = storageService.addNotification({
       title: '🎓 Học Sinh Mới Đăng Ký!',
       message: `Học sinh ${newStudent.name} (Lớp ${newStudent.className}) vừa tạo tài khoản mới. SĐT PH: ${newStudent.parentPhone || 'Chưa nhập'}.`,
       type: 'register'
@@ -183,7 +183,7 @@ export const storageService = {
     }
 
     // Sync new student account & notification to cloud immediately!
-    storageService.pushToCloudSync();
+    await storageService.pushToCloudSync();
     return newStudent;
   },
 
@@ -250,14 +250,27 @@ export const storageService = {
     // 2. Sync notifications
     if (cloudData.notifications && Array.isArray(cloudData.notifications)) {
       const localNotifs = getJSON(KEYS.NOTIFICATIONS, []);
+      const localNotifIds = new Set(localNotifs.map(n => n.id));
       const mergedMap = {};
+      
+      let newestNotif = null;
       [...localNotifs, ...cloudData.notifications].forEach(n => {
-        if (n && n.id) mergedMap[n.id] = n;
+        if (n && n.id) {
+          mergedMap[n.id] = n;
+          if (!localNotifIds.has(n.id)) {
+            newestNotif = n;
+          }
+        }
       });
+      
       const mergedList = Object.values(mergedMap).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)).slice(0, 30);
       if (JSON.stringify(localNotifs) !== JSON.stringify(mergedList)) {
         setJSON(KEYS.NOTIFICATIONS, mergedList);
         hasChanged = true;
+
+        if (newestNotif && typeof window !== 'undefined') {
+          window.dispatchEvent(new CustomEvent('new-realtime-notification', { detail: newestNotif }));
+        }
       }
     }
 
