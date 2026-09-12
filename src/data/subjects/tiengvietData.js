@@ -1,0 +1,7784 @@
+// Modular Curriculum Data for TIẾNG VIỆT
+export const tiengvietSubject = {
+  "id": "tiengviet",
+  "name": "TIẾNG VIỆT",
+  "subTitle": "Đầy đủ 210 bài học theo 35 Tuần: Đọc hiểu, Luyện từ & câu, Tập làm văn",
+  "icon": "BookOpen",
+  "color": "from-pink-500 to-rose-600",
+  "bgColor": "bg-pink-50",
+  "borderColor": "border-pink-200",
+  "textColor": "text-pink-600",
+  "badgeColor": "bg-pink-100 text-pink-800",
+  "lessons": [
+    {
+      "id": "tv-1",
+      "theme": "Tuần 1: Thế giới tuổi thơ",
+      "title": "Bài 1: Thanh âm của gió",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 1: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 1: Thanh âm của gió. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 1: Thanh âm của gió",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 1: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 1: Thanh âm của gió. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_1",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 1: Thanh âm của gió\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 1: Thanh âm của gió\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-2",
+      "theme": "Tuần 1: Thế giới tuổi thơ",
+      "title": "Bài 1: Luyện tập về danh từ, động từ, tính từ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 1: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 1: Luyện tập về danh từ, động từ, tính từ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 1: Luyện tập về danh từ, động từ, tính từ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 1: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 1: Luyện tập về danh từ, động từ, tính từ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_2",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 1: Luyện tập về danh từ, động từ, tính từ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 1: Luyện tập về danh từ, động từ, tính từ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-3",
+      "theme": "Tuần 1: Thế giới tuổi thơ",
+      "title": "Bài 1: Tìm hiểu cách viết bài văn kể chuyện sáng tạo",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 1: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 1: Tìm hiểu cách viết bài văn kể chuyện sáng tạo. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 1: Tìm hiểu cách viết bài văn kể chuyện sáng tạo",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 1: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 1: Tìm hiểu cách viết bài văn kể chuyện sáng tạo. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_3",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 1: Tìm hiểu cách viết bài văn kể chuyện sáng tạo\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 1: Tìm hiểu cách viết bài văn kể chuyện sáng tạo\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-4",
+      "theme": "Tuần 1: Thế giới tuổi thơ",
+      "title": "Bài 2: Cánh đồng hoa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 1: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 2: Cánh đồng hoa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 2: Cánh đồng hoa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 1: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 2: Cánh đồng hoa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_4",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 2: Cánh đồng hoa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 2: Cánh đồng hoa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-5",
+      "theme": "Tuần 1: Thế giới tuổi thơ",
+      "title": "Bài 2: Tìm hiểu cách viết bài văn kể chuyện sáng tạo (tiếp theo)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 1: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 2: Tìm hiểu cách viết bài văn kể chuyện sáng tạo (tiếp theo). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 2: Tìm hiểu cách viết bài văn kể chuyện sáng tạo (tiếp theo)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 1: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 2: Tìm hiểu cách viết bài văn kể chuyện sáng tạo (tiếp theo). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_5",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 2: Tìm hiểu cách viết bài văn kể chuyện sáng tạo (tiếp theo)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 2: Tìm hiểu cách viết bài văn kể chuyện sáng tạo (tiếp theo)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-6",
+      "theme": "Tuần 1: Thế giới tuổi thơ",
+      "title": "Bài 2: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 1: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 2: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 2: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 1: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 2: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_6",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 2: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 2: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-7",
+      "theme": "Tuần 2: Thế giới tuổi thơ",
+      "title": "Bài 3: Tuổi ngựa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 2: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 3: Tuổi ngựa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 3: Tuổi ngựa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 2: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 3: Tuổi ngựa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_7",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 3: Tuổi ngựa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 3: Tuổi ngựa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-8",
+      "theme": "Tuần 2: Thế giới tuổi thơ",
+      "title": "Bài 3: Đại từ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 2: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 3: Đại từ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 3: Đại từ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 2: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 3: Đại từ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_8",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 3: Đại từ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 3: Đại từ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-9",
+      "theme": "Tuần 2: Thế giới tuổi thơ",
+      "title": "Bài 3: Lập dàn ý cho bài văn kể chuyện sáng tạo",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 2: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 3: Lập dàn ý cho bài văn kể chuyện sáng tạo. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 3: Lập dàn ý cho bài văn kể chuyện sáng tạo",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 2: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 3: Lập dàn ý cho bài văn kể chuyện sáng tạo. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_9",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 3: Lập dàn ý cho bài văn kể chuyện sáng tạo\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 3: Lập dàn ý cho bài văn kể chuyện sáng tạo\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-10",
+      "theme": "Tuần 2: Thế giới tuổi thơ",
+      "title": "Bài 4: Bến sông tuổi thơ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 2: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 4: Bến sông tuổi thơ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 4: Bến sông tuổi thơ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 2: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 4: Bến sông tuổi thơ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_10",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 4: Bến sông tuổi thơ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 4: Bến sông tuổi thơ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-11",
+      "theme": "Tuần 2: Thế giới tuổi thơ",
+      "title": "Bài 4: Viết bài văn kể chuyện sáng tạo",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 2: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 4: Viết bài văn kể chuyện sáng tạo. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 4: Viết bài văn kể chuyện sáng tạo",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 2: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 4: Viết bài văn kể chuyện sáng tạo. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_11",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 4: Viết bài văn kể chuyện sáng tạo\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 4: Viết bài văn kể chuyện sáng tạo\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-12",
+      "theme": "Tuần 2: Thế giới tuổi thơ",
+      "title": "Bài 4: Những câu chuyện thú vị",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 2: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 4: Những câu chuyện thú vị. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 4: Những câu chuyện thú vị",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 2: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 4: Những câu chuyện thú vị. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_12",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 4: Những câu chuyện thú vị\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 4: Những câu chuyện thú vị\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-13",
+      "theme": "Tuần 3: Thế giới tuổi thơ",
+      "title": "Bài 5: Tiếng hạt nảy mầm",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 3: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 5: Tiếng hạt nảy mầm. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 5: Tiếng hạt nảy mầm",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 3: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 5: Tiếng hạt nảy mầm. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_13",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 5: Tiếng hạt nảy mầm\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 5: Tiếng hạt nảy mầm\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-14",
+      "theme": "Tuần 3: Thế giới tuổi thơ",
+      "title": "Bài 5: Luyện tập về đại từ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 3: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 5: Luyện tập về đại từ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 5: Luyện tập về đại từ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 3: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 5: Luyện tập về đại từ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_14",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 5: Luyện tập về đại từ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 5: Luyện tập về đại từ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-15",
+      "theme": "Tuần 3: Thế giới tuổi thơ",
+      "title": "Bài 5: Đánh giá, chỉnh sửa bài văn kể chuyện sáng tạo",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 3: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 5: Đánh giá, chỉnh sửa bài văn kể chuyện sáng tạo. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 5: Đánh giá, chỉnh sửa bài văn kể chuyện sáng tạo",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 3: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 5: Đánh giá, chỉnh sửa bài văn kể chuyện sáng tạo. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_15",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 5: Đánh giá, chỉnh sửa bài văn kể chuyện sáng tạo\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 5: Đánh giá, chỉnh sửa bài văn kể chuyện sáng tạo\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-16",
+      "theme": "Tuần 3: Thế giới tuổi thơ",
+      "title": "Bài 6: Ngôi sao sân cỏ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 3: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 6: Ngôi sao sân cỏ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 6: Ngôi sao sân cỏ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 3: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 6: Ngôi sao sân cỏ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_16",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 6: Ngôi sao sân cỏ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 6: Ngôi sao sân cỏ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-17",
+      "theme": "Tuần 3: Thế giới tuổi thơ",
+      "title": "Bài 6: Tìm hiểu cách viết báo cáo công việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 3: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 6: Tìm hiểu cách viết báo cáo công việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 6: Tìm hiểu cách viết báo cáo công việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 3: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 6: Tìm hiểu cách viết báo cáo công việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_17",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 6: Tìm hiểu cách viết báo cáo công việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 6: Tìm hiểu cách viết báo cáo công việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-18",
+      "theme": "Tuần 3: Thế giới tuổi thơ",
+      "title": "Bài 6: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 3: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 6: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 6: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 3: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 6: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_18",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 6: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 6: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-19",
+      "theme": "Tuần 4: Thế giới tuổi thơ",
+      "title": "Bài 7: Bộ sưu tập độc đáo",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 4: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 7: Bộ sưu tập độc đáo. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 7: Bộ sưu tập độc đáo",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 4: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 7: Bộ sưu tập độc đáo. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_19",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 7: Bộ sưu tập độc đáo\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 7: Bộ sưu tập độc đáo\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-20",
+      "theme": "Tuần 4: Thế giới tuổi thơ",
+      "title": "Bài 7: Luyện tập về đại từ (Tiếp theo)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 4: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 7: Luyện tập về đại từ (Tiếp theo). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 7: Luyện tập về đại từ (Tiếp theo)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 4: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 7: Luyện tập về đại từ (Tiếp theo). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_20",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 7: Luyện tập về đại từ (Tiếp theo)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 7: Luyện tập về đại từ (Tiếp theo)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-21",
+      "theme": "Tuần 4: Thế giới tuổi thơ",
+      "title": "Bài 7: Viết báo cáo công việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 4: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 7: Viết báo cáo công việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 7: Viết báo cáo công việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 4: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 7: Viết báo cáo công việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_21",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 7: Viết báo cáo công việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 7: Viết báo cáo công việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-22",
+      "theme": "Tuần 4: Thế giới tuổi thơ",
+      "title": "Bài 8: Hành tinh kì lạ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 4: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 8: Hành tinh kì lạ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 8: Hành tinh kì lạ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 4: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 8: Hành tinh kì lạ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_22",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 8: Hành tinh kì lạ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 8: Hành tinh kì lạ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-23",
+      "theme": "Tuần 4: Thế giới tuổi thơ",
+      "title": "Bài 8: Đánh giá, chỉnh sửa báo cáo công việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 4: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 8: Đánh giá, chỉnh sửa báo cáo công việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 8: Đánh giá, chỉnh sửa báo cáo công việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 4: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 8: Đánh giá, chỉnh sửa báo cáo công việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_23",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 8: Đánh giá, chỉnh sửa báo cáo công việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 8: Đánh giá, chỉnh sửa báo cáo công việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-24",
+      "theme": "Tuần 4: Thế giới tuổi thơ",
+      "title": "Bài 8: Những điểm vui chơi lí thú",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 4: Thế giới tuổi thơ.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 8: Những điểm vui chơi lí thú. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 8: Những điểm vui chơi lí thú",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 4: Thế giới tuổi thơ.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 8: Những điểm vui chơi lí thú. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_24",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 8: Những điểm vui chơi lí thú\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 8: Những điểm vui chơi lí thú\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-25",
+      "theme": "Tuần 5: Thiên nhiên kì thú",
+      "title": "Bài 9: Trước cổng trời",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 5: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 9: Trước cổng trời. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 9: Trước cổng trời",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 5: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 9: Trước cổng trời. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_25",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 9: Trước cổng trời\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 9: Trước cổng trời\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-26",
+      "theme": "Tuần 5: Thiên nhiên kì thú",
+      "title": "Bài 9: Từ đồng nghĩa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 5: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 9: Từ đồng nghĩa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 9: Từ đồng nghĩa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 5: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 9: Từ đồng nghĩa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_26",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 9: Từ đồng nghĩa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 9: Từ đồng nghĩa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-27",
+      "theme": "Tuần 5: Thiên nhiên kì thú",
+      "title": "Bài 9: Tìm hiểu cách viết bài văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 5: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 9: Tìm hiểu cách viết bài văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 9: Tìm hiểu cách viết bài văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 5: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 9: Tìm hiểu cách viết bài văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_27",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 9: Tìm hiểu cách viết bài văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 9: Tìm hiểu cách viết bài văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-28",
+      "theme": "Tuần 5: Thiên nhiên kì thú",
+      "title": "Bài 10: Kì diệu rừng xanh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 5: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 10: Kì diệu rừng xanh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 10: Kì diệu rừng xanh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 5: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 10: Kì diệu rừng xanh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_28",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 10: Kì diệu rừng xanh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 10: Kì diệu rừng xanh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-29",
+      "theme": "Tuần 5: Thiên nhiên kì thú",
+      "title": "Bài 10: Tìm hiểu cách viết bài văn tả phong cảnh (Tiếp theo)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 5: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 10: Tìm hiểu cách viết bài văn tả phong cảnh (Tiếp theo). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 10: Tìm hiểu cách viết bài văn tả phong cảnh (Tiếp theo)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 5: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 10: Tìm hiểu cách viết bài văn tả phong cảnh (Tiếp theo). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_29",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 10: Tìm hiểu cách viết bài văn tả phong cảnh (Tiếp theo)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 10: Tìm hiểu cách viết bài văn tả phong cảnh (Tiếp theo)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-30",
+      "theme": "Tuần 5: Thiên nhiên kì thú",
+      "title": "Bài 10: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 5: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 10: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 10: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 5: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 10: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_30",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 10: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 10: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-31",
+      "theme": "Tuần 6: Thiên nhiên kì thú",
+      "title": "Bài 11: Hang Sơn Đoòng - Những điều kì thú",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 6: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 11: Hang Sơn Đoòng - Những điều kì thú. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 11: Hang Sơn Đoòng - Những điều kì thú",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 6: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 11: Hang Sơn Đoòng - Những điều kì thú. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_31",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 11: Hang Sơn Đoòng - Những điều kì thú\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 11: Hang Sơn Đoòng - Những điều kì thú\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-32",
+      "theme": "Tuần 6: Thiên nhiên kì thú",
+      "title": "Bài 11: Luyện tập về từ đồng nghĩa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 6: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 11: Luyện tập về từ đồng nghĩa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 11: Luyện tập về từ đồng nghĩa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 6: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 11: Luyện tập về từ đồng nghĩa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_32",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 11: Luyện tập về từ đồng nghĩa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 11: Luyện tập về từ đồng nghĩa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-33",
+      "theme": "Tuần 6: Thiên nhiên kì thú",
+      "title": "Bài 11: Viết mở bài và kết bài cho bài văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 6: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 11: Viết mở bài và kết bài cho bài văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 11: Viết mở bài và kết bài cho bài văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 6: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 11: Viết mở bài và kết bài cho bài văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_33",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 11: Viết mở bài và kết bài cho bài văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 11: Viết mở bài và kết bài cho bài văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-34",
+      "theme": "Tuần 6: Thiên nhiên kì thú",
+      "title": "Bài 12: Những hòn đảo trên Vịnh Hạ Long",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 6: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 12: Những hòn đảo trên Vịnh Hạ Long. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 12: Những hòn đảo trên Vịnh Hạ Long",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 6: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 12: Những hòn đảo trên Vịnh Hạ Long. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_34",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 12: Những hòn đảo trên Vịnh Hạ Long\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 12: Những hòn đảo trên Vịnh Hạ Long\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-35",
+      "theme": "Tuần 6: Thiên nhiên kì thú",
+      "title": "Bài 12: Quan sát phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 6: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 12: Quan sát phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 12: Quan sát phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 6: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 12: Quan sát phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_35",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 12: Quan sát phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 12: Quan sát phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-36",
+      "theme": "Tuần 6: Thiên nhiên kì thú",
+      "title": "Bài 12: Bảo tồn động vật hoang dã",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 6: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 12: Bảo tồn động vật hoang dã. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 12: Bảo tồn động vật hoang dã",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 6: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 12: Bảo tồn động vật hoang dã. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_36",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 12: Bảo tồn động vật hoang dã\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 12: Bảo tồn động vật hoang dã\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-37",
+      "theme": "Tuần 7: Thiên nhiên kì thú",
+      "title": "Bài 13: Mầm non",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 7: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 13: Mầm non. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 13: Mầm non",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 7: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 13: Mầm non. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_37",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 13: Mầm non\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 13: Mầm non\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-38",
+      "theme": "Tuần 7: Thiên nhiên kì thú",
+      "title": "Bài 13: Từ đa nghĩa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 7: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 13: Từ đa nghĩa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 13: Từ đa nghĩa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 7: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 13: Từ đa nghĩa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_38",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 13: Từ đa nghĩa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 13: Từ đa nghĩa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-39",
+      "theme": "Tuần 7: Thiên nhiên kì thú",
+      "title": "Bài 13: Lập dàn ý cho bài văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 7: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 13: Lập dàn ý cho bài văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 13: Lập dàn ý cho bài văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 7: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 13: Lập dàn ý cho bài văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_39",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 13: Lập dàn ý cho bài văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 13: Lập dàn ý cho bài văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-40",
+      "theme": "Tuần 7: Thiên nhiên kì thú",
+      "title": "Bài 14: Những ngọn núi nóng rẫy",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 7: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 14: Những ngọn núi nóng rẫy. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 14: Những ngọn núi nóng rẫy",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 7: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 14: Những ngọn núi nóng rẫy. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_40",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 14: Những ngọn núi nóng rẫy\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 14: Những ngọn núi nóng rẫy\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-41",
+      "theme": "Tuần 7: Thiên nhiên kì thú",
+      "title": "Bài 14: Viết đoạn văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 7: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 14: Viết đoạn văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 14: Viết đoạn văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 7: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 14: Viết đoạn văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_41",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 14: Viết đoạn văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 14: Viết đoạn văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-42",
+      "theme": "Tuần 7: Thiên nhiên kì thú",
+      "title": "Bài 14: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 7: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 14: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 14: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 7: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 14: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_42",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 14: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 14: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-43",
+      "theme": "Tuần 8: Thiên nhiên kì thú",
+      "title": "Bài 15: Bài ca về mặt trời",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 8: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 15: Bài ca về mặt trời. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 15: Bài ca về mặt trời",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 8: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 15: Bài ca về mặt trời. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_43",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 15: Bài ca về mặt trời\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 15: Bài ca về mặt trời\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-44",
+      "theme": "Tuần 8: Thiên nhiên kì thú",
+      "title": "Bài 15: Luyện tập về từ đa nghĩa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 8: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 15: Luyện tập về từ đa nghĩa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 15: Luyện tập về từ đa nghĩa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 8: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 15: Luyện tập về từ đa nghĩa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_44",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 15: Luyện tập về từ đa nghĩa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 15: Luyện tập về từ đa nghĩa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-45",
+      "theme": "Tuần 8: Thiên nhiên kì thú",
+      "title": "Bài 15: Viết bài văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 8: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 15: Viết bài văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 15: Viết bài văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 8: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 15: Viết bài văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_45",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 15: Viết bài văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 15: Viết bài văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-46",
+      "theme": "Tuần 8: Thiên nhiên kì thú",
+      "title": "Bài 16: Xin chào, Xa-ha-ra",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 8: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 16: Xin chào, Xa-ha-ra. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 16: Xin chào, Xa-ha-ra",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 8: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 16: Xin chào, Xa-ha-ra. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_46",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 16: Xin chào, Xa-ha-ra\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 16: Xin chào, Xa-ha-ra\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-47",
+      "theme": "Tuần 8: Thiên nhiên kì thú",
+      "title": "Bài 16: Đánh giá, chỉnh sửa bài văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 8: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 16: Đánh giá, chỉnh sửa bài văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 16: Đánh giá, chỉnh sửa bài văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 8: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 16: Đánh giá, chỉnh sửa bài văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_47",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 16: Đánh giá, chỉnh sửa bài văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 16: Đánh giá, chỉnh sửa bài văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-48",
+      "theme": "Tuần 8: Thiên nhiên kì thú",
+      "title": "Bài 16: Cảnh đẹp thiên nhiên",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 8: Thiên nhiên kì thú.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 16: Cảnh đẹp thiên nhiên. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 16: Cảnh đẹp thiên nhiên",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 8: Thiên nhiên kì thú.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 16: Cảnh đẹp thiên nhiên. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_48",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 16: Cảnh đẹp thiên nhiên\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 16: Cảnh đẹp thiên nhiên\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-49",
+      "theme": "Tuần 9: Ôn tập và Đánh giá giữa học kì 1",
+      "title": "Phần 1 - Ôn tập: Tiết 1 - 2",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 9: Ôn tập và Đánh giá giữa học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 1 - 2. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 1 - 2",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 9: Ôn tập và Đánh giá giữa học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 1 - 2. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_49",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 1 - 2\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 1 - 2\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-50",
+      "theme": "Tuần 9: Ôn tập và Đánh giá giữa học kì 1",
+      "title": "Phần 1 - Ôn tập: Tiết 3 - 4",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 9: Ôn tập và Đánh giá giữa học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 3 - 4. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 3 - 4",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 9: Ôn tập và Đánh giá giữa học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 3 - 4. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_50",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 3 - 4\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 3 - 4\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-51",
+      "theme": "Tuần 9: Ôn tập và Đánh giá giữa học kì 1",
+      "title": "Phần 1 - Ôn tập: Tiết 5",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 9: Ôn tập và Đánh giá giữa học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 5. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 5",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 9: Ôn tập và Đánh giá giữa học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 5. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_51",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 5\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 5\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-52",
+      "theme": "Tuần 9: Ôn tập và Đánh giá giữa học kì 1",
+      "title": "Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Vườn mặt trời, quả mặt trăng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 9: Ôn tập và Đánh giá giữa học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Vườn mặt trời, quả mặt trăng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Vườn mặt trời, quả mặt trăng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 9: Ôn tập và Đánh giá giữa học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Vườn mặt trời, quả mặt trăng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_52",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Vườn mặt trời, quả mặt trăng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Vườn mặt trời, quả mặt trăng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-53",
+      "theme": "Tuần 9: Ôn tập và Đánh giá giữa học kì 1",
+      "title": "Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Cánh đồng vàng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 9: Ôn tập và Đánh giá giữa học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Cánh đồng vàng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Cánh đồng vàng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 9: Ôn tập và Đánh giá giữa học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Cánh đồng vàng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_53",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Cánh đồng vàng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Cánh đồng vàng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-54",
+      "theme": "Tuần 9: Ôn tập và Đánh giá giữa học kì 1",
+      "title": "Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Viết",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 9: Ôn tập và Đánh giá giữa học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Viết. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Viết",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 9: Ôn tập và Đánh giá giữa học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Viết. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_54",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Viết\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá giữa học kì I: Tiết 6 - 7: Viết\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-55",
+      "theme": "Tuần 10: Trên con đường học tập",
+      "title": "Bài 17: Thư gửi các học sinh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 10: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 17: Thư gửi các học sinh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 17: Thư gửi các học sinh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 10: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 17: Thư gửi các học sinh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_55",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 17: Thư gửi các học sinh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 17: Thư gửi các học sinh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-56",
+      "theme": "Tuần 10: Trên con đường học tập",
+      "title": "Bài 17: Sử dụng từ điển",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 10: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 17: Sử dụng từ điển. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 17: Sử dụng từ điển",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 10: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 17: Sử dụng từ điển. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_56",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 17: Sử dụng từ điển\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 17: Sử dụng từ điển\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-57",
+      "theme": "Tuần 10: Trên con đường học tập",
+      "title": "Bài 17: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một cuốn sách",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 10: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 17: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một cuốn sách. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 17: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một cuốn sách",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 10: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 17: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một cuốn sách. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_57",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 17: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một cuốn sách\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 17: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một cuốn sách\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-58",
+      "theme": "Tuần 10: Trên con đường học tập",
+      "title": "Bài 18: Tấm gương tự học",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 10: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 18: Tấm gương tự học. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 18: Tấm gương tự học",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 10: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 18: Tấm gương tự học. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_58",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 18: Tấm gương tự học\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 18: Tấm gương tự học\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-59",
+      "theme": "Tuần 10: Trên con đường học tập",
+      "title": "Bài 18: Tìm ý cho đoạn văn giới thiệu nhân vật trong một cuốn sách",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 10: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 18: Tìm ý cho đoạn văn giới thiệu nhân vật trong một cuốn sách. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 18: Tìm ý cho đoạn văn giới thiệu nhân vật trong một cuốn sách",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 10: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 18: Tìm ý cho đoạn văn giới thiệu nhân vật trong một cuốn sách. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_59",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 18: Tìm ý cho đoạn văn giới thiệu nhân vật trong một cuốn sách\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 18: Tìm ý cho đoạn văn giới thiệu nhân vật trong một cuốn sách\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-60",
+      "theme": "Tuần 10: Trên con đường học tập",
+      "title": "Bài 18: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 10: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 18: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 18: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 10: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 18: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_60",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 18: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 18: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-61",
+      "theme": "Tuần 11: Trên con đường học tập",
+      "title": "Bài 19: Trải nghiệm để sáng tạo",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 11: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 19: Trải nghiệm để sáng tạo. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 19: Trải nghiệm để sáng tạo",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 11: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 19: Trải nghiệm để sáng tạo. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_61",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 19: Trải nghiệm để sáng tạo\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 19: Trải nghiệm để sáng tạo\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-62",
+      "theme": "Tuần 11: Trên con đường học tập",
+      "title": "Bài 19: Luyện tập sử dụng từ điển",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 11: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 19: Luyện tập sử dụng từ điển. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 19: Luyện tập sử dụng từ điển",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 11: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 19: Luyện tập sử dụng từ điển. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_62",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 19: Luyện tập sử dụng từ điển\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 19: Luyện tập sử dụng từ điển\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-63",
+      "theme": "Tuần 11: Trên con đường học tập",
+      "title": "Bài 19: Viết đoạn văn giới thiệu nhân vật trong một cuốn sách",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 11: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 19: Viết đoạn văn giới thiệu nhân vật trong một cuốn sách. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 19: Viết đoạn văn giới thiệu nhân vật trong một cuốn sách",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 11: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 19: Viết đoạn văn giới thiệu nhân vật trong một cuốn sách. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_63",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 19: Viết đoạn văn giới thiệu nhân vật trong một cuốn sách\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 19: Viết đoạn văn giới thiệu nhân vật trong một cuốn sách\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-64",
+      "theme": "Tuần 11: Trên con đường học tập",
+      "title": "Bài 20: Khổ luyện thành tài",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 11: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 20: Khổ luyện thành tài. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 20: Khổ luyện thành tài",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 11: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 20: Khổ luyện thành tài. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_64",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 20: Khổ luyện thành tài\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 20: Khổ luyện thành tài\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-65",
+      "theme": "Tuần 11: Trên con đường học tập",
+      "title": "Bài 20: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một cuốn sách",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 11: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 20: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một cuốn sách. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 20: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một cuốn sách",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 11: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 20: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một cuốn sách. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_65",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 20: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một cuốn sách\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 20: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một cuốn sách\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-66",
+      "theme": "Tuần 11: Trên con đường học tập",
+      "title": "Bài 20: Cuốn sách tôi yêu",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 11: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 20: Cuốn sách tôi yêu. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 20: Cuốn sách tôi yêu",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 11: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 20: Cuốn sách tôi yêu. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_66",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 20: Cuốn sách tôi yêu\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 20: Cuốn sách tôi yêu\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-67",
+      "theme": "Tuần 12: Trên con đường học tập",
+      "title": "Bài 21: Thế giới trong trang sách",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 12: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 21: Thế giới trong trang sách. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 21: Thế giới trong trang sách",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 12: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 21: Thế giới trong trang sách. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_67",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 21: Thế giới trong trang sách\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 21: Thế giới trong trang sách\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-68",
+      "theme": "Tuần 12: Trên con đường học tập",
+      "title": "Bài 21: Dấu gạch ngang",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 12: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 21: Dấu gạch ngang. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 21: Dấu gạch ngang",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 12: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 21: Dấu gạch ngang. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_68",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 21: Dấu gạch ngang\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 21: Dấu gạch ngang\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-69",
+      "theme": "Tuần 12: Trên con đường học tập",
+      "title": "Bài 21: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 12: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 21: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 21: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 12: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 21: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_69",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 21: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 21: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-70",
+      "theme": "Tuần 12: Trên con đường học tập",
+      "title": "Bài 22: Từ những câu chuyện ấu thơ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 12: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 22: Từ những câu chuyện ấu thơ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 22: Từ những câu chuyện ấu thơ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 12: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 22: Từ những câu chuyện ấu thơ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_70",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 22: Từ những câu chuyện ấu thơ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 22: Từ những câu chuyện ấu thơ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-71",
+      "theme": "Tuần 12: Trên con đường học tập",
+      "title": "Bài 22: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 12: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 22: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 22: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 12: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 22: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_71",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 22: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 22: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-72",
+      "theme": "Tuần 12: Trên con đường học tập",
+      "title": "Bài 22: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 12: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 22: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 22: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 12: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 22: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_72",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 22: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 22: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-73",
+      "theme": "Tuần 13: Trên con đường học tập",
+      "title": "Bài 23: Giới thiệu sách Dế mèn phiêu lưu kí",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 13: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 23: Giới thiệu sách Dế mèn phiêu lưu kí. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 23: Giới thiệu sách Dế mèn phiêu lưu kí",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 13: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 23: Giới thiệu sách Dế mèn phiêu lưu kí. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_73",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 23: Giới thiệu sách Dế mèn phiêu lưu kí\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 23: Giới thiệu sách Dế mèn phiêu lưu kí\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-74",
+      "theme": "Tuần 13: Trên con đường học tập",
+      "title": "Bài 23: Luyện tập về dấu gạch ngang",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 13: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 23: Luyện tập về dấu gạch ngang. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 23: Luyện tập về dấu gạch ngang",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 13: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 23: Luyện tập về dấu gạch ngang. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_74",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 23: Luyện tập về dấu gạch ngang\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 23: Luyện tập về dấu gạch ngang\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-75",
+      "theme": "Tuần 13: Trên con đường học tập",
+      "title": "Bài 23: Viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 13: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 23: Viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 23: Viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 13: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 23: Viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_75",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 23: Viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 23: Viết đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-76",
+      "theme": "Tuần 13: Trên con đường học tập",
+      "title": "Bài 24: Tinh thần học tập của nhà Phi-lít",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 13: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 24: Tinh thần học tập của nhà Phi-lít. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 24: Tinh thần học tập của nhà Phi-lít",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 13: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 24: Tinh thần học tập của nhà Phi-lít. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_76",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 24: Tinh thần học tập của nhà Phi-lít\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 24: Tinh thần học tập của nhà Phi-lít\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-77",
+      "theme": "Tuần 13: Trên con đường học tập",
+      "title": "Bài 24: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 13: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 24: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 24: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 13: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 24: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_77",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 24: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 24: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một câu chuyện\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-78",
+      "theme": "Tuần 13: Trên con đường học tập",
+      "title": "Bài 24: Lợi ích của tự học",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 13: Trên con đường học tập.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 24: Lợi ích của tự học. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 24: Lợi ích của tự học",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 13: Trên con đường học tập.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 24: Lợi ích của tự học. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_78",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 24: Lợi ích của tự học\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 24: Lợi ích của tự học\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-79",
+      "theme": "Tuần 14: Nghệ thuật muôn màu",
+      "title": "Bài 25: Tiếng đàn Ba-la-lai-ca trên sông Đà",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 14: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 25: Tiếng đàn Ba-la-lai-ca trên sông Đà. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 25: Tiếng đàn Ba-la-lai-ca trên sông Đà",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 14: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 25: Tiếng đàn Ba-la-lai-ca trên sông Đà. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_79",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 25: Tiếng đàn Ba-la-lai-ca trên sông Đà\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 25: Tiếng đàn Ba-la-lai-ca trên sông Đà\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-80",
+      "theme": "Tuần 14: Nghệ thuật muôn màu",
+      "title": "Bài 25: Biện pháp điệp từ, điệp ngữ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 14: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 25: Biện pháp điệp từ, điệp ngữ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 25: Biện pháp điệp từ, điệp ngữ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 14: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 25: Biện pháp điệp từ, điệp ngữ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_80",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 25: Biện pháp điệp từ, điệp ngữ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 25: Biện pháp điệp từ, điệp ngữ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-81",
+      "theme": "Tuần 14: Nghệ thuật muôn màu",
+      "title": "Bài 25: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 14: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 25: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 25: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 14: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 25: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_81",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 25: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 25: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-82",
+      "theme": "Tuần 14: Nghệ thuật muôn màu",
+      "title": "Bài 26: Trí tưởng tượng phong phú",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 14: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 26: Trí tưởng tượng phong phú. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 26: Trí tưởng tượng phong phú",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 14: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 26: Trí tưởng tượng phong phú. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_82",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 26: Trí tưởng tượng phong phú\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 26: Trí tưởng tượng phong phú\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-83",
+      "theme": "Tuần 14: Nghệ thuật muôn màu",
+      "title": "Bài 26: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 14: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 26: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 26: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 14: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 26: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_83",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 26: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 26: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-84",
+      "theme": "Tuần 14: Nghệ thuật muôn màu",
+      "title": "Bài 26: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 14: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 26: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 26: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 14: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 26: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_84",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 26: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 26: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-85",
+      "theme": "Tuần 15: Nghệ thuật muôn màu",
+      "title": "Bài 27: Tranh làng Hồ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 15: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 27: Tranh làng Hồ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 27: Tranh làng Hồ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 15: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 27: Tranh làng Hồ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_85",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 27: Tranh làng Hồ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 27: Tranh làng Hồ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-86",
+      "theme": "Tuần 15: Nghệ thuật muôn màu",
+      "title": "Bài 27: Luyện tập về điệp từ, điệp ngữ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 15: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 27: Luyện tập về điệp từ, điệp ngữ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 27: Luyện tập về điệp từ, điệp ngữ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 15: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 27: Luyện tập về điệp từ, điệp ngữ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_86",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 27: Luyện tập về điệp từ, điệp ngữ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 27: Luyện tập về điệp từ, điệp ngữ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-87",
+      "theme": "Tuần 15: Nghệ thuật muôn màu",
+      "title": "Bài 27: Viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 15: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 27: Viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 27: Viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 15: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 27: Viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_87",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 27: Viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 27: Viết đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-88",
+      "theme": "Tuần 15: Nghệ thuật muôn màu",
+      "title": "Bài 28: Tập hát quan họ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 15: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 28: Tập hát quan họ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 28: Tập hát quan họ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 15: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 28: Tập hát quan họ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_88",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 28: Tập hát quan họ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 28: Tập hát quan họ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-89",
+      "theme": "Tuần 15: Nghệ thuật muôn màu",
+      "title": "Bài 28: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 15: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 28: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 28: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 15: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 28: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_89",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 28: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 28: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một bài thơ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-90",
+      "theme": "Tuần 15: Nghệ thuật muôn màu",
+      "title": "Bài 28: Chương trình nghệ thuật em yêu thích",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 15: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 28: Chương trình nghệ thuật em yêu thích. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 28: Chương trình nghệ thuật em yêu thích",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 15: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 28: Chương trình nghệ thuật em yêu thích. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_90",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 28: Chương trình nghệ thuật em yêu thích\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 28: Chương trình nghệ thuật em yêu thích\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-91",
+      "theme": "Tuần 16: Nghệ thuật muôn màu",
+      "title": "Bài 29: Phim hoạt hình Chú ốc sên bay",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 16: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 29: Phim hoạt hình Chú ốc sên bay. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 29: Phim hoạt hình Chú ốc sên bay",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 16: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 29: Phim hoạt hình Chú ốc sên bay. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_91",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 29: Phim hoạt hình Chú ốc sên bay\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 29: Phim hoạt hình Chú ốc sên bay\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-92",
+      "theme": "Tuần 16: Nghệ thuật muôn màu",
+      "title": "Bài 29: Kết từ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 16: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 29: Kết từ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 29: Kết từ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 16: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 29: Kết từ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_92",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 29: Kết từ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 29: Kết từ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-93",
+      "theme": "Tuần 16: Nghệ thuật muôn màu",
+      "title": "Bài 29: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 16: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 29: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 29: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 16: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 29: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_93",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 29: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 29: Tìm hiểu cách viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-94",
+      "theme": "Tuần 16: Nghệ thuật muôn màu",
+      "title": "Bài 30: Nghệ thuật múa ba lê",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 16: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 30: Nghệ thuật múa ba lê. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 30: Nghệ thuật múa ba lê",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 16: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 30: Nghệ thuật múa ba lê. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_94",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 30: Nghệ thuật múa ba lê\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 30: Nghệ thuật múa ba lê\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-95",
+      "theme": "Tuần 16: Nghệ thuật muôn màu",
+      "title": "Bài 30: Tìm ý cho đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 16: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 30: Tìm ý cho đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 30: Tìm ý cho đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 16: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 30: Tìm ý cho đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_95",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 30: Tìm ý cho đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 30: Tìm ý cho đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-96",
+      "theme": "Tuần 16: Nghệ thuật muôn màu",
+      "title": "Bài 30: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 16: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 30: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 30: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 16: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 30: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_96",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 30: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 30: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-97",
+      "theme": "Tuần 17: Nghệ thuật muôn màu",
+      "title": "Bài 31: Một ngôi chùa độc đáo",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 17: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 31: Một ngôi chùa độc đáo. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 31: Một ngôi chùa độc đáo",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 17: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 31: Một ngôi chùa độc đáo. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_97",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 31: Một ngôi chùa độc đáo\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 31: Một ngôi chùa độc đáo\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-98",
+      "theme": "Tuần 17: Nghệ thuật muôn màu",
+      "title": "Bài 31: Luyện tập về kết từ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 17: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 31: Luyện tập về kết từ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 31: Luyện tập về kết từ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 17: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 31: Luyện tập về kết từ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_98",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 31: Luyện tập về kết từ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 31: Luyện tập về kết từ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-99",
+      "theme": "Tuần 17: Nghệ thuật muôn màu",
+      "title": "Bài 31: Viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 17: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 31: Viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 31: Viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 17: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 31: Viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_99",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 31: Viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 31: Viết đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-100",
+      "theme": "Tuần 17: Nghệ thuật muôn màu",
+      "title": "Bài 32: Sự tích chú Tễu",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 17: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 32: Sự tích chú Tễu. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 32: Sự tích chú Tễu",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 17: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 32: Sự tích chú Tễu. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_100",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 32: Sự tích chú Tễu\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 32: Sự tích chú Tễu\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-101",
+      "theme": "Tuần 17: Nghệ thuật muôn màu",
+      "title": "Bài 32: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 17: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 32: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 32: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 17: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 32: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_101",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 32: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 32: Đánh giá, chỉnh sửa đoạn văn giới thiệu nhân vật trong một bộ phim hoạt hình\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-102",
+      "theme": "Tuần 17: Nghệ thuật muôn màu",
+      "title": "Bài 32: Bộ phim yêu thích",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 17: Nghệ thuật muôn màu.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 32: Bộ phim yêu thích. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 32: Bộ phim yêu thích",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 17: Nghệ thuật muôn màu.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 32: Bộ phim yêu thích. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_102",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 32: Bộ phim yêu thích\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 32: Bộ phim yêu thích\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-103",
+      "theme": "Tuần 18: Ôn tập và đánh giá cuối học kì 1",
+      "title": "Phần 1 - Ôn tập: Tiết 1 - 2",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 18: Ôn tập và đánh giá cuối học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 1 - 2. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 1 - 2",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 18: Ôn tập và đánh giá cuối học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 1 - 2. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_103",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 1 - 2\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 1 - 2\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-104",
+      "theme": "Tuần 18: Ôn tập và đánh giá cuối học kì 1",
+      "title": "Phần 1 - Ôn tập: Tiết 3 - 4",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 18: Ôn tập và đánh giá cuối học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 3 - 4. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 3 - 4",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 18: Ôn tập và đánh giá cuối học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 3 - 4. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_104",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 3 - 4\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 3 - 4\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-105",
+      "theme": "Tuần 18: Ôn tập và đánh giá cuối học kì 1",
+      "title": "Phần 1 - Ôn tập: Tiết 5",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 18: Ôn tập và đánh giá cuối học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 5. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 5",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 18: Ôn tập và đánh giá cuối học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 5. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_105",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 5\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 5\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-106",
+      "theme": "Tuần 18: Ôn tập và đánh giá cuối học kì 1",
+      "title": "Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Bố đứng nhìn biển cả",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 18: Ôn tập và đánh giá cuối học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Bố đứng nhìn biển cả. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Bố đứng nhìn biển cả",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 18: Ôn tập và đánh giá cuối học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Bố đứng nhìn biển cả. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_106",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Bố đứng nhìn biển cả\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Bố đứng nhìn biển cả\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-107",
+      "theme": "Tuần 18: Ôn tập và đánh giá cuối học kì 1",
+      "title": "Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Những điều thú vị về chim di cư",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 18: Ôn tập và đánh giá cuối học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Những điều thú vị về chim di cư. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Những điều thú vị về chim di cư",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 18: Ôn tập và đánh giá cuối học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Những điều thú vị về chim di cư. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_107",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Những điều thú vị về chim di cư\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Những điều thú vị về chim di cư\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-108",
+      "theme": "Tuần 18: Ôn tập và đánh giá cuối học kì 1",
+      "title": "Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Viết",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 18: Ôn tập và đánh giá cuối học kì 1.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Viết. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Viết",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 18: Ôn tập và đánh giá cuối học kì 1.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Viết. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_108",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Viết\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá cuối học kì I: Tiết 6 - 7: Viết\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-109",
+      "theme": "Tuần 19: Vẻ đẹp cuộc sống",
+      "title": "Bài 1: Tiếng hát của người đá",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 19: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 1: Tiếng hát của người đá. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 1: Tiếng hát của người đá",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 19: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 1: Tiếng hát của người đá. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_109",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 1: Tiếng hát của người đá\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 1: Tiếng hát của người đá\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-110",
+      "theme": "Tuần 19: Vẻ đẹp cuộc sống",
+      "title": "Bài 1: Câu đơn và câu ghép",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 19: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 1: Câu đơn và câu ghép. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 1: Câu đơn và câu ghép",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 19: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 1: Câu đơn và câu ghép. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_110",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 1: Câu đơn và câu ghép\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 1: Câu đơn và câu ghép\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-111",
+      "theme": "Tuần 19: Vẻ đẹp cuộc sống",
+      "title": "Bài 1: Tìm hiểu cách viết bài văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 19: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 1: Tìm hiểu cách viết bài văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 1: Tìm hiểu cách viết bài văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 19: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 1: Tìm hiểu cách viết bài văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_111",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 1: Tìm hiểu cách viết bài văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 1: Tìm hiểu cách viết bài văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-112",
+      "theme": "Tuần 19: Vẻ đẹp cuộc sống",
+      "title": "Bài 2: Khúc hát ru những em bé lớn trên lưng mẹ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 19: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 2: Khúc hát ru những em bé lớn trên lưng mẹ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 2: Khúc hát ru những em bé lớn trên lưng mẹ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 19: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 2: Khúc hát ru những em bé lớn trên lưng mẹ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_112",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 2: Khúc hát ru những em bé lớn trên lưng mẹ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 2: Khúc hát ru những em bé lớn trên lưng mẹ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-113",
+      "theme": "Tuần 19: Vẻ đẹp cuộc sống",
+      "title": "Bài 2: Viết mở bài và kết bài cho bài văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 19: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 2: Viết mở bài và kết bài cho bài văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 2: Viết mở bài và kết bài cho bài văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 19: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 2: Viết mở bài và kết bài cho bài văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_113",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 2: Viết mở bài và kết bài cho bài văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 2: Viết mở bài và kết bài cho bài văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-114",
+      "theme": "Tuần 19: Vẻ đẹp cuộc sống",
+      "title": "Bài 2: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 19: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 2: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 2: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 19: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 2: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_114",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 2: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 2: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-115",
+      "theme": "Tuần 20: Vẻ đẹp cuộc sống",
+      "title": "Bài 3: Hạt gạo làng ta",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 20: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 3: Hạt gạo làng ta. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 3: Hạt gạo làng ta",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 20: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 3: Hạt gạo làng ta. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_115",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 3: Hạt gạo làng ta\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 3: Hạt gạo làng ta\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-116",
+      "theme": "Tuần 20: Vẻ đẹp cuộc sống",
+      "title": "Bài 3: Cách nối các vế câu ghép",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 20: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 3: Cách nối các vế câu ghép. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 3: Cách nối các vế câu ghép",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 20: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 3: Cách nối các vế câu ghép. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_116",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 3: Cách nối các vế câu ghép\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 3: Cách nối các vế câu ghép\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-117",
+      "theme": "Tuần 20: Vẻ đẹp cuộc sống",
+      "title": "Bài 3: Quan sát để viết bài văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 20: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 3: Quan sát để viết bài văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 3: Quan sát để viết bài văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 20: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 3: Quan sát để viết bài văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_117",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 3: Quan sát để viết bài văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 3: Quan sát để viết bài văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-118",
+      "theme": "Tuần 20: Vẻ đẹp cuộc sống",
+      "title": "Bài 4: Hộp quà màu thiên thanh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 20: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 4: Hộp quà màu thiên thanh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 4: Hộp quà màu thiên thanh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 20: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 4: Hộp quà màu thiên thanh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_118",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 4: Hộp quà màu thiên thanh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 4: Hộp quà màu thiên thanh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-119",
+      "theme": "Tuần 20: Vẻ đẹp cuộc sống",
+      "title": "Bài 4: Lập dàn ý cho bài văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 20: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 4: Lập dàn ý cho bài văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 4: Lập dàn ý cho bài văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 20: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 4: Lập dàn ý cho bài văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_119",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 4: Lập dàn ý cho bài văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 4: Lập dàn ý cho bài văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-120",
+      "theme": "Tuần 20: Vẻ đẹp cuộc sống",
+      "title": "Bài 4: Nét đẹp học đường",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 20: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 4: Nét đẹp học đường. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 4: Nét đẹp học đường",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 20: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 4: Nét đẹp học đường. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_120",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 4: Nét đẹp học đường\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 4: Nét đẹp học đường\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-121",
+      "theme": "Tuần 21: Vẻ đẹp cuộc sống",
+      "title": "Bài 5: Giỏ hoa tháng Năm",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 21: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 5: Giỏ hoa tháng Năm. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 5: Giỏ hoa tháng Năm",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 21: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 5: Giỏ hoa tháng Năm. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_121",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 5: Giỏ hoa tháng Năm\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 5: Giỏ hoa tháng Năm\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-122",
+      "theme": "Tuần 21: Vẻ đẹp cuộc sống",
+      "title": "Bài 5: Cách nối các vế câu ghép (Tiếp theo)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 21: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 5: Cách nối các vế câu ghép (Tiếp theo). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 5: Cách nối các vế câu ghép (Tiếp theo)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 21: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 5: Cách nối các vế câu ghép (Tiếp theo). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_122",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 5: Cách nối các vế câu ghép (Tiếp theo)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 5: Cách nối các vế câu ghép (Tiếp theo)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-123",
+      "theme": "Tuần 21: Vẻ đẹp cuộc sống",
+      "title": "Bài 5: Viết đoạn văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 21: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 5: Viết đoạn văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 5: Viết đoạn văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 21: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 5: Viết đoạn văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_123",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 5: Viết đoạn văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 5: Viết đoạn văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-124",
+      "theme": "Tuần 21: Vẻ đẹp cuộc sống",
+      "title": "Bài 6: Thư của bố",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 21: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 6: Thư của bố. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 6: Thư của bố",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 21: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 6: Thư của bố. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_124",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 6: Thư của bố\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 6: Thư của bố\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-125",
+      "theme": "Tuần 21: Vẻ đẹp cuộc sống",
+      "title": "Bài 6: Viết bài văn tả người (Bài viết số 1)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 21: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 6: Viết bài văn tả người (Bài viết số 1). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 6: Viết bài văn tả người (Bài viết số 1)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 21: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 6: Viết bài văn tả người (Bài viết số 1). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_125",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 6: Viết bài văn tả người (Bài viết số 1)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 6: Viết bài văn tả người (Bài viết số 1)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-126",
+      "theme": "Tuần 21: Vẻ đẹp cuộc sống",
+      "title": "Bài 6: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 21: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 6: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 6: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 21: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 6: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_126",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 6: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 6: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-127",
+      "theme": "Tuần 22: Vẻ đẹp cuộc sống",
+      "title": "Bài 7: Đoàn thuyền đánh cá",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 22: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 7: Đoàn thuyền đánh cá. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 7: Đoàn thuyền đánh cá",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 22: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 7: Đoàn thuyền đánh cá. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_127",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 7: Đoàn thuyền đánh cá\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 7: Đoàn thuyền đánh cá\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-128",
+      "theme": "Tuần 22: Vẻ đẹp cuộc sống",
+      "title": "Bài 7: Luyện tập về câu ghép",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 22: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 7: Luyện tập về câu ghép. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 7: Luyện tập về câu ghép",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 22: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 7: Luyện tập về câu ghép. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_128",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 7: Luyện tập về câu ghép\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 7: Luyện tập về câu ghép\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-129",
+      "theme": "Tuần 22: Vẻ đẹp cuộc sống",
+      "title": "Bài 7: Đánh giá, chỉnh sửa bài văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 22: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 7: Đánh giá, chỉnh sửa bài văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 7: Đánh giá, chỉnh sửa bài văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 22: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 7: Đánh giá, chỉnh sửa bài văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_129",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 7: Đánh giá, chỉnh sửa bài văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 7: Đánh giá, chỉnh sửa bài văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-130",
+      "theme": "Tuần 22: Vẻ đẹp cuộc sống",
+      "title": "Bài 8: Khu rừng của Mát",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 22: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 8: Khu rừng của Mát. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 8: Khu rừng của Mát",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 22: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 8: Khu rừng của Mát. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_130",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 8: Khu rừng của Mát\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 8: Khu rừng của Mát\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-131",
+      "theme": "Tuần 22: Vẻ đẹp cuộc sống",
+      "title": "Bài 8: Viết bài văn tả người (Bài viết số 2)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 22: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 8: Viết bài văn tả người (Bài viết số 2). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 8: Viết bài văn tả người (Bài viết số 2)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 22: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 8: Viết bài văn tả người (Bài viết số 2). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_131",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 8: Viết bài văn tả người (Bài viết số 2)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 8: Viết bài văn tả người (Bài viết số 2)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-132",
+      "theme": "Tuần 22: Vẻ đẹp cuộc sống",
+      "title": "Bài 8: Những ý kiến khác biệt",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 22: Vẻ đẹp cuộc sống.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 8: Những ý kiến khác biệt. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 8: Những ý kiến khác biệt",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 22: Vẻ đẹp cuộc sống.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 8: Những ý kiến khác biệt. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_132",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 8: Những ý kiến khác biệt\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 8: Những ý kiến khác biệt\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-133",
+      "theme": "Tuần 23: Hương sắc trăm miền",
+      "title": "Bài 9: Hội thổi cơm thi ở Đồng Vân",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 23: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 9: Hội thổi cơm thi ở Đồng Vân. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 9: Hội thổi cơm thi ở Đồng Vân",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 23: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 9: Hội thổi cơm thi ở Đồng Vân. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_133",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 9: Hội thổi cơm thi ở Đồng Vân\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 9: Hội thổi cơm thi ở Đồng Vân\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-134",
+      "theme": "Tuần 23: Hương sắc trăm miền",
+      "title": "Bài 9: Liên kết câu bằng cách lặp từ ngữ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 23: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 9: Liên kết câu bằng cách lặp từ ngữ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 9: Liên kết câu bằng cách lặp từ ngữ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 23: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 9: Liên kết câu bằng cách lặp từ ngữ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_134",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 9: Liên kết câu bằng cách lặp từ ngữ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 9: Liên kết câu bằng cách lặp từ ngữ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-135",
+      "theme": "Tuần 23: Hương sắc trăm miền",
+      "title": "Bài 9: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 23: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 9: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 9: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 23: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 9: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_135",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 9: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 9: Tìm hiểu cách viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-136",
+      "theme": "Tuần 23: Hương sắc trăm miền",
+      "title": "Bài 10: Những búp chè trên cây cổ thụ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 23: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 10: Những búp chè trên cây cổ thụ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 10: Những búp chè trên cây cổ thụ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 23: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 10: Những búp chè trên cây cổ thụ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_136",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 10: Những búp chè trên cây cổ thụ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 10: Những búp chè trên cây cổ thụ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-137",
+      "theme": "Tuần 23: Hương sắc trăm miền",
+      "title": "Bài 10: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 23: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 10: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 10: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 23: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 10: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_137",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 10: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 10: Tìm ý cho đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-138",
+      "theme": "Tuần 23: Hương sắc trăm miền",
+      "title": "Bài 10: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 23: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 10: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 10: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 23: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 10: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_138",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 10: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 10: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-139",
+      "theme": "Tuần 24: Hương sắc trăm miền",
+      "title": "Bài 11: Hương cốm mùa thu",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 24: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 11: Hương cốm mùa thu. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 11: Hương cốm mùa thu",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 24: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 11: Hương cốm mùa thu. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_139",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 11: Hương cốm mùa thu\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 11: Hương cốm mùa thu\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-140",
+      "theme": "Tuần 24: Hương sắc trăm miền",
+      "title": "Bài 11: Liên kết câu bằng từ ngữ nối",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 24: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 11: Liên kết câu bằng từ ngữ nối. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 11: Liên kết câu bằng từ ngữ nối",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 24: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 11: Liên kết câu bằng từ ngữ nối. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_140",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 11: Liên kết câu bằng từ ngữ nối\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 11: Liên kết câu bằng từ ngữ nối\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-141",
+      "theme": "Tuần 24: Hương sắc trăm miền",
+      "title": "Bài 11: Viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 24: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 11: Viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 11: Viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 24: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 11: Viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_141",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 11: Viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 11: Viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-142",
+      "theme": "Tuần 24: Hương sắc trăm miền",
+      "title": "Bài 12: Vũ điệu trên nền thổ cẩm",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 24: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 12: Vũ điệu trên nền thổ cẩm. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 12: Vũ điệu trên nền thổ cẩm",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 24: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 12: Vũ điệu trên nền thổ cẩm. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_142",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 12: Vũ điệu trên nền thổ cẩm\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 12: Vũ điệu trên nền thổ cẩm\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-143",
+      "theme": "Tuần 24: Hương sắc trăm miền",
+      "title": "Bài 12: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 24: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 12: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 12: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 24: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 12: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_143",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 12: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 12: Đánh giá, chỉnh sửa đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-144",
+      "theme": "Tuần 24: Hương sắc trăm miền",
+      "title": "Bài 12: Địa điểm tham quan, du lịch",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 24: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 12: Địa điểm tham quan, du lịch. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 12: Địa điểm tham quan, du lịch",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 24: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 12: Địa điểm tham quan, du lịch. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_144",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 12: Địa điểm tham quan, du lịch\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 12: Địa điểm tham quan, du lịch\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-145",
+      "theme": "Tuần 25: Hương sắc trăm miền",
+      "title": "Bài 13: Đàn t'rưng - Tiếng ca đại ngàn",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 25: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 13: Đàn t'rưng - Tiếng ca đại ngàn. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 13: Đàn t'rưng - Tiếng ca đại ngàn",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 25: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 13: Đàn t'rưng - Tiếng ca đại ngàn. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_145",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 13: Đàn t'rưng - Tiếng ca đại ngàn\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 13: Đàn t'rưng - Tiếng ca đại ngàn\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-146",
+      "theme": "Tuần 25: Hương sắc trăm miền",
+      "title": "Bài 13: Liên kết câu bằng từ ngữ thay thế",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 25: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 13: Liên kết câu bằng từ ngữ thay thế. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 13: Liên kết câu bằng từ ngữ thay thế",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 25: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 13: Liên kết câu bằng từ ngữ thay thế. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_146",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 13: Liên kết câu bằng từ ngữ thay thế\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 13: Liên kết câu bằng từ ngữ thay thế\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-147",
+      "theme": "Tuần 25: Hương sắc trăm miền",
+      "title": "Bài 13: Tìm hiểu cách viết chương trình hoạt động",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 25: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 13: Tìm hiểu cách viết chương trình hoạt động. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 13: Tìm hiểu cách viết chương trình hoạt động",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 25: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 13: Tìm hiểu cách viết chương trình hoạt động. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_147",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 13: Tìm hiểu cách viết chương trình hoạt động\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 13: Tìm hiểu cách viết chương trình hoạt động\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-148",
+      "theme": "Tuần 25: Hương sắc trăm miền",
+      "title": "Bài 14: Đường quê Đồng Tháp Mười",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 25: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 14: Đường quê Đồng Tháp Mười. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 14: Đường quê Đồng Tháp Mười",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 25: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 14: Đường quê Đồng Tháp Mười. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_148",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 14: Đường quê Đồng Tháp Mười\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 14: Đường quê Đồng Tháp Mười\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-149",
+      "theme": "Tuần 25: Hương sắc trăm miền",
+      "title": "Bài 14: Viết chương trình hoạt động (Bài viết số 1)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 25: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 14: Viết chương trình hoạt động (Bài viết số 1). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 14: Viết chương trình hoạt động (Bài viết số 1)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 25: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 14: Viết chương trình hoạt động (Bài viết số 1). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_149",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 14: Viết chương trình hoạt động (Bài viết số 1)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 14: Viết chương trình hoạt động (Bài viết số 1)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-150",
+      "theme": "Tuần 25: Hương sắc trăm miền",
+      "title": "Bài 14: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 25: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 14: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 14: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 25: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 14: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_150",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 14: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 14: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-151",
+      "theme": "Tuần 26: Hương sắc trăm miền",
+      "title": "Bài 15: Xuồng ba lá quê tôi",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 26: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 15: Xuồng ba lá quê tôi. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 15: Xuồng ba lá quê tôi",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 26: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 15: Xuồng ba lá quê tôi. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_151",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 15: Xuồng ba lá quê tôi\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 15: Xuồng ba lá quê tôi\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-152",
+      "theme": "Tuần 26: Hương sắc trăm miền",
+      "title": "Bài 15: Luyện tập về liên kết câu trong đoạn văn",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 26: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 15: Luyện tập về liên kết câu trong đoạn văn. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 15: Luyện tập về liên kết câu trong đoạn văn",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 26: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 15: Luyện tập về liên kết câu trong đoạn văn. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_152",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 15: Luyện tập về liên kết câu trong đoạn văn\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 15: Luyện tập về liên kết câu trong đoạn văn\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-153",
+      "theme": "Tuần 26: Hương sắc trăm miền",
+      "title": "Bài 15: Đánh giá, chỉnh sửa chương trình hoạt động",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 26: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 15: Đánh giá, chỉnh sửa chương trình hoạt động. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 15: Đánh giá, chỉnh sửa chương trình hoạt động",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 26: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 15: Đánh giá, chỉnh sửa chương trình hoạt động. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_153",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 15: Đánh giá, chỉnh sửa chương trình hoạt động\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 15: Đánh giá, chỉnh sửa chương trình hoạt động\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-154",
+      "theme": "Tuần 26: Hương sắc trăm miền",
+      "title": "Bài 16: Về thăm Đất Mũi",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 26: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 16: Về thăm Đất Mũi. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 16: Về thăm Đất Mũi",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 26: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 16: Về thăm Đất Mũi. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_154",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 16: Về thăm Đất Mũi\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 16: Về thăm Đất Mũi\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-155",
+      "theme": "Tuần 26: Hương sắc trăm miền",
+      "title": "Bài 16: Viết chương trình hoạt động (Bài viết số 2)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 26: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 16: Viết chương trình hoạt động (Bài viết số 2). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 16: Viết chương trình hoạt động (Bài viết số 2)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 26: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 16: Viết chương trình hoạt động (Bài viết số 2). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_155",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 16: Viết chương trình hoạt động (Bài viết số 2)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 16: Viết chương trình hoạt động (Bài viết số 2)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-156",
+      "theme": "Tuần 26: Hương sắc trăm miền",
+      "title": "Bài 16: Sản vật địa phương",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 26: Hương sắc trăm miền.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 16: Sản vật địa phương. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 16: Sản vật địa phương",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 26: Hương sắc trăm miền.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 16: Sản vật địa phương. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_156",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 16: Sản vật địa phương\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 16: Sản vật địa phương\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-157",
+      "theme": "Tuần 27: Ôn tập và đánh giá giữa học kì 2",
+      "title": "Phần 1 - Ôn tập: Tiết 1 - 2",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 27: Ôn tập và đánh giá giữa học kì 2.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 1 - 2. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 1 - 2",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 27: Ôn tập và đánh giá giữa học kì 2.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 1 - 2. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_157",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 1 - 2\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 1 - 2\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-158",
+      "theme": "Tuần 27: Ôn tập và đánh giá giữa học kì 2",
+      "title": "Phần 1 - Ôn tập: Tiết 3 - 4",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 27: Ôn tập và đánh giá giữa học kì 2.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 3 - 4. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 3 - 4",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 27: Ôn tập và đánh giá giữa học kì 2.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 3 - 4. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_158",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 3 - 4\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 3 - 4\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-159",
+      "theme": "Tuần 27: Ôn tập và đánh giá giữa học kì 2",
+      "title": "Phần 1 - Ôn tập: Tiết 5",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 27: Ôn tập và đánh giá giữa học kì 2.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 5. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 5",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 27: Ôn tập và đánh giá giữa học kì 2.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 5. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_159",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 5\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 5\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-160",
+      "theme": "Tuần 27: Ôn tập và đánh giá giữa học kì 2",
+      "title": "Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mưa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 27: Ôn tập và đánh giá giữa học kì 2.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mưa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mưa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 27: Ôn tập và đánh giá giữa học kì 2.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mưa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_160",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mưa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mưa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-161",
+      "theme": "Tuần 27: Ôn tập và đánh giá giữa học kì 2",
+      "title": "Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mùa mật mới",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 27: Ôn tập và đánh giá giữa học kì 2.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mùa mật mới. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mùa mật mới",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 27: Ôn tập và đánh giá giữa học kì 2.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mùa mật mới. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_161",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mùa mật mới\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Mùa mật mới\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-162",
+      "theme": "Tuần 27: Ôn tập và đánh giá giữa học kì 2",
+      "title": "Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Viết",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 27: Ôn tập và đánh giá giữa học kì 2.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Viết. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Viết",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 27: Ôn tập và đánh giá giữa học kì 2.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Viết. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_162",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Viết\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá giữa học kì II: Tiết 6 - 7: Viết\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-163",
+      "theme": "Tuần 28: Tiếp bước cha ông",
+      "title": "Bài 17: Nghìn năm văn hiến",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 28: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 17: Nghìn năm văn hiến. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 17: Nghìn năm văn hiến",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 28: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 17: Nghìn năm văn hiến. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_163",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 17: Nghìn năm văn hiến\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 17: Nghìn năm văn hiến\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-164",
+      "theme": "Tuần 28: Tiếp bước cha ông",
+      "title": "Bài 17: Luyện tập về đại từ và kết từ",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 28: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 17: Luyện tập về đại từ và kết từ. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 17: Luyện tập về đại từ và kết từ",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 28: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 17: Luyện tập về đại từ và kết từ. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_164",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 17: Luyện tập về đại từ và kết từ\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 17: Luyện tập về đại từ và kết từ\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-165",
+      "theme": "Tuần 28: Tiếp bước cha ông",
+      "title": "Bài 17: Tìm hiểu cách viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 28: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 17: Tìm hiểu cách viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 17: Tìm hiểu cách viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 28: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 17: Tìm hiểu cách viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_165",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 17: Tìm hiểu cách viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 17: Tìm hiểu cách viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-166",
+      "theme": "Tuần 28: Tiếp bước cha ông",
+      "title": "Bài 18: Người thầy của muôn đời",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 28: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 18: Người thầy của muôn đời. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 18: Người thầy của muôn đời",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 28: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 18: Người thầy của muôn đời. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_166",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 18: Người thầy của muôn đời\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 18: Người thầy của muôn đời\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-167",
+      "theme": "Tuần 28: Tiếp bước cha ông",
+      "title": "Bài 18: Tìm ý cho đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 28: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 18: Tìm ý cho đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 18: Tìm ý cho đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 28: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 18: Tìm ý cho đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_167",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 18: Tìm ý cho đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 18: Tìm ý cho đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-168",
+      "theme": "Tuần 28: Tiếp bước cha ông",
+      "title": "Bài 18: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 28: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 18: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 18: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 28: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 18: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_168",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 18: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 18: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-169",
+      "theme": "Tuần 29: Tiếp bước cha ông",
+      "title": "Bài 19: Danh y Tuệ Tĩnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 29: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 19: Danh y Tuệ Tĩnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 19: Danh y Tuệ Tĩnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 29: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 19: Danh y Tuệ Tĩnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_169",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 19: Danh y Tuệ Tĩnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 19: Danh y Tuệ Tĩnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-170",
+      "theme": "Tuần 29: Tiếp bước cha ông",
+      "title": "Bài 19: Luyện tập về từ đồng nghĩa và từ đa nghĩa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 29: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 19: Luyện tập về từ đồng nghĩa và từ đa nghĩa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 19: Luyện tập về từ đồng nghĩa và từ đa nghĩa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 29: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 19: Luyện tập về từ đồng nghĩa và từ đa nghĩa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_170",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 19: Luyện tập về từ đồng nghĩa và từ đa nghĩa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 19: Luyện tập về từ đồng nghĩa và từ đa nghĩa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-171",
+      "theme": "Tuần 29: Tiếp bước cha ông",
+      "title": "Bài 19: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 1)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 29: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 19: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 1). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 19: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 1)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 29: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 19: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 1). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_171",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 19: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 1)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 19: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 1)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-172",
+      "theme": "Tuần 29: Tiếp bước cha ông",
+      "title": "Bài 20: Cụ Đồ Chiểu",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 29: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 20: Cụ Đồ Chiểu. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 20: Cụ Đồ Chiểu",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 29: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 20: Cụ Đồ Chiểu. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_172",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 20: Cụ Đồ Chiểu\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 20: Cụ Đồ Chiểu\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-173",
+      "theme": "Tuần 29: Tiếp bước cha ông",
+      "title": "Bài 20: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 29: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 20: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 20: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 29: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 20: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_173",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 20: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 20: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-174",
+      "theme": "Tuần 29: Tiếp bước cha ông",
+      "title": "Bài 20: Đền ơn đáp nghĩa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 29: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 20: Đền ơn đáp nghĩa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 20: Đền ơn đáp nghĩa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 29: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 20: Đền ơn đáp nghĩa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_174",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 20: Đền ơn đáp nghĩa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 20: Đền ơn đáp nghĩa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-175",
+      "theme": "Tuần 30: Tiếp bước cha ông",
+      "title": "Bài 21: Anh hùng Lao động Trần Đại Nghĩa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 30: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 21: Anh hùng Lao động Trần Đại Nghĩa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 21: Anh hùng Lao động Trần Đại Nghĩa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 30: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 21: Anh hùng Lao động Trần Đại Nghĩa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_175",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 21: Anh hùng Lao động Trần Đại Nghĩa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 21: Anh hùng Lao động Trần Đại Nghĩa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-176",
+      "theme": "Tuần 30: Tiếp bước cha ông",
+      "title": "Bài 21: Luyện tập về câu ghép",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 30: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 21: Luyện tập về câu ghép. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 21: Luyện tập về câu ghép",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 30: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 21: Luyện tập về câu ghép. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_176",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 21: Luyện tập về câu ghép\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 21: Luyện tập về câu ghép\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-177",
+      "theme": "Tuần 30: Tiếp bước cha ông",
+      "title": "Bài 21: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 2)",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 30: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 21: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 2). Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 21: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 2)",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 30: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 21: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 2). Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_177",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 21: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 2)\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 21: Viết đoạn văn nêu ý kiến tán thành một sự việc, hiện tượng (Bài viết số 2)\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-178",
+      "theme": "Tuần 30: Tiếp bước cha ông",
+      "title": "Bài 22: Bộ đội về làng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 30: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 22: Bộ đội về làng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 22: Bộ đội về làng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 30: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 22: Bộ đội về làng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_178",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 22: Bộ đội về làng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 22: Bộ đội về làng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-179",
+      "theme": "Tuần 30: Tiếp bước cha ông",
+      "title": "Bài 22: Luyện viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 30: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 22: Luyện viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 22: Luyện viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 30: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 22: Luyện viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_179",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 22: Luyện viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 22: Luyện viết đoạn văn thể hiện tình cảm, cảm xúc về một sự việc\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-180",
+      "theme": "Tuần 30: Tiếp bước cha ông",
+      "title": "Bài 22: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 30: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 22: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 22: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 30: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 22: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_180",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 22: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 22: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-181",
+      "theme": "Tuần 31: Tiếp bước cha ông",
+      "title": "Bài 23: Về ngôi nhà đang xây",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 31: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 23: Về ngôi nhà đang xây. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 23: Về ngôi nhà đang xây",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 31: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 23: Về ngôi nhà đang xây. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_181",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 23: Về ngôi nhà đang xây\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 23: Về ngôi nhà đang xây\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-182",
+      "theme": "Tuần 31: Tiếp bước cha ông",
+      "title": "Bài 23: Viết hoa danh từ chung để thể hiện sự tôn trọng đặc biệt",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 31: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 23: Viết hoa danh từ chung để thể hiện sự tôn trọng đặc biệt. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 23: Viết hoa danh từ chung để thể hiện sự tôn trọng đặc biệt",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 31: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 23: Viết hoa danh từ chung để thể hiện sự tôn trọng đặc biệt. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_182",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 23: Viết hoa danh từ chung để thể hiện sự tôn trọng đặc biệt\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 23: Viết hoa danh từ chung để thể hiện sự tôn trọng đặc biệt\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-183",
+      "theme": "Tuần 31: Tiếp bước cha ông",
+      "title": "Bài 23: Luyện tập lập dàn ý cho bài văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 31: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 23: Luyện tập lập dàn ý cho bài văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 23: Luyện tập lập dàn ý cho bài văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 31: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 23: Luyện tập lập dàn ý cho bài văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_183",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 23: Luyện tập lập dàn ý cho bài văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 23: Luyện tập lập dàn ý cho bài văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-184",
+      "theme": "Tuần 31: Tiếp bước cha ông",
+      "title": "Bài 24: Việt Nam quê hương ta",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 31: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 24: Việt Nam quê hương ta. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 24: Việt Nam quê hương ta",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 31: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 24: Việt Nam quê hương ta. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_184",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 24: Việt Nam quê hương ta\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 24: Việt Nam quê hương ta\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-185",
+      "theme": "Tuần 31: Tiếp bước cha ông",
+      "title": "Bài 24: Luyện viết bài văn tả phong cảnh",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 31: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 24: Luyện viết bài văn tả phong cảnh. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 24: Luyện viết bài văn tả phong cảnh",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 31: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 24: Luyện viết bài văn tả phong cảnh. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_185",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 24: Luyện viết bài văn tả phong cảnh\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 24: Luyện viết bài văn tả phong cảnh\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-186",
+      "theme": "Tuần 31: Tiếp bước cha ông",
+      "title": "Bài 24: Di tích lịch sử",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 31: Tiếp bước cha ông.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 24: Di tích lịch sử. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 24: Di tích lịch sử",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 31: Tiếp bước cha ông.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 24: Di tích lịch sử. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_186",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 24: Di tích lịch sử\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 24: Di tích lịch sử\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-187",
+      "theme": "Tuần 32: Thế giới của chúng ta",
+      "title": "Bài 25: Bài ca trái đất",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 32: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 25: Bài ca trái đất. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 25: Bài ca trái đất",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 32: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 25: Bài ca trái đất. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_187",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 25: Bài ca trái đất\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 25: Bài ca trái đất\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-188",
+      "theme": "Tuần 32: Thế giới của chúng ta",
+      "title": "Bài 25: Cách viết tên người và tên địa lí nước ngoài",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 32: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 25: Cách viết tên người và tên địa lí nước ngoài. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 25: Cách viết tên người và tên địa lí nước ngoài",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 32: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 25: Cách viết tên người và tên địa lí nước ngoài. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_188",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 25: Cách viết tên người và tên địa lí nước ngoài\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 25: Cách viết tên người và tên địa lí nước ngoài\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-189",
+      "theme": "Tuần 32: Thế giới của chúng ta",
+      "title": "Bài 25: Luyện tập lập dàn ý cho bài văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 32: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 25: Luyện tập lập dàn ý cho bài văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 25: Luyện tập lập dàn ý cho bài văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 32: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 25: Luyện tập lập dàn ý cho bài văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_189",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 25: Luyện tập lập dàn ý cho bài văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 25: Luyện tập lập dàn ý cho bài văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-190",
+      "theme": "Tuần 32: Thế giới của chúng ta",
+      "title": "Bài 26: Những con hạc giấy",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 32: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 26: Những con hạc giấy. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 26: Những con hạc giấy",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 32: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 26: Những con hạc giấy. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_190",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 26: Những con hạc giấy\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 26: Những con hạc giấy\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-191",
+      "theme": "Tuần 32: Thế giới của chúng ta",
+      "title": "Bài 26: Luyện viết bài văn tả người",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 32: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 26: Luyện viết bài văn tả người. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 26: Luyện viết bài văn tả người",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 32: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 26: Luyện viết bài văn tả người. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_191",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 26: Luyện viết bài văn tả người\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 26: Luyện viết bài văn tả người\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-192",
+      "theme": "Tuần 32: Thế giới của chúng ta",
+      "title": "Bài 26: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 32: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 26: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 26: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 32: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 26: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_192",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 26: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 26: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-193",
+      "theme": "Tuần 33: Thế giới của chúng ta",
+      "title": "Bài 27: Người hùng thầm lặng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 33: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 27: Người hùng thầm lặng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 27: Người hùng thầm lặng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 33: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 27: Người hùng thầm lặng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_193",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 27: Người hùng thầm lặng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 27: Người hùng thầm lặng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-194",
+      "theme": "Tuần 33: Thế giới của chúng ta",
+      "title": "Bài 27: Luyện tập về dấu gạch ngang",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 33: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 27: Luyện tập về dấu gạch ngang. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 27: Luyện tập về dấu gạch ngang",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 33: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 27: Luyện tập về dấu gạch ngang. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_194",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 27: Luyện tập về dấu gạch ngang\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 27: Luyện tập về dấu gạch ngang\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-195",
+      "theme": "Tuần 33: Thế giới của chúng ta",
+      "title": "Bài 27: Tìm hiểu cách viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 33: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 27: Tìm hiểu cách viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 27: Tìm hiểu cách viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 33: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 27: Tìm hiểu cách viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_195",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 27: Tìm hiểu cách viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 27: Tìm hiểu cách viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-196",
+      "theme": "Tuần 33: Thế giới của chúng ta",
+      "title": "Bài 28: Giờ trái đất",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 33: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 28: Giờ trái đất. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 28: Giờ trái đất",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 33: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 28: Giờ trái đất. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_196",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 28: Giờ trái đất\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 28: Giờ trái đất\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-197",
+      "theme": "Tuần 33: Thế giới của chúng ta",
+      "title": "Bài 28: Tìm ý cho đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 33: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 28: Tìm ý cho đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 28: Tìm ý cho đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 33: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 28: Tìm ý cho đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_197",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 28: Tìm ý cho đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 28: Tìm ý cho đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-198",
+      "theme": "Tuần 33: Thế giới của chúng ta",
+      "title": "Bài 28: Trải nghiệm ngày hè",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 33: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 28: Trải nghiệm ngày hè. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 28: Trải nghiệm ngày hè",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 33: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 28: Trải nghiệm ngày hè. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_198",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 28: Trải nghiệm ngày hè\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 28: Trải nghiệm ngày hè\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-199",
+      "theme": "Tuần 34: Thế giới của chúng ta",
+      "title": "Bài 29: Điện thoại di động",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 34: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 29: Điện thoại di động. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 29: Điện thoại di động",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 34: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 29: Điện thoại di động. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_199",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 29: Điện thoại di động\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 29: Điện thoại di động\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-200",
+      "theme": "Tuần 34: Thế giới của chúng ta",
+      "title": "Bài 29: Luyện tập về liên kết câu trong đoạn văn",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 34: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 29: Luyện tập về liên kết câu trong đoạn văn. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 29: Luyện tập về liên kết câu trong đoạn văn",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 34: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 29: Luyện tập về liên kết câu trong đoạn văn. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_200",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 29: Luyện tập về liên kết câu trong đoạn văn\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 29: Luyện tập về liên kết câu trong đoạn văn\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-201",
+      "theme": "Tuần 34: Thế giới của chúng ta",
+      "title": "Bài 29: Viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 34: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 29: Viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 29: Viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 34: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 29: Viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_201",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 29: Viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 29: Viết đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-202",
+      "theme": "Tuần 34: Thế giới của chúng ta",
+      "title": "Bài 30: Thành phố thông minh Mát-xđa",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 34: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 30: Thành phố thông minh Mát-xđa. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 30: Thành phố thông minh Mát-xđa",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 34: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 30: Thành phố thông minh Mát-xđa. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_202",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 30: Thành phố thông minh Mát-xđa\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 30: Thành phố thông minh Mát-xđa\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-203",
+      "theme": "Tuần 34: Thế giới của chúng ta",
+      "title": "Bài 30: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 34: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 30: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 30: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 34: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 30: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_203",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 30: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 30: Đánh giá, chỉnh sửa đoạn văn nêu ý kiến phản đối một sự việc, hiện tượng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-204",
+      "theme": "Tuần 34: Thế giới của chúng ta",
+      "title": "Bài 30: Đọc mở rộng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 34: Thế giới của chúng ta.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Bài 30: Đọc mở rộng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Bài 30: Đọc mở rộng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 34: Thế giới của chúng ta.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Bài 30: Đọc mở rộng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_204",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Bài 30: Đọc mở rộng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Bài 30: Đọc mở rộng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-205",
+      "theme": "Tuần 35: Ôn tập và Đánh giá cuối năm học",
+      "title": "Phần 1 - Ôn tập: Tiết 1 - 2",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 35: Ôn tập và Đánh giá cuối năm học.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 1 - 2. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 1 - 2",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 35: Ôn tập và Đánh giá cuối năm học.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 1 - 2. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_205",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 1 - 2\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 1 - 2\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-206",
+      "theme": "Tuần 35: Ôn tập và Đánh giá cuối năm học",
+      "title": "Phần 1 - Ôn tập: Tiết 3 - 4",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 35: Ôn tập và Đánh giá cuối năm học.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 3 - 4. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 3 - 4",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 35: Ôn tập và Đánh giá cuối năm học.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 3 - 4. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_206",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 3 - 4\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 3 - 4\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-207",
+      "theme": "Tuần 35: Ôn tập và Đánh giá cuối năm học",
+      "title": "Phần 1 - Ôn tập: Tiết 5",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 35: Ôn tập và Đánh giá cuối năm học.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 1 - Ôn tập: Tiết 5. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 1 - Ôn tập: Tiết 5",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 35: Ôn tập và Đánh giá cuối năm học.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 1 - Ôn tập: Tiết 5. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_207",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 1 - Ôn tập: Tiết 5\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 1 - Ôn tập: Tiết 5\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-208",
+      "theme": "Tuần 35: Ôn tập và Đánh giá cuối năm học",
+      "title": "Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Qua Thậm Thình",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 35: Ôn tập và Đánh giá cuối năm học.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Qua Thậm Thình. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Qua Thậm Thình",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 35: Ôn tập và Đánh giá cuối năm học.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Qua Thậm Thình. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_208",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Qua Thậm Thình\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Qua Thậm Thình\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-209",
+      "theme": "Tuần 35: Ôn tập và Đánh giá cuối năm học",
+      "title": "Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Phong cảnh đền Hùng",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 35: Ôn tập và Đánh giá cuối năm học.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Phong cảnh đền Hùng. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Phong cảnh đền Hùng",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 35: Ôn tập và Đánh giá cuối năm học.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Phong cảnh đền Hùng. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_209",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Phong cảnh đền Hùng\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Phong cảnh đền Hùng\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    },
+    {
+      "id": "tv-210",
+      "theme": "Tuần 35: Ôn tập và Đánh giá cuối năm học",
+      "title": "Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Viết",
+      "description": "Nội dung trọng tâm Luyện từ và câu, Đọc hiểu và Tập làm văn Lớp 5 thuộc Tuần 35: Ôn tập và Đánh giá cuối năm học.",
+      "duration": "35 phút",
+      "isLocked": false,
+      "theory": {
+        "summary": "Trọng tâm kiến thức Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Viết. Học sinh tiếp thu vốn từ, ngữ pháp và phương pháp viết văn Lớp 5.",
+        "sections": [
+          {
+            "title": "1. Trọng tâm bài học: Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Viết",
+            "text": "Nội dung thuộc chương trình Tiếng Việt 5 theo chủ điểm Tuần 35: Ôn tập và Đánh giá cuối năm học.\nRèn luyện khả năng đọc cảm thụ, phân tích từ ngữ và kỹ năng diễn đạt.",
+            "highlights": [
+              "Tập trung đọc diễn cảm",
+              "Vận dụng linh hoạt từ ngữ và ngữ pháp"
+            ]
+          }
+        ],
+        "audioText": "Trọng tâm kiến thức bài học Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Viết. Giúp các em phát triển năng lực đọc hiểu và cảm thụ văn học Tiếng Việt Lớp 5."
+      },
+      "exercises": [
+        {
+          "id": "tv_q_210",
+          "type": "mcq",
+          "question": "Văn bản/nội dung \"Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Viết\" hướng tới rèn luyện kỹ năng nào chính?",
+          "options": [
+            "Đọc hiểu & Tiếng Việt Lớp 5",
+            "Tính toán số học",
+            "Nói tiếng Anh",
+            "Vẽ sơ đồ tư duy"
+          ],
+          "answerIndex": 0,
+          "explanation": "Nội dung bài học \"Phần 2 - Đánh giá cuối năm học: Tiết 6 - 7: Viết\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        }
+      ]
+    }
+  ]
+};

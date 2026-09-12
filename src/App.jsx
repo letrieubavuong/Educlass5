@@ -1,0 +1,173 @@
+import React, { useState, useEffect } from 'react';
+import { Navbar } from './components/Navbar';
+import { SubjectGrid } from './components/SubjectGrid';
+import { LessonDetail } from './components/LessonDetail';
+import { AdminPanel } from './components/AdminPanel';
+import { LeaderboardView } from './components/LeaderboardView';
+import { AuthModal } from './components/AuthModal';
+import { PWAInstallBanner } from './components/PWAInstallBanner';
+import { storageService } from './services/storageService';
+
+export function App() {
+  const [currentUser, setCurrentUser] = useState(null);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [currentView, setCurrentView] = useState('grid'); // 'grid' | 'admin' | 'lesson' | 'leaderboard'
+  
+  const [selectedSubject, setSelectedSubject] = useState(null);
+  const [selectedLesson, setSelectedLesson] = useState(null);
+
+  // Lock overwrites tick state to trigger rerender when admin changes locks
+  const [, setLockTick] = useState(0);
+
+  // PWA installation prompt listener
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [showPWABanner, setShowPWABanner] = useState(false);
+
+  useEffect(() => {
+    // Load persisted user session if any
+    const sessionUser = storageService.getCurrentUser();
+    if (sessionUser) {
+      setCurrentUser(sessionUser);
+    }
+
+    // PWA install prompt handler
+    const handleBeforeInstall = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      setShowPWABanner(true);
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstall);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstall);
+    };
+  }, []);
+
+  const handleInstallPWA = () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted PWA installation');
+      }
+      setDeferredPrompt(null);
+      setShowPWABanner(false);
+    });
+  };
+
+  const handleAuthSuccess = (user) => {
+    setCurrentUser(user);
+    if (user.role === 'admin') {
+      setCurrentView('admin');
+    }
+  };
+
+  const handleLogout = () => {
+    storageService.logout();
+    setCurrentUser(null);
+    setCurrentView('grid');
+  };
+
+  const handleSelectLesson = (subject, lesson) => {
+    setSelectedSubject(subject);
+    setSelectedLesson(lesson);
+    setCurrentView('lesson');
+  };
+
+  const handleNavigateToLesson = (subjectId, lessonId) => {
+    const allSubjects = storageService.getAllSubjects();
+    const sub = allSubjects.find(s => s.id === subjectId);
+    if (!sub) return;
+    const les = sub.lessons.find(l => l.id === lessonId);
+    if (!les) return;
+
+    setSelectedSubject(sub);
+    setSelectedLesson(les);
+    setCurrentView('lesson');
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 font-sans">
+      
+      {/* Navigation Header */}
+      <Navbar
+        currentUser={currentUser}
+        onOpenAuth={() => setIsAuthOpen(true)}
+        onLogout={handleLogout}
+        onGoHome={() => setCurrentView('grid')}
+        onOpenAdmin={() => setCurrentView('admin')}
+        onOpenLeaderboard={() => setCurrentView('leaderboard')}
+        canInstallPWA={!!deferredPrompt}
+        onInstallPWA={handleInstallPWA}
+        onNavigateToLesson={handleNavigateToLesson}
+      />
+
+      {/* Main View Router */}
+      <main className="flex-1 pb-12">
+        {currentView === 'grid' && (
+          <SubjectGrid
+            currentUser={currentUser}
+            onSelectLesson={handleSelectLesson}
+            onOpenAuth={() => setIsAuthOpen(true)}
+          />
+        )}
+
+        {currentView === 'admin' && (
+          <AdminPanel
+            onBack={() => setCurrentView('grid')}
+            onUpdateOverwrites={() => setLockTick(prev => prev + 1)}
+          />
+        )}
+
+        {currentView === 'leaderboard' && (
+          <LeaderboardView
+            onBack={() => setCurrentView('grid')}
+            currentUser={currentUser}
+            onUpdateUser={(updated) => setCurrentUser(updated)}
+          />
+        )}
+
+        {currentView === 'lesson' && selectedSubject && selectedLesson && (
+          <LessonDetail
+            subject={selectedSubject}
+            lesson={selectedLesson}
+            onBack={() => setCurrentView('grid')}
+            currentUser={currentUser}
+            onOpenAuth={() => setIsAuthOpen(true)}
+          />
+        )}
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <div>
+            <strong>EduClass Lớp 5 PWA</strong> &copy; {new Date().getFullYear()} - Nền Tảng Học Tập Tiểu Học Thông Minh
+          </div>
+          <div className="flex items-center gap-4 text-slate-400">
+            <span>Toán</span> • <span>Tiếng Việt</span> • <span>Tiếng Anh</span> • <span>Khoa học</span> • <span>Tin học</span> • <span>Lịch sử & Địa lý</span>
+          </div>
+        </div>
+      </footer>
+
+      {/* Auth Modal */}
+      <AuthModal
+        isOpen={isAuthOpen}
+        onClose={() => setIsAuthOpen(false)}
+        onAuthSuccess={handleAuthSuccess}
+      />
+
+      {/* PWA Floating Install Banner */}
+      {showPWABanner && (
+        <PWAInstallBanner
+          onInstall={handleInstallPWA}
+          onDismiss={() => setShowPWABanner(false)}
+        />
+      )}
+
+    </div>
+  );
+}
+
+export default App;

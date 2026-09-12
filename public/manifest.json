@@ -1,0 +1,23 @@
+{
+  "short_name": "EduLop5",
+  "name": "EduClass Lớp 5 - Học Tập & Luyện Thi Smart PWA",
+  "description": "Ứng dụng PWA hỗ trợ học sinh Lớp 5 học Toán, Tiếng Việt, Tiếng Anh, Khoa học, Tin học, Lịch sử & Địa lý",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#f8fafc",
+  "theme_color": "#0284c7",
+  "display": "standalone",
+  "orientation": "portrait-primary"
+}
