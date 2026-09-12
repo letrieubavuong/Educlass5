@@ -1,14 +1,13 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, set, get, onValue } from 'firebase/database';
 
-// Firebase Project Configuration
-// Thầy/Cô có thể dán thông số Firebase Config của riêng mình tại đây nếu muốn!
+// Firebase Project Configuration cho dự án feesmanager-3e889 của Thầy/Cô
 const firebaseConfig = {
   apiKey: "AIzaSyEduclass5Lop5SmartApp2026",
-  authDomain: "educlass5-sync.firebaseapp.com",
-  databaseURL: "https://educlass5-sync-default-rtdb.firebaseio.com",
-  projectId: "educlass5-sync",
-  storageBucket: "educlass5-sync.appspot.com",
+  authDomain: "feesmanager-3e889.firebaseapp.com",
+  databaseURL: "https://feesmanager-3e889-default-rtdb.firebaseio.com",
+  projectId: "feesmanager-3e889",
+  storageBucket: "feesmanager-3e889.appspot.com",
   messagingSenderId: "987654321012",
   appId: "1:987654321012:web:a1b2c3d4e5f6g7h8"
 };
