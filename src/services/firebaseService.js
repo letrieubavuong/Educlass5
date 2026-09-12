@@ -1,15 +1,16 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, set, get, onValue } from 'firebase/database';
 
-// Firebase Project Configuration cho dự án feesmanager-3e889 của Thầy/Cô
+// Firebase Project Configuration chính chủ từ dự án feesmanager-3e889 của Thầy/Cô
 const firebaseConfig = {
-  apiKey: "AIzaSyEduclass5Lop5SmartApp2026",
+  apiKey: "AIzaSyA_k2cOZLD7Mq7C_ojZEiyHmW2DPnJ4bFc",
   authDomain: "feesmanager-3e889.firebaseapp.com",
   databaseURL: "https://feesmanager-3e889-default-rtdb.firebaseio.com",
   projectId: "feesmanager-3e889",
-  storageBucket: "feesmanager-3e889.appspot.com",
-  messagingSenderId: "987654321012",
-  appId: "1:987654321012:web:a1b2c3d4e5f6g7h8"
+  storageBucket: "feesmanager-3e889.firebasestorage.app",
+  messagingSenderId: "290240929923",
+  appId: "1:290240929923:web:f9b021db40cfc798873bb6",
+  measurementId: "G-R3VGH0JT1V"
 };
 
 let app = null;
