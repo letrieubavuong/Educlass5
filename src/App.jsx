@@ -33,10 +33,10 @@ export function App() {
     // 1. Initial Cloud Sync Fetch on Mount
     storageService.fetchFromCloudSync();
 
-    // 2. High-frequency real-time background polling (every 1 second)
+    // 2. Adaptive real-time background polling (every 4 seconds)
     const syncInterval = setInterval(() => {
       storageService.fetchFromCloudSync();
-    }, 1000);
+    }, 4000);
 
     // 3. Listen for window focus / tab visibility change to sync immediately
     const handleFocusOrVisibility = () => {

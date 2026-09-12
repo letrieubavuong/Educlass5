@@ -169,7 +169,18 @@ export const storageService = {
     setJSON(KEYS.REGISTERED_STUDENTS, students);
     setJSON(KEYS.CURRENT_USER, newStudent);
     
-    // Sync new student account to cloud immediately!
+    // Add Notification for Admin & Teachers
+    storageService.addNotification({
+      title: '🎓 Học Sinh Mới Đăng Ký!',
+      message: `Học sinh ${newStudent.name} (Lớp ${newStudent.className}) vừa tạo tài khoản mới. SĐT PH: ${newStudent.parentPhone || 'Chưa nhập'}.`,
+      type: 'register'
+    });
+
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('cloud-sync-updated'));
+    }
+
+    // Sync new student account & notification to cloud immediately!
     storageService.pushToCloudSync();
     return newStudent;
   },
@@ -202,28 +213,23 @@ export const storageService = {
   },
 
   // --- CLOUD MULTI-DEVICE SYNC ENGINE ---
-  getCloudSyncUrl: () => {
-    const customId = localStorage.getItem('edu_lop5_sync_id');
-    const objectId = customId || 'ff808181a067127101a093c800377ec3';
-    return `https://api.restful-api.dev/objects/${objectId}`;
-  },
-
-  recreateCloudSyncObject: async (payload) => {
-    try {
-      const res = await fetch('https://api.restful-api.dev/objects', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (res.ok) {
-        const created = await res.json();
-        if (created?.id) {
-          localStorage.setItem('edu_lop5_sync_id', created.id);
+  getCrudSyncTarget: async () => {
+    let key = localStorage.getItem('edu_lop5_crud_key');
+    if (!key) {
+      try {
+        const page = await fetch('https://crudcrud.com');
+        const html = await page.text();
+        const match = html.match(/https:\/\/crudcrud\.com\/api\/([a-f0-9]+)/);
+        if (match && match[1]) {
+          key = match[1];
+          localStorage.setItem('edu_lop5_crud_key', key);
         }
+      } catch (e) {
+        console.warn('crudcrud key fetch warning:', e);
       }
-    } catch (e) {
-      console.warn('Failed to recreate cloud sync object:', e);
     }
+    key = key || '9d67c8ae8760427595b673320ad93f51';
+    return `https://crudcrud.com/api/${key}/sync`;
   },
 
   pushToCloudSync: async () => {
@@ -238,26 +244,40 @@ export const storageService = {
       const notifications = getJSON(KEYS.NOTIFICATIONS, []);
       const custom_curriculum = getJSON(KEYS.CUSTOM_CURRICULUM, null);
       const payload = {
-        name: 'educlass5_class_sync_v1',
-        data: {
-          lock_overwrites,
-          registered_students,
-          student_scores,
-          notifications,
-          custom_curriculum,
-          lastSync: new Date().toISOString()
-        }
+        lock_overwrites,
+        registered_students,
+        student_scores,
+        notifications,
+        custom_curriculum,
+        lastSync: new Date().toISOString()
       };
 
-      const syncUrl = storageService.getCloudSyncUrl();
-      const res = await fetch(syncUrl, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
+      const syncUrl = await storageService.getCrudSyncTarget();
+      let docId = localStorage.getItem('edu_lop5_doc_id');
 
-      if (!res.ok && res.status === 404) {
-        await storageService.recreateCloudSyncObject(payload);
+      if (docId) {
+        const putRes = await fetch(`${syncUrl}/${docId}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!putRes.ok) {
+          docId = null;
+        }
+      }
+
+      if (!docId) {
+        const postRes = await fetch(syncUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (postRes.ok) {
+          const created = await postRes.json();
+          if (created?._id) {
+            localStorage.setItem('edu_lop5_doc_id', created._id);
+          }
+        }
       }
     } catch (e) {
       console.warn('Cloud sync push offline:', e);
@@ -266,29 +286,33 @@ export const storageService = {
 
   fetchFromCloudSync: async () => {
     try {
-      const syncUrl = storageService.getCloudSyncUrl();
+      const syncUrl = await storageService.getCrudSyncTarget();
       const res = await fetch(syncUrl);
       if (!res.ok) return null;
-      const result = await res.json();
-      const cloudData = result?.data;
-      if (!cloudData) return null;
+      const list = await res.json();
+      if (!Array.isArray(list) || list.length === 0) return null;
+
+      const latestDoc = list[list.length - 1];
+      if (latestDoc._id) {
+        localStorage.setItem('edu_lop5_doc_id', latestDoc._id);
+      }
 
       let hasChanged = false;
 
       // 1. Sync lock_overwrites
-      if (cloudData.lock_overwrites) {
+      if (latestDoc.lock_overwrites) {
         const localLocks = getJSON(KEYS.LESSON_LOCK_OVERWRITES, {});
-        if (JSON.stringify(localLocks) !== JSON.stringify(cloudData.lock_overwrites)) {
-          setJSON(KEYS.LESSON_LOCK_OVERWRITES, cloudData.lock_overwrites);
+        if (JSON.stringify(localLocks) !== JSON.stringify(latestDoc.lock_overwrites)) {
+          setJSON(KEYS.LESSON_LOCK_OVERWRITES, latestDoc.lock_overwrites);
           hasChanged = true;
         }
       }
 
       // 2. Sync notifications
-      if (cloudData.notifications && Array.isArray(cloudData.notifications)) {
+      if (latestDoc.notifications && Array.isArray(latestDoc.notifications)) {
         const localNotifs = getJSON(KEYS.NOTIFICATIONS, []);
         const mergedMap = {};
-        [...localNotifs, ...cloudData.notifications].forEach(n => {
+        [...localNotifs, ...latestDoc.notifications].forEach(n => {
           if (!mergedMap[n.id]) mergedMap[n.id] = n;
         });
         const mergedList = Object.values(mergedMap).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)).slice(0, 30);
@@ -299,29 +323,29 @@ export const storageService = {
       }
 
       // 3. Sync custom_curriculum
-      if (cloudData.custom_curriculum) {
+      if (latestDoc.custom_curriculum) {
         const localCustom = getJSON(KEYS.CUSTOM_CURRICULUM, null);
-        if (JSON.stringify(localCustom) !== JSON.stringify(cloudData.custom_curriculum)) {
-          setJSON(KEYS.CUSTOM_CURRICULUM, cloudData.custom_curriculum);
+        if (JSON.stringify(localCustom) !== JSON.stringify(latestDoc.custom_curriculum)) {
+          setJSON(KEYS.CUSTOM_CURRICULUM, latestDoc.custom_curriculum);
           hasChanged = true;
         }
       }
 
       // 4. Sync registered_students
-      if (cloudData.registered_students && Array.isArray(cloudData.registered_students)) {
+      if (latestDoc.registered_students && Array.isArray(latestDoc.registered_students)) {
         const localStudents = getJSON(KEYS.REGISTERED_STUDENTS, SEED_STUDENTS);
-        const mergedStudents = mergeStudents(localStudents, cloudData.registered_students);
-        if (JSON.stringify(localStudents) !== JSON.stringify(mergedStudents)) {
+        const mergedStudents = mergeStudents(localStudents, latestDoc.registered_students);
+        if (localStudents.length !== mergedStudents.length || JSON.stringify(localStudents) !== JSON.stringify(mergedStudents)) {
           setJSON(KEYS.REGISTERED_STUDENTS, mergedStudents);
           hasChanged = true;
         }
       }
 
       // 5. Sync student_scores
-      if (cloudData.student_scores && Array.isArray(cloudData.student_scores)) {
+      if (latestDoc.student_scores && Array.isArray(latestDoc.student_scores)) {
         const localScores = getJSON(KEYS.STUDENT_SCORES, []);
-        const mergedScores = mergeScores(localScores, cloudData.student_scores);
-        if (JSON.stringify(localScores) !== JSON.stringify(mergedScores)) {
+        const mergedScores = mergeScores(localScores, latestDoc.student_scores);
+        if (localScores.length !== mergedScores.length || JSON.stringify(localScores) !== JSON.stringify(mergedScores)) {
           setJSON(KEYS.STUDENT_SCORES, mergedScores);
           hasChanged = true;
         }
@@ -331,7 +355,7 @@ export const storageService = {
         window.dispatchEvent(new Event('cloud-sync-updated'));
       }
 
-      return { hasChanged, data: cloudData };
+      return { hasChanged, data: latestDoc };
     } catch (e) {
       console.warn('Cloud sync fetch offline:', e);
     }
