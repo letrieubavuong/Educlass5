@@ -6,6 +6,7 @@ import { AdminPanel } from './components/AdminPanel';
 import { LeaderboardView } from './components/LeaderboardView';
 import { AuthModal } from './components/AuthModal';
 import { storageService } from './services/storageService';
+import { firebaseService } from './services/firebaseService';
 
 export function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -29,6 +30,13 @@ export function App() {
         setIsAuthOpen(true);
       }, 600);
     }
+
+    // 0. Listen to Firebase Realtime Database WebSockets (<50ms latency push across all devices!)
+    const unsubscribeFirebase = firebaseService.listenToRealtimeSync((data) => {
+      if (data) {
+        storageService.applyCloudData(data);
+      }
+    });
 
     // 1. Initial Cloud Sync Fetch on Mount
     storageService.fetchFromCloudSync();
@@ -62,6 +70,7 @@ export function App() {
     window.addEventListener('storage', handleStorageEvent);
 
     return () => {
+      unsubscribeFirebase();
       clearInterval(syncInterval);
       window.removeEventListener('focus', handleFocusOrVisibility);
       document.removeEventListener('visibilitychange', handleFocusOrVisibility);
