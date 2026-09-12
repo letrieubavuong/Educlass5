@@ -394,18 +394,265 @@ export const toanSubject = {
       },
       "exercises": [
         {
-          "id": "q_6_1",
-          "type": "mcq",
-          "question": "Tính: $\\frac{3}{5} + \\frac{1}{2} = ?$",
-          "explanation": "Quy đồng mẫu số chung là 10.",
-          "options": [
-            "$\\frac{11}{10}$",
-            "$\\frac{4}{7}$",
-            "$\\frac{4}{10}$",
-            "$\\frac{7}{10}$"
-          ],
-          "answerIndex": 0
-        }
+    "id": "q_6_1",
+    "type": "mcq",
+    "question": "Tính: $\\frac{1}{3} + \\frac{1}{4} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 12: $\\frac{4}{12} + \\frac{3}{12} = \\frac{7}{12}$.",
+    "options": [
+      "$\\frac{7}{12}$",
+      "$\\frac{2}{7}$",
+      "$\\frac{5}{12}$",
+      "$\\frac{1}{12}$"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_6_2",
+    "type": "mcq",
+    "question": "Tính: $\\frac{2}{3} - \\frac{1}{2} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 6: $\\frac{4}{6} - \\frac{3}{6} = \\frac{1}{6}$.",
+    "options": [
+      "$\\frac{1}{1}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{3}{6}$",
+      "$\\frac{1}{5}$"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_6_3",
+    "type": "mcq",
+    "question": "Tính: $\\frac{3}{5} + \\frac{1}{2} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 10: $\\frac{6}{10} + \\frac{5}{10} = \\frac{11}{10}$.",
+    "options": [
+      "$\\frac{11}{10}$",
+      "$\\frac{4}{7}$",
+      "$\\frac{4}{10}$",
+      "$\\frac{7}{10}$"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_6_4",
+    "type": "mcq",
+    "question": "Tính: $\\frac{5}{6} - \\frac{1}{3} = ?$",
+    "explanation": "Mẫu số chung là 6: $\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2}$.",
+    "options": [
+      "$\\frac{4}{3}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{4}{6}$"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_6_5",
+    "type": "mcq",
+    "question": "Tính: $\\frac{3}{4} + \\frac{2}{5} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 20: $\\frac{15}{20} + \\frac{8}{20} = \\frac{23}{20}$.",
+    "options": [
+      "$\\frac{5}{9}$",
+      "$\\frac{23}{20}$",
+      "$\\frac{17}{20}$",
+      "$\\frac{21}{20}$"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_6_6",
+    "type": "mcq",
+    "question": "Tính: $\\frac{7}{8} - \\frac{1}{4} = ?$",
+    "explanation": "Mẫu số chung là 8: $\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}$.",
+    "options": [
+      "$\\frac{6}{4}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{6}{8}$"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_6_7",
+    "type": "mcq",
+    "question": "Tính: $\\frac{2}{7} + \\frac{3}{5} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 35: $\\frac{10}{35} + \\frac{21}{35} = \\frac{31}{35}$.",
+    "options": [
+      "$\\frac{31}{35}$",
+      "$\\frac{5}{12}$",
+      "$\\frac{29}{35}$",
+      "$\\frac{26}{35}$"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_6_8",
+    "type": "mcq",
+    "question": "Tính: $\\frac{4}{5} - \\frac{2}{3} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 15: $\\frac{12}{15} - \\frac{10}{15} = \\frac{2}{15}$.",
+    "options": [
+      "$\\frac{2}{2}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{2}{15}$",
+      "$\\frac{7}{15}$"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_6_9",
+    "type": "mcq",
+    "question": "Tính: $\\frac{5}{12} + \\frac{1}{4} = ?$",
+    "explanation": "Mẫu số chung là 12: $\\frac{5}{12} + \\frac{3}{12} = \\frac{8}{12} = \\frac{2}{3}$.",
+    "options": [
+      "$\\frac{2}{3}$",
+      "$\\frac{6}{16}$",
+      "$\\frac{7}{12}$",
+      "$\\frac{3}{4}$"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_6_10",
+    "type": "mcq",
+    "question": "Tính: $\\frac{9}{10} - \\frac{2}{5} = ?$",
+    "explanation": "Mẫu số chung là 10: $\\frac{9}{10} - \\frac{4}{10} = \\frac{5}{10} = \\frac{1}{2}$.",
+    "options": [
+      "$\\frac{7}{5}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{7}{10}$"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_6_11",
+    "type": "mcq",
+    "question": "Tính: $\\frac{1}{6} + \\frac{3}{8} = ?$",
+    "explanation": "Mẫu số chung nhỏ nhất là 24: $\\frac{4}{24} + \\frac{9}{24} = \\frac{13}{24}$.",
+    "options": [
+      "$\\frac{4}{14}$",
+      "$\\frac{11}{24}$",
+      "$\\frac{13}{24}$",
+      "$\\frac{7}{12}$"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_6_12",
+    "type": "mcq",
+    "question": "Tính: $\\frac{7}{9} - \\frac{1}{6} = ?$",
+    "explanation": "Mẫu số chung nhỏ nhất là 18: $\\frac{14}{18} - \\frac{3}{18} = \\frac{11}{18}$.",
+    "options": [
+      "$\\frac{11}{18}$",
+      "$\\frac{6}{3}$",
+      "$\\frac{13}{18}$",
+      "$\\frac{5}{9}$"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_6_13",
+    "type": "mcq",
+    "question": "Tính: $\\frac{3}{7} + \\frac{1}{2} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 14: $\\frac{6}{14} + \\frac{7}{14} = \\frac{13}{14}$.",
+    "options": [
+      "$\\frac{4}{9}$",
+      "$\\frac{13}{14}$",
+      "$\\frac{11}{14}$",
+      "$\\frac{5}{14}$"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_6_14",
+    "type": "mcq",
+    "question": "Tính: $\\frac{11}{15} - \\frac{1}{3} = ?$",
+    "explanation": "Mẫu số chung là 15: $\\frac{11}{15} - \\frac{5}{15} = \\frac{6}{15} = \\frac{2}{5}$.",
+    "options": [
+      "$\\frac{10}{12}$",
+      "$\\frac{7}{15}$",
+      "$\\frac{2}{5}$",
+      "$\\frac{1}{3}$"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_6_15",
+    "type": "mcq",
+    "question": "Tính: $\\frac{5}{8} + \\frac{1}{6} = ?$",
+    "explanation": "Mẫu số chung nhỏ nhất là 24: $\\frac{15}{24} + \\frac{4}{24} = \\frac{19}{24}$.",
+    "options": [
+      "$\\frac{19}{24}$",
+      "$\\frac{6}{14}$",
+      "$\\frac{17}{24}$",
+      "$\\frac{23}{24}$"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_6_16",
+    "type": "mcq",
+    "question": "Tính: $\\frac{5}{7} - \\frac{1}{2} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 14: $\\frac{10}{14} - \\frac{7}{14} = \\frac{3}{14}$.",
+    "options": [
+      "$\\frac{4}{5}$",
+      "$\\frac{1}{14}$",
+      "$\\frac{3}{14}$",
+      "$\\frac{5}{14}$"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_6_17",
+    "type": "mcq",
+    "question": "Tính: $\\frac{7}{12} + \\frac{2}{9} = ?$",
+    "explanation": "Mẫu số chung nhỏ nhất là 36: $\\frac{21}{36} + \\frac{8}{36} = \\frac{29}{36}$.",
+    "options": [
+      "$\\frac{9}{21}$",
+      "$\\frac{29}{36}$",
+      "$\\frac{25}{36}$",
+      "$\\frac{31}{36}$"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q_6_18",
+    "type": "mcq",
+    "question": "Tính: $\\frac{5}{6} - \\frac{3}{8} = ?$",
+    "explanation": "Mẫu số chung nhỏ nhất là 24: $\\frac{20}{24} - \\frac{9}{24} = \\frac{11}{24}$.",
+    "options": [
+      "$\\frac{2}{2}$",
+      "$\\frac{13}{24}$",
+      "$\\frac{11}{24}$",
+      "$\\frac{7}{24}$"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q_6_19",
+    "type": "mcq",
+    "question": "Tính: $\\frac{3}{10} + \\frac{4}{15} = ?$",
+    "explanation": "Mẫu số chung nhỏ nhất là 30: $\\frac{9}{30} + \\frac{8}{30} = \\frac{17}{30}$.",
+    "options": [
+      "$\\frac{17}{30}$",
+      "$\\frac{7}{25}$",
+      "$\\frac{19}{30}$",
+      "$\\frac{13}{30}$"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q_6_20",
+    "type": "mcq",
+    "question": "Tính: $\\frac{4}{9} - \\frac{1}{4} = ?$",
+    "explanation": "Quy đồng mẫu số chung là 36: $\\frac{16}{36} - \\frac{9}{36} = \\frac{7}{36}$.",
+    "options": [
+      "$\\frac{3}{5}$",
+      "$\\frac{7}{36}$",
+      "$\\frac{5}{36}$",
+      "$\\frac{11}{36}$"
+    ],
+    "answerIndex": 1
+  }
       ]
     },
     {
