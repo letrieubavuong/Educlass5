@@ -5,9 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#0284c7" />
-    <meta name="description" content="Ứng dụng PWA hỗ trợ học sinh Lớp 5: Toán, Tiếng Việt, Tiếng Anh, Khoa học, Tin học, Lịch sử & Địa lý" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+    <meta name="description" content="Nền tảng học tập & luyện thi thông minh cho học sinh Lớp 5: Toán, Tiếng Việt, Tiếng Anh, Khoa học, Tin học, Lịch sử & Địa lý" />
     
     <!-- Google Fonts: Be Vietnam Pro (specifically engineered for Vietnamese diacritics & bold text) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,18 +15,24 @@
     <!-- KaTeX CSS for LaTeX Math Formula Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 
-    <title>EduClass Lớp 5 - Ứng Dụng Học Tập Thông Minh PWA</title>
+    <title>EduClass Lớp 5 - Nền Tảng Học Tập & Luyện Thi Thông Minh</title>
   </head>
   <body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-sky-200 selection:text-sky-900 min-h-screen">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
+      // Clean up legacy PWA Service Worker & Cache on existing devices
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('SW Registered:', reg.scope))
-            .catch(err => console.log('SW Registration failed:', err));
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
         });
+        if ('caches' in window) {
+          caches.keys().then(names => {
+            for (let name of names) caches.delete(name);
+          });
+        }
       }
     </script>
   </body>

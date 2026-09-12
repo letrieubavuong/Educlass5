@@ -5,7 +5,6 @@ import { LessonDetail } from './components/LessonDetail';
 import { AdminPanel } from './components/AdminPanel';
 import { LeaderboardView } from './components/LeaderboardView';
 import { AuthModal } from './components/AuthModal';
-import { PWAInstallBanner } from './components/PWAInstallBanner';
 import { storageService } from './services/storageService';
 
 export function App() {
@@ -16,12 +15,8 @@ export function App() {
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedLesson, setSelectedLesson] = useState(null);
 
-  // Lock overwrites tick state to trigger rerender when admin changes locks
+  // Lock overwrites tick state to trigger rerender when admin changes locks or cloud sync updates
   const [lockTick, setLockTick] = useState(0);
-
-  // PWA installation prompt listener
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [showPWABanner, setShowPWABanner] = useState(false);
 
   useEffect(() => {
     // Load persisted user session if any
@@ -53,35 +48,13 @@ export function App() {
     };
     window.addEventListener('cloud-sync-updated', handleCloudSyncUpdated);
 
-    // PWA install prompt handler
-    const handleBeforeInstall = (e) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-      setShowPWABanner(true);
-    };
-
-    window.addEventListener('beforeinstallprompt', handleBeforeInstall);
-
     return () => {
       clearInterval(syncInterval);
       window.removeEventListener('focus', handleFocusOrVisibility);
       document.removeEventListener('visibilitychange', handleFocusOrVisibility);
       window.removeEventListener('cloud-sync-updated', handleCloudSyncUpdated);
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstall);
     };
   }, []);
-
-  const handleInstallPWA = () => {
-    if (!deferredPrompt) return;
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted PWA installation');
-      }
-      setDeferredPrompt(null);
-      setShowPWABanner(false);
-    });
-  };
 
   const handleAuthSuccess = (user) => {
     setCurrentUser(user);
@@ -126,8 +99,6 @@ export function App() {
         onGoHome={() => setCurrentView('grid')}
         onOpenAdmin={() => setCurrentView('admin')}
         onOpenLeaderboard={() => setCurrentView('leaderboard')}
-        canInstallPWA={!!deferredPrompt}
-        onInstallPWA={handleInstallPWA}
         onNavigateToLesson={handleNavigateToLesson}
       />
 
@@ -174,7 +145,7 @@ export function App() {
       <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <div>
-            <strong>EduClass Lớp 5 PWA</strong> &copy; {new Date().getFullYear()} - Nền Tảng Học Tập Tiểu Học Thông Minh
+            <strong>EduClass Lớp 5</strong> &copy; {new Date().getFullYear()} - Nền Tảng Học Tập & Luyện Thi Thông Minh
           </div>
           <div className="flex items-center gap-4 text-slate-400">
             <span>Toán</span> • <span>Tiếng Việt</span> • <span>Tiếng Anh</span> • <span>Khoa học</span> • <span>Tin học</span> • <span>Lịch sử & Địa lý</span>
@@ -188,14 +159,6 @@ export function App() {
         onClose={() => setIsAuthOpen(false)}
         onAuthSuccess={handleAuthSuccess}
       />
-
-      {/* PWA Floating Install Banner */}
-      {showPWABanner && (
-        <PWAInstallBanner
-          onInstall={handleInstallPWA}
-          onDismiss={() => setShowPWABanner(false)}
-        />
-      )}
 
     </div>
   );

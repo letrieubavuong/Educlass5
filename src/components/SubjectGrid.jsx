@@ -37,7 +37,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
         <div className="relative z-10 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-extrabold mb-3">
             <Sparkles className="w-4 h-4 text-amber-300" />
-            <span>Chương Trình Giáo Dục Lớp 5 Chuẩn PWA</span>
+            <span>Chương Trình Giáo Dục Lớp 5 Chuẩn GDPT 2018</span>
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-tight">

@@ -4,7 +4,7 @@ import { storageService } from '../services/storageService';
 
 export const Navbar = ({ 
   currentUser, onOpenAuth, onLogout, onGoHome, onOpenAdmin, 
-  onOpenLeaderboard, canInstallPWA, onInstallPWA, onNavigateToLesson 
+  onOpenLeaderboard, onNavigateToLesson 
 }) => {
   const [showNotifMenu, setShowNotifMenu] = useState(false);
 
@@ -36,7 +36,7 @@ export const Navbar = ({
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-lg sm:text-xl text-slate-800 tracking-tight">EduClass</span>
-              <span className="bg-sky-100 text-sky-700 text-xs px-2 py-0.5 rounded-full font-bold">LỚP 5 PWA</span>
+              <span className="bg-sky-100 text-sky-700 text-xs px-2 py-0.5 rounded-full font-bold">LỚP 5</span>
             </div>
             <p className="text-xs text-slate-500 hidden sm:block">Học tập & Luyện thi Thông minh</p>
           </div>
@@ -128,18 +128,6 @@ export const Navbar = ({
             <Trophy className="w-4 h-4 text-amber-950 fill-amber-950" />
             <span className="hidden sm:inline">Thi Đua</span>
           </button>
-
-          {/* PWA Install Button */}
-          {canInstallPWA && (
-            <button
-              onClick={onInstallPWA}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 transition-colors shadow-sm animate-pulse-subtle"
-              title="Cài đặt Ứng dụng về màn hình chính"
-            >
-              <Download className="w-4 h-4" />
-              <span className="hidden sm:inline">Cài App</span>
-            </button>
-          )}
 
           {/* User Profile / Status */}
           {currentUser ? (
