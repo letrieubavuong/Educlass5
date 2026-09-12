@@ -189,8 +189,8 @@ export function App() {
           <div>
             <strong>EduClass Lớp 5</strong> &copy; {new Date().getFullYear()} - Nền Tảng Học Tập & Luyện Thi Thông Minh
           </div>
-          <div className="flex items-center gap-4 text-slate-400">
-            <span>Toán</span> • <span>Tiếng Việt</span> • <span>Tiếng Anh</span> • <span>Khoa học</span> • <span>Tin học</span> • <span>Lịch sử & Địa lý</span>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-slate-400">
+            <span>Toán</span> • <span>Tiếng Việt</span> • <span>Tiếng Anh</span> • <span>Khoa học</span> • <span>Tin học</span> • <span>Lịch sử & Địa lý</span> • <span className="font-bold text-indigo-500">Đấu trường Tin học trẻ</span> • <span className="font-bold text-purple-500">Đấu trường VnEdu</span> • <span className="font-bold text-amber-500">Đấu trường Trạng Nguyên</span>
           </div>
         </div>
       </footer>

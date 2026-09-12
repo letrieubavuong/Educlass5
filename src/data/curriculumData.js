@@ -5,6 +5,9 @@ import { tienganhSubject } from './subjects/tienganhData';
 import { khoahocSubject } from './subjects/khoahocData';
 import { tinhocSubject } from './subjects/tinhocData';
 import { lichsuDialiSubject } from './subjects/lichsuDialiData';
+import { dautruongTinhocSubject } from './subjects/dautruongTinhocData';
+import { dautruongVneduSubject } from './subjects/dautruongVneduData';
+import { dautruongTrangnguyenSubject } from './subjects/dautruongTrangnguyenData';
 
 export const SUBJECTS = [
   toanSubject,
@@ -12,5 +15,9 @@ export const SUBJECTS = [
   tienganhSubject,
   khoahocSubject,
   tinhocSubject,
-  lichsuDialiSubject
+  lichsuDialiSubject,
+  dautruongTinhocSubject,
+  dautruongVneduSubject,
+  dautruongTrangnguyenSubject
 ];
+

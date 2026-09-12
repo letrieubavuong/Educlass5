@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { 
   Calculator, BookOpen, Languages, FlaskConical, Monitor, Landmark, 
-  Lock, Unlock, ChevronRight, CheckCircle, Sparkles, Clock, Star, Folder, Grid, ListFilter
+  Lock, Unlock, ChevronRight, CheckCircle, Sparkles, Clock, Star, Folder, Grid, ListFilter,
+  Terminal, Swords, Crown, Trophy, Award, Zap
 } from 'lucide-react';
 import { SUBJECTS } from '../data/curriculumData';
 import { storageService } from '../services/storageService';
@@ -14,7 +15,13 @@ const ICON_MAP = {
   Languages,
   FlaskConical,
   Monitor,
-  Landmark
+  Landmark,
+  Terminal,
+  Swords,
+  Crown,
+  Trophy,
+  Award,
+  Zap
 };
 
 export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
@@ -47,7 +54,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
           </h1>
 
           <p className="text-sm sm:text-base text-sky-100 mt-2 font-medium leading-relaxed">
-            <MathLatex text="Khám phá 6 môn học cốt lõi với phần **Lý thuyết sinh động** và **Bài tập vận dụng tương tác** (trắc nghiệm, đúng/sai, điền từ, điền đáp án số)." />
+            <MathLatex text="Khám phá **Môn học cốt lõi** và các **Đấu trường luyện thi nâng cao** với phần **Lý thuyết sinh động** & **Bộ đề tương tác** (trắc nghiệm, ghép nối, kéo thả, điền số)." />
           </p>
 
           {!currentUser && (
@@ -110,7 +117,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
           }`}
         >
           <Grid className="w-4 h-4" />
-          <span>Tất cả (6 môn)</span>
+          <span>Tất cả ({SUBJECTS.length} môn & đấu trường)</span>
         </button>
 
         {SUBJECTS.map((sub) => {
