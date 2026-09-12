@@ -180,6 +180,14 @@ export const AdminPanel = ({ onBack, onUpdateOverwrites }) => {
     showNotification('Đã MỞ TẤT CẢ 🔓 bài học cho học sinh!');
   };
 
+  const handleLockAll = () => {
+    if (window.confirm('Bạn có chắc chắn muốn KHÓA TẤT CẢ các bài học trên hệ thống không?')) {
+      storageService.lockAllLessons();
+      onUpdateOverwrites();
+      showNotification('Đã KHÓA TẤT CẢ 🔒 bài học trên hệ thống!');
+    }
+  };
+
   // Add new single question
   const handleAddQuestion = () => {
     if (!qQuestion.trim()) {
@@ -1047,10 +1055,29 @@ Giải thích: Hiện tượng tạo ra chất mới là sự biến đổi hóa
         {/* TAB 3: LOCK / UNLOCK LESSONS PER SUBJECT */}
         {activeTab === 'lessons' && (
           <div className="p-6 space-y-8">
-            <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-amber-800 text-xs sm:text-sm flex items-start gap-3">
-              <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-              <div>
-                <strong>Hướng dẫn dành cho Giáo viên:</strong> Khi bạn nhấn công tắc <strong>MỞ 🔓</strong> hoặc <strong>KHÓA 🔒</strong>, trạng thái bài học của tất cả học sinh sẽ ngay lập tức thay đổi. Bài bị khóa sẽ ngắt quyền học phần Lý thuyết và Bài tập của các em.
+            <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-amber-800 text-xs sm:text-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className="flex items-start gap-3">
+                <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                <div>
+                  <strong>Hướng dẫn dành cho Giáo viên:</strong> Khi bạn nhấn công tắc <strong>MỞ 🔓</strong> hoặc <strong>KHÓA 🔒</strong>, trạng thái bài học của tất cả học sinh sẽ ngay lập tức thay đổi. Bài bị khóa sẽ ngắt quyền học phần Lý thuyết và Bài tập của các em.
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 shrink-0 w-full md:w-auto">
+                <button
+                  onClick={handleUnlockAll}
+                  className="flex-1 md:flex-none px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5"
+                >
+                  <Unlock className="w-4 h-4" />
+                  <span>Mở Tất Cả Bài 🔓</span>
+                </button>
+                <button
+                  onClick={handleLockAll}
+                  className="flex-1 md:flex-none px-4 py-2.5 bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs rounded-xl shadow-xs transition-all flex items-center justify-center gap-1.5"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Khóa Tất Cả Bài 🔒</span>
+                </button>
               </div>
             </div>
 

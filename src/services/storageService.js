@@ -281,6 +281,22 @@ export const storageService = {
     return overwrites;
   },
 
+  lockAllLessons: () => {
+    const overwrites = {};
+    const allSubjects = storageService.getAllSubjects();
+    for (const sub of allSubjects) {
+      for (const les of sub.lessons) {
+        overwrites[les.id] = true;
+      }
+    }
+    setJSON(KEYS.LESSON_LOCK_OVERWRITES, overwrites);
+
+    // Push state to Cloud for all student devices
+    storageService.pushToCloudSync();
+
+    return overwrites;
+  },
+
   isLessonLocked: (lesson) => {
     const overwrites = storageService.getLockOverwrites();
     if (overwrites[lesson.id] !== undefined) {
