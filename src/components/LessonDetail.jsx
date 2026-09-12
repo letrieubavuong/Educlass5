@@ -8,7 +8,7 @@ import confetti from 'canvas-confetti';
 import { storageService } from '../services/storageService';
 import { MathLatex } from './MathLatex';
 
-export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth }) => {
+export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth, onUpdateUser }) => {
   const [activeTab, setActiveTab] = useState('theory'); // 'theory' | 'practice'
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [zoomImageUrl, setZoomImageUrl] = useState(null);
@@ -188,7 +188,7 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
   };
 
   // Next Question or Finish
-  const handleNextQuestion = () => {
+  const handleNextQuestion = async () => {
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex(prev => prev + 1);
       setSelectedMcq(null);
@@ -214,7 +214,7 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
         console.error(e);
       }
 
-      storageService.saveExerciseResult(
+      const updatedUser = await storageService.saveExerciseResult(
         lesson.id, 
         finalScore, 
         questions.length, 
@@ -222,6 +222,9 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
         timeElapsedSeconds, 
         formattedTime
       );
+      if (onUpdateUser && updatedUser) {
+        onUpdateUser(updatedUser);
+      }
     }
   };
 

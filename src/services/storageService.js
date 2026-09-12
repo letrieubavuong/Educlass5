@@ -542,15 +542,24 @@ export const storageService = {
   },
 
   // --- STUDENT PROGRESS & SCORES ---
-  saveExerciseResult: (lessonId, rawScore, totalQuestions, starsEarned, timeSpentSeconds = 0, timeSpentFormatted = '00:00') => {
+  saveExerciseResult: async (lessonId, rawScore, totalQuestions, starsEarned, timeSpentSeconds = 0, timeSpentFormatted = '00:00') => {
     const currentUser = storageService.getCurrentUser();
-    if (!currentUser || currentUser.role !== 'student') return;
+    if (!currentUser || currentUser.role !== 'student') return null;
 
     const validTotal = Math.max(1, totalQuestions || 1);
     const score = Math.min(validTotal, Math.max(0, rawScore));
     const percentage = Math.min(100, Math.round((score / validTotal) * 100));
 
     const scores = getJSON(KEYS.STUDENT_SCORES, []);
+
+    // Find previous attempt for this student & lesson to deduct previous stars & XP (no accumulation)
+    const previousAttempts = scores.filter(s => s.studentId === currentUser.id && s.lessonId === lessonId);
+    const previousAttempt = previousAttempts.length > 0 ? previousAttempts[previousAttempts.length - 1] : null;
+
+    const prevStars = previousAttempt ? (previousAttempt.starsEarned || 0) : 0;
+    const prevXp = previousAttempt ? ((previousAttempt.score || 0) * 20) : 0;
+    const prevTime = previousAttempt ? (previousAttempt.timeSpentSeconds || 0) : 0;
+
     scores.push({
       studentId: currentUser.id,
       studentName: currentUser.name,
@@ -565,13 +574,16 @@ export const storageService = {
     });
     setJSON(KEYS.STUDENT_SCORES, scores);
 
+    let updatedSession = currentUser;
     const students = storageService.getStudents();
     const studentIdx = students.findIndex(s => s.id === currentUser.id);
     if (studentIdx !== -1) {
       const std = students[studentIdx];
-      std.stars = (std.stars || 0) + starsEarned;
-      std.xp = (std.xp || 0) + (score * 20);
-      std.totalTimeSeconds = (std.totalTimeSeconds || 0) + (timeSpentSeconds || 0);
+      
+      // Deduct previous attempt's stars/XP/time and apply new attempt values
+      std.stars = Math.max(0, (std.stars || 0) - prevStars + starsEarned);
+      std.xp = Math.max(0, (std.xp || 0) - prevXp + (score * 20));
+      std.totalTimeSeconds = Math.max(0, (std.totalTimeSeconds || 0) - prevTime + (timeSpentSeconds || 0));
       
       if (!std.completedLessons.includes(lessonId)) {
         std.completedLessons.push(lessonId);
@@ -579,7 +591,7 @@ export const storageService = {
       students[studentIdx] = std;
       setJSON(KEYS.REGISTERED_STUDENTS, students);
       
-      const updatedSession = { 
+      updatedSession = { 
         ...currentUser, 
         stars: std.stars, 
         xp: std.xp, 
@@ -588,9 +600,14 @@ export const storageService = {
       };
       setJSON(KEYS.CURRENT_USER, updatedSession);
     }
-    
+
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('cloud-sync-updated'));
+    }
+
     // Push updated scores & student XP/stars to Cloud
-    storageService.pushToCloudSync();
+    await storageService.pushToCloudSync();
+    return updatedSession;
   },
 
   getStudentScores: () => {

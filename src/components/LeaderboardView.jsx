@@ -1,22 +1,95 @@
 import React, { useState } from 'react';
 import { 
   Trophy, Medal, Crown, Star, Flame, Sparkles, ShoppingBag, 
-  ArrowLeft, CheckCircle2, ShieldAlert, Award, Clock
+  ArrowLeft, CheckCircle2, ShieldAlert, Award, Clock, Filter
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { storageService, getStudentTitle } from '../services/storageService';
 
 const STORE_BADGES = [
-  { id: 'b1', name: '🌱 Tân Binh Lớp 5', cost: 50, desc: 'Huy hiệu khởi đầu hành trình tích sao thi đua' },
-  { id: 'b2', name: '🚀 Tàu Vũ Trụ Tri Thức', cost: 150, desc: 'Dành cho học sinh khám phá không giới hạn bài học Lớp 5' },
-  { id: 'b3', name: '🧙‍♂️ Phù Thủy Toán Học', cost: 300, desc: 'Biểu tượng xuất sắc bài tập Toán Lớp 5' },
-  { id: 'b4', name: '🦉 Cú Mèo Thông Thái', cost: 500, desc: 'Tư duy logic phản xạ siêu tốc và chính xác' },
-  { id: 'b5', name: '🔬 Nhà Khoa Học Nhí', cost: 800, desc: 'Làm chủ các khám phá Khoa học & Tự nhiên' },
-  { id: 'b6', name: '🗣️ Thần Đồng Ngôn Ngữ', cost: 1200, desc: 'Xuất sắc Tiếng Việt & Luyện 4 kỹ năng Tiếng Anh' },
-  { id: 'b7', name: '💻 Phù Thủy Tin Học', cost: 1800, desc: 'Làm chủ công nghệ & tư duy thuật toán' },
-  { id: 'b8', name: '👑 Vương Miện Trạng Nguyên', cost: 2500, desc: 'Danh hiệu tôn vinh Trạng Nguyên đỉnh cao Lớp 5' },
-  { id: 'b9', name: '🐉 Rồng Thần Tri Thức', cost: 3500, desc: 'Huy hiệu huyền thoại dành cho học sinh giỏi toàn diện' },
-  { id: 'b10', name: '💎 Vương Miện Kim Cương Tối Cao', cost: 5000, desc: 'Danh hiệu cao quý nhất dành cho Ngôi sao kiệt xuất' }
+  // Tier 1: Khởi Đầu (20 - 100 ⭐)
+  { id: 'b1', category: '🌱 Khởi Đầu', name: '🌱 Tân Binh Lớp 5', cost: 20, desc: 'Huy hiệu khởi đầu hành trình tích sao thi đua' },
+  { id: 'b2', category: '🌱 Khởi Đầu', name: '✏️ Mầm Non Chăm Chỉ', cost: 40, desc: 'Tích cực hoàn thành bài học đầu tiên Lớp 5' },
+  { id: 'b3', category: '🌱 Khởi Đầu', name: '🌟 Ngôi Sao Hy Vọng', cost: 60, desc: 'Khởi đầu chuỗi tích sao ấn tượng' },
+  { id: 'b4', category: '🌱 Khởi Đầu', name: '🎒 Ba Lô Tri Thức', cost: 80, desc: 'Trang bị đầy đủ hành trang rèn luyện' },
+  { id: 'b5', category: '🌱 Khởi Đầu', name: '🚀 Chấn Hưng Học Tập', cost: 100, desc: 'Sẵn sàng chinh phục chương trình Lớp 5' },
+
+  // Tier 2: Phản Xạ & Tốc Độ (120 - 280 ⭐)
+  { id: 'b6', category: '⚡ Tốc Độ', name: '⚡ Phản Xạ Siêu Tốc', cost: 120, desc: 'Hoàn thành bài tập với thời gian kỷ lục' },
+  { id: 'b7', category: '⚡ Tốc Độ', name: '🔥 Chiếc Cúp Chăm Chỉ', cost: 150, desc: 'Học tập đều đặn và kiên trì mỗi ngày' },
+  { id: 'b8', category: '⚡ Tốc Độ', name: '⏰ Chắt Chắt Thời Gian', cost: 180, desc: 'Quản lý thời gian học cực kỳ tối ưu' },
+  { id: 'b9', category: '⚡ Tốc Độ', name: '🦉 Cú Mèo Đêm Khuya', cost: 220, desc: 'Chăm chỉ tự học và rèn luyện nâng cao' },
+  { id: 'b10', category: '⚡ Tốc Độ', name: '🎯 Mục Tiêu Chuẩn Xác', cost: 280, desc: 'Làm bài đạt điểm 10 tuyệt đối lần đầu' },
+
+  // Tier 3: Thần Đồng Toán Học (320 - 800 ⭐)
+  { id: 'b11', category: '📐 Toán Học', name: '📐 Chuyên Gia Hình Học', cost: 320, desc: 'Làm chủ diện tích & thể tích các hình Lớp 5' },
+  { id: 'b12', category: '📐 Toán Học', name: '🔢 Phù Thủy Số Thập Phân', cost: 400, desc: 'Tính toán siêu đẳng số thập phân & phân số' },
+  { id: 'b13', category: '📐 Toán Học', name: '⚖️ Bậc Thầy Đại Số', cost: 500, desc: 'Giải toán đố & tìm X siêu tốc chuẩn xác' },
+  { id: 'b14', category: '📐 Toán Học', name: '🧠 Siêu Trí Tuệ Toán Học', cost: 650, desc: 'Chinh phục các bài toán nâng cao Lớp 5' },
+  { id: 'b15', category: '📐 Toán Học', name: '👑 Vua Toán Học Lớp 5', cost: 800, desc: 'Huy hiệu tôn vinh Đỉnh cao Toán Lớp 5' },
+
+  // Tier 4: Trạng Nguyên Tiếng Việt (350 - 900 ⭐)
+  { id: 'b16', category: '📖 Tiếng Việt', name: '✍️ Bút Vàng Văn Học', cost: 350, desc: 'Viết văn tả cảnh & cảm nghĩ phong phú' },
+  { id: 'b17', category: '📖 Tiếng Việt', name: '📖 Bậc Thầy Từ Vựng', cost: 450, desc: 'Am hiểu từ đồng nghĩa, trái nghĩa, từ ghép' },
+  { id: 'b18', category: '📖 Tiếng Việt', name: '📜 Ngữ Pháp Siêu Cấp', cost: 550, desc: 'Phân tích câu ghép & phép liên kết thành thạo' },
+  { id: 'b19', category: '📖 Tiếng Việt', name: '🎭 Nhà Thơ Nhí Lớp 5', cost: 700, desc: 'Cảm thụ văn học sâu sắc & giàu cảm xúc' },
+  { id: 'b20', category: '📖 Tiếng Việt', name: '👑 Trạng Nguyên Tiếng Việt', cost: 900, desc: 'Đỉnh cao thông thạo môn Tiếng Việt Lớp 5' },
+
+  // Tier 5: Kỳ Phùng Tiếng Anh (400 - 1100 ⭐)
+  { id: 'b21', category: '🇬🇧 Tiếng Anh', name: '🔤 Vocabulary Explorer', cost: 400, desc: 'Bậc thầy từ vựng Tiếng Anh Lớp 5' },
+  { id: 'b22', category: '🇬🇧 Tiếng Anh', name: '🎧 Super Listener', cost: 500, desc: 'Kỹ năng nghe hiểu Tiếng Anh xuất sắc' },
+  { id: 'b23', category: '🇬🇧 Tiếng Anh', name: '💬 Fluent Speaker', cost: 650, desc: 'Phát âm chuẩn & giao tiếp tự tin' },
+  { id: 'b24', category: '🇬🇧 Tiếng Anh', name: '📚 Master Reader', cost: 850, desc: 'Đọc hiểu bài đọc Tiếng Anh chuẩn xác' },
+  { id: 'b25', category: '🇬🇧 Tiếng Anh', name: '🌐 English Global Ambassador', cost: 1100, desc: 'Đại sứ Tiếng Anh Lớp 5 toàn cầu' },
+
+  // Tier 6: Nhà Khoa Học Nhí (450 - 1300 ⭐)
+  { id: 'b26', category: '🔬 Khoa Học', name: '🔬 Nhà Sinh Học Nhí', cost: 450, desc: 'Hiểu biết sâu sắc về sinh vật & môi trường' },
+  { id: 'b27', category: '🔬 Khoa Học', name: '⚡ Kỹ Sư Năng Lượng', cost: 600, desc: 'Am hiểu mạch điện & tiết kiệm năng lượng' },
+  { id: 'b28', category: '🔬 Khoa Học', name: '🌿 Bảo Vệ Trái Đất', cost: 750, desc: 'Đại sứ bảo vệ môi trường & sinh thái' },
+  { id: 'b29', category: '🔬 Khoa Học', name: '🌌 Khám Phá Vũ Trụ', cost: 950, desc: 'Am hiểu sự sống & hiện tượng tự nhiên' },
+  { id: 'b30', category: '🔬 Khoa Học', name: '👑 Vua Khoa Học Lớp 5', cost: 1300, desc: 'Làm chủ toàn bộ kiến thức Khoa Học 5' },
+
+  // Tier 7: Sử Địa Hào Hùng (500 - 1500 ⭐)
+  { id: 'b31', category: '🗺️ Sử Địa', name: '🗺️ Nhà Địa Lý Nhí', cost: 500, desc: 'Thông thuộc địa hình, sông núi Việt Nam' },
+  { id: 'b32', category: '🗺️ Sử Địa', name: '🏛️ Sử Gia Hào Hùng', cost: 650, desc: 'Nắm vững các mốc lịch sử dựng nước & giữ nước' },
+  { id: 'b33', category: '🗺️ Sử Địa', name: '🌏 Khám Phá Năng Động', cost: 850, desc: 'Hiểu biết sâu sắc các châu lục trên thế giới' },
+  { id: 'b34', category: '🗺️ Sử Địa', name: '🎖️ Hào Khí Đông A', cost: 1100, desc: 'Tinh thần học tập & tự hào dân tộc' },
+  { id: 'b35', category: '🗺️ Sử Địa', name: '👑 Vua Sử Địa Lớp 5', cost: 1500, desc: 'Bậc thầy Lịch sử & Địa lý Lớp 5' },
+
+  // Tier 8: Phù Thủy Công Nghệ (600 - 2000 ⭐)
+  { id: 'b36', category: '💻 Tin Học', name: '💻 Lập Trình Viên Nhí', cost: 600, desc: 'Tư duy thuật toán & logic máy tính' },
+  { id: 'b37', category: '💻 Tin Học', name: '🌐 An Toàn Internet', cost: 800, desc: 'Hiểu biết quy tắc an toàn không gian mạng' },
+  { id: 'b38', category: '💻 Tin Học', name: '🎨 Phù Thủy Đồ Họa', cost: 1100, desc: 'Sáng tạo bài trình chiếu & đa phương tiện' },
+  { id: 'b39', category: '💻 Tin Học', name: '🤖 Kỹ Sư AI Tương Lai', cost: 1500, desc: 'Tiếp cận công nghệ tri thức hiện đại' },
+  { id: 'b40', category: '💻 Tin Học', name: '⚡ Vua Công Nghệ Lớp 5', cost: 2000, desc: 'Làm chủ Tin học & Công nghệ Lớp 5' },
+
+  // Tier 9: Huyền Thoại Thi Đua (2500 - 6000 ⭐)
+  { id: 'b41', category: '🏆 Huyền Thoại', name: '🥉 Đồng Thau Tri Thức', cost: 2500, desc: 'Chứng nhận học sinh giỏi cấp trường' },
+  { id: 'b42', category: '🏆 Huyền Thoại', name: '🥈 Bạc Kim Tri Thức', cost: 3200, desc: 'Chinh phục 80% kho tàng bài học Lớp 5' },
+  { id: 'b43', category: '🏆 Huyền Thoại', name: '🥇 Hoàng Kim Tri Thức', cost: 4000, desc: 'Chinh phục 100% kho tàng bài học Lớp 5' },
+  { id: 'b44', category: '🏆 Huyền Thoại', name: '🔮 Thần Đồng Toàn Năng', cost: 5000, desc: 'Đạt điểm tối đa ở tất cả các môn học' },
+  { id: 'b45', category: '🏆 Huyền Thoại', name: '🛡️ Thiệp Vàng Trạng Nguyên', cost: 6000, desc: 'Vinh danh Bảng Vàng danh dự toàn trường' },
+
+  // Tier 10: Tối Cao & Bất Tử (7500 - 15000 ⭐)
+  { id: 'b46', category: '💎 Tối Cao', name: '🌟 Ngôi Sao Khung Trời', cost: 7500, desc: 'Tỏa sáng rực rỡ đỉnh bảng xếp hạng' },
+  { id: 'b47', category: '💎 Tối Cao', name: '🐉 Rồng Thần Tri Thức', cost: 9000, desc: 'Sức mạnh tri thức vô song Lớp 5' },
+  { id: 'b48', category: '💎 Tối Cao', name: '🌌 Đại Sứ Tri Thức', cost: 11000, desc: 'Tượng đài học tập xuất chúng toàn khối' },
+  { id: 'b49', category: '💎 Tối Cao', name: '💎 Vương Miện Kim Cương', cost: 13000, desc: 'Danh hiệu cao quý bậc nhất Lớp 5' },
+  { id: 'b50', category: '💎 Tối Cao', name: '☀️ Thái Dương Trạng Nguyên', cost: 15000, desc: 'Huyền thoại bất tử của Tiểu học Lớp 5' }
+];
+
+const CATEGORIES = [
+  'Tất cả (50)',
+  '🌱 Khởi Đầu',
+  '⚡ Tốc Độ',
+  '📐 Toán Học',
+  '📖 Tiếng Việt',
+  '🇬🇧 Tiếng Anh',
+  '🔬 Khoa Học',
+  '🗺️ Sử Địa',
+  '💻 Tin Học',
+  '🏆 Huyền Thoại',
+  '💎 Tối Cao'
 ];
 
 const formatTotalTime = (totalSecs) => {
@@ -30,6 +103,7 @@ const formatTotalTime = (totalSecs) => {
 export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
   const [selectedClass, setSelectedClass] = useState('all');
   const [activeTab, setActiveTab] = useState('rank'); // 'rank' | 'shop'
+  const [selectedCat, setSelectedCat] = useState('Tất cả (50)');
   const [notification, setNotification] = useState('');
 
   const leaderboard = storageService.getLeaderboard();
@@ -41,6 +115,10 @@ export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
   const top1 = filteredLeaderboard[0];
   const top2 = filteredLeaderboard[1];
   const top3 = filteredLeaderboard[2];
+
+  const filteredBadges = selectedCat === 'Tất cả (50)'
+    ? STORE_BADGES
+    : STORE_BADGES.filter(b => b.category === selectedCat);
 
   const handleBuyBadge = (badge) => {
     try {
@@ -99,10 +177,12 @@ export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
                   <p className="text-[11px] text-amber-200 uppercase font-bold">Sao của bạn</p>
                   <p className="text-xl sm:text-2xl font-black text-amber-300">{currentUser.stars || 0} ⭐</p>
                 </div>
-                <div className="w-px h-8 bg-white/20"></div>
+                <div className="w-px h-8 bg-white/20" />
                 <div className="text-center">
-                  <p className="text-[11px] text-amber-200 uppercase font-bold">Điểm XP</p>
-                  <p className="text-xl sm:text-2xl font-black text-white">{currentUser.xp || 0} ⚡</p>
+                  <p className="text-[11px] text-amber-200 uppercase font-bold">Huy hiệu hiện tại</p>
+                  <p className="text-xs sm:text-sm font-bold text-white max-w-[140px] truncate">
+                    {currentUser.avatarBadge || '🌱 Tân Binh Lớp 5'}
+                  </p>
                 </div>
               </div>
             )}
@@ -110,41 +190,41 @@ export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
         </div>
       </div>
 
-      {/* Navigation Tabs (Ranking vs Star Shop) */}
-      <div className="flex items-center justify-between bg-white p-2 rounded-2xl border border-slate-200 shadow-xs">
-        <div className="flex gap-2">
+      {/* Tabs & Class Filter Bar */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white p-2.5 rounded-2xl border border-slate-200 shadow-sm">
+        
+        {/* Navigation Tabs */}
+        <div className="flex items-center gap-2 w-full sm:w-auto">
           <button
             onClick={() => setActiveTab('rank')}
-            className={`px-5 py-2.5 rounded-xl font-extrabold text-xs sm:text-sm transition-all flex items-center gap-2 ${
+            className={`flex-1 sm:flex-initial px-5 py-2.5 rounded-xl font-extrabold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 ${
               activeTab === 'rank'
-                ? 'bg-amber-500 text-white shadow-md'
+                ? 'bg-amber-500 text-white shadow-md shadow-amber-500/20'
                 : 'text-slate-600 hover:bg-slate-100'
             }`}
           >
-            <Trophy className="w-4 h-4" />
-            <span>1. Bảng Xếp Hạng Thi Đua</span>
+            <Trophy className="w-4 h-4" /> Bảng Xếp Hạng Học Sinh
           </button>
-
           <button
             onClick={() => setActiveTab('shop')}
-            className={`px-5 py-2.5 rounded-xl font-extrabold text-xs sm:text-sm transition-all flex items-center gap-2 ${
+            className={`flex-1 sm:flex-initial px-5 py-2.5 rounded-xl font-extrabold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 ${
               activeTab === 'shop'
-                ? 'bg-purple-600 text-white shadow-md'
+                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/20'
                 : 'text-slate-600 hover:bg-slate-100'
             }`}
           >
-            <ShoppingBag className="w-4 h-4" />
-            <span>2. Cửa Hàng Đổi Huy Hiệu ⭐</span>
+            <ShoppingBag className="w-4 h-4" /> Cửa Hàng Huy Hiệu (50 Loại 🏅)
           </button>
         </div>
 
+        {/* Class Filter (Rank tab only) */}
         {activeTab === 'rank' && (
-          <div className="flex items-center gap-1.5">
-            <span className="text-xs text-slate-500 font-bold hidden sm:inline">Lớp:</span>
+          <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+            <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Lớp:</span>
             <select
               value={selectedClass}
               onChange={(e) => setSelectedClass(e.target.value)}
-              className="px-3 py-1.5 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold bg-white text-slate-700 focus:ring-2 focus:ring-amber-500"
+              className="bg-slate-100 border border-slate-200 text-slate-800 text-xs font-bold rounded-xl px-3 py-2 outline-none focus:ring-2 focus:ring-amber-500"
             >
               <option value="all">Tất cả các lớp</option>
               <option value="5A">Lớp 5A</option>
@@ -296,22 +376,50 @@ export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
       {/* TAB 2: STAR BADGE STORE */}
       {activeTab === 'shop' && (
         <div className="space-y-6">
-          <div className="bg-purple-50 border border-purple-200 rounded-3xl p-6 text-purple-900 text-xs sm:text-sm">
-            💡 <strong>Hướng dẫn Cửa Hàng:</strong> Tích lũy đủ số ⭐ <strong>Sao thưởng</strong> khi hoàn thành xuất sắc các bài tập vận dụng để đổi lấy các Huy Hiệu & Danh Hiệu độc quyền hiển thị trên Bảng Xếp Hạng!
+          <div className="bg-purple-50 border border-purple-200 rounded-3xl p-6 text-purple-900 text-xs sm:text-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              💡 <strong>Kho 50 Huy Hiệu Đổi Quà Thi Đua:</strong> Tích lũy đủ ⭐ <strong>Sao thưởng</strong> khi làm bài tập vận dụng để đổi lấy các Huy Hiệu & Danh Hiệu độc quyền hiển thị trên Bảng Xếp Hạng!
+            </div>
+            <div className="bg-purple-200/80 px-4 py-2 rounded-2xl text-purple-950 font-black text-xs shrink-0">
+              Đang hiển thị: {filteredBadges.length} / 50 Huy hiệu
+            </div>
+          </div>
+
+          {/* Category Filter Pills */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCat(cat)}
+                className={`px-4 py-2 rounded-2xl font-extrabold text-xs whitespace-nowrap transition-all border ${
+                  selectedCat === cat
+                    ? 'bg-purple-600 text-white border-purple-600 shadow-md shadow-purple-500/20'
+                    : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-100'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {STORE_BADGES.map((badge) => {
+            {filteredBadges.map((badge) => {
               const isEquipped = currentUser?.avatarBadge === badge.name;
               const canAfford = (currentUser?.stars || 0) >= badge.cost;
 
               return (
                 <div 
                   key={badge.id}
-                  className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-center group"
+                  className="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-center group relative overflow-hidden"
                 >
-                  <div>
-                    <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                  <div className="absolute top-3 right-3">
+                    <span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
+                      {badge.category}
+                    </span>
+                  </div>
+
+                  <div className="mt-4">
+                    <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">
                       {badge.name.split(' ')[0]}
                     </div>
                     <h3 className="font-extrabold text-slate-800 text-base">{badge.name}</h3>
