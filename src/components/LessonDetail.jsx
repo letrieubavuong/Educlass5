@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { 
   ArrowLeft, BookOpen, CheckCircle2, XCircle, Volume2, VolumeX, 
   HelpCircle, Star, Sparkles, Trophy, RotateCcw, Send, ChevronRight, Check,
-  Mic, MicOff, Headphones, FileText, PenTool, Maximize2, X, Image, Clock
+  Mic, MicOff, Headphones, FileText, PenTool, Maximize2, X, Image, Clock,
+  Link2, Move, RefreshCw, ArrowLeftRight, CheckSquare
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { storageService } from '../services/storageService';
@@ -18,6 +19,16 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
   const [selectedMcq, setSelectedMcq] = useState(null);
   const [selectedTf, setSelectedTf] = useState(null);
   const [userInputText, setUserInputText] = useState('');
+
+  // Interactive Question Types State (Matching & Drag-Drop)
+  const [userMatches, setUserMatches] = useState({}); // { leftIdx: rightIdx }
+  const [selectedLeft, setSelectedLeft] = useState(null);
+  const [shuffledRightItems, setShuffledRightItems] = useState([]);
+  
+  const [placedBlanks, setPlacedBlanks] = useState([]); // string[] for fill_blanks
+  const [selectedChip, setSelectedChip] = useState(null); // string for tap-to-place chip
+  const [currentOrder, setCurrentOrder] = useState([]); // string[] for reorder
+  const [swapSourceIndex, setSwapSourceIndex] = useState(null); // number for reorder chip tap-swap
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
@@ -156,6 +167,37 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
     };
   }, []);
 
+  // Initialize state whenever currentIndex or currentQ changes
+  useEffect(() => {
+    if (!currentQ) return;
+
+    if (currentQ.type === 'matching' && currentQ.pairs) {
+      setUserMatches({});
+      setSelectedLeft(null);
+      const rights = currentQ.pairs.map((p, idx) => ({ text: p.right, originalIndex: idx }));
+      setShuffledRightItems([...rights].sort(() => Math.random() - 0.5));
+    } else if (currentQ.type === 'drag_drop') {
+      if (currentQ.subtype === 'fill_blanks') {
+        const count = currentQ.correctAnswers 
+          ? currentQ.correctAnswers.length 
+          : (currentQ.template ? (currentQ.template.match(/\[\d+\]/g) || []).length : 0);
+        setPlacedBlanks(new Array(count).fill(''));
+        setSelectedChip(null);
+      } else if (currentQ.subtype === 'reorder') {
+        const items = currentQ.initialItems ? [...currentQ.initialItems] : [...(currentQ.correctOrder || [])];
+        // Ensure items are shuffled if initial order matches correct order
+        const isAlreadyCorrect = items.every((val, idx) => val === currentQ.correctOrder?.[idx]);
+        let shuffled = [...items].sort(() => Math.random() - 0.5);
+        if (isAlreadyCorrect && items.length > 1) {
+          // Shuffle again to avoid accidentally giving already solved state
+          shuffled = [...items].reverse();
+        }
+        setCurrentOrder(shuffled);
+        setSwapSourceIndex(null);
+      }
+    }
+  }, [currentIndex, currentQ]);
+
   // Submit Answer Logic for current question
   const handleSubmitAnswer = () => {
     if (!currentQ || isSubmitted) return;
@@ -178,6 +220,20 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
       const normalizedUser = userInputText.trim().toLowerCase();
       const normalizedTarget = currentQ.answer.trim().toLowerCase();
       correct = normalizedUser === normalizedTarget;
+    } else if (currentQ.type === 'matching') {
+      if (!currentQ.pairs || Object.keys(userMatches).length < currentQ.pairs.length) return;
+      correct = Object.entries(userMatches).every(([leftIdx, rightIdx]) => {
+        const rightItem = shuffledRightItems[rightIdx];
+        return rightItem && rightItem.originalIndex === parseInt(leftIdx, 10);
+      });
+    } else if (currentQ.type === 'drag_drop') {
+      if (currentQ.subtype === 'fill_blanks') {
+        if (!currentQ.correctAnswers || placedBlanks.some(b => !b)) return;
+        correct = placedBlanks.every((val, i) => val.trim().toLowerCase() === currentQ.correctAnswers[i].trim().toLowerCase());
+      } else if (currentQ.subtype === 'reorder') {
+        if (!currentQ.correctOrder || currentOrder.length !== currentQ.correctOrder.length) return;
+        correct = currentOrder.every((val, i) => val.trim() === currentQ.correctOrder[i].trim());
+      }
     }
 
     setIsSubmitted(true);
@@ -194,6 +250,13 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
       setSelectedMcq(null);
       setSelectedTf(null);
       setUserInputText('');
+      setUserMatches({});
+      setSelectedLeft(null);
+      setShuffledRightItems([]);
+      setPlacedBlanks([]);
+      setSelectedChip(null);
+      setCurrentOrder([]);
+      setSwapSourceIndex(null);
       setIsSubmitted(false);
       setIsCorrect(false);
       setTranscript('');
@@ -233,6 +296,13 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
     setSelectedMcq(null);
     setSelectedTf(null);
     setUserInputText('');
+    setUserMatches({});
+    setSelectedLeft(null);
+    setShuffledRightItems([]);
+    setPlacedBlanks([]);
+    setSelectedChip(null);
+    setCurrentOrder([]);
+    setSwapSourceIndex(null);
     setIsSubmitted(false);
     setIsCorrect(false);
     setScore(0);
@@ -258,6 +328,14 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
           >
             🔑 Đăng Nhập / Đăng Ký Ngay
           </button>
+        </div>
+      )}
+
+      {/* Admin Viewing Locked Lesson Mode Banner */}
+      {storageService.isLessonLocked(lesson) && currentUser?.role === 'admin' && (
+        <div className="bg-purple-50 border border-purple-200 p-3.5 rounded-2xl text-purple-900 text-xs sm:text-sm font-bold flex items-center gap-2 shadow-xs">
+          <span className="text-base">👑</span>
+          <span>Chế độ Quản trị viên (Admin): Bạn đang xem bài học <strong>"{lesson.title}"</strong>. Bài học này hiện đang tạm <strong>KHÓA 🔒</strong> đối với học sinh.</span>
         </div>
       )}
 
@@ -471,6 +549,8 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
                       currentQ?.type === 'mcq' ? 'TRẮC NGHIỆM' :
                       currentQ?.type === 'true_false' ? 'ĐÚNG / SAI' :
                       currentQ?.type === 'fill_blank' ? 'ĐIỀN TỪ VÀO CHỖ TRỐNG' :
+                      currentQ?.type === 'matching' ? '🧩 NỐI CÂU / NỐI VẾ' :
+                      currentQ?.type === 'drag_drop' ? '🎯 KÉO THẢ TƯƠNG TÁC' :
                       'ĐIỀN ĐÁP ÁN SỐ / NGẮN'
                     )}
                   </span>
@@ -663,6 +743,338 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
                 </div>
               )}
 
+              {/* MATCHING INTERACTIVE TYPE */}
+              {currentQ?.type === 'matching' && currentQ?.pairs && (
+                <div className="space-y-4">
+                  <div className="bg-sky-50 border border-sky-200 p-3.5 rounded-2xl text-xs sm:text-sm text-sky-900 font-bold flex items-center justify-between">
+                    <span>💡 Bấm chọn vế <strong>Cột A</strong> rồi chọn vế tương ứng ở <strong>Cột B</strong> để ghép nối:</span>
+                    {Object.keys(userMatches).length > 0 && !isSubmitted && (
+                      <button
+                        onClick={() => { setUserMatches({}); setSelectedLeft(null); }}
+                        className="text-xs text-sky-700 underline font-extrabold flex items-center gap-1 hover:text-sky-900 shrink-0"
+                      >
+                        <RefreshCw className="w-3.5 h-3.5" /> Tháo tất cả
+                      </button>
+                    )}
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                    {/* COLUMN A */}
+                    <div className="space-y-2.5">
+                      <h4 className="font-black text-xs uppercase tracking-wider text-slate-500 bg-slate-100 px-3 py-1.5 rounded-xl text-center">
+                        CỘT A (MỤC NỐI)
+                      </h4>
+                      {currentQ.pairs.map((pair, leftIdx) => {
+                        const isMatched = userMatches[leftIdx] !== undefined;
+                        const matchPalette = ['bg-indigo-600 text-white', 'bg-emerald-600 text-white', 'bg-amber-600 text-white', 'bg-purple-600 text-white', 'bg-rose-600 text-white'];
+                        const colorClass = isMatched ? matchPalette[leftIdx % matchPalette.length] : '';
+                        const isSelected = selectedLeft === leftIdx;
+
+                        return (
+                          <button
+                            key={leftIdx}
+                            disabled={isSubmitted}
+                            onClick={() => {
+                              if (isMatched) {
+                                setUserMatches(prev => {
+                                  const copy = { ...prev };
+                                  delete copy[leftIdx];
+                                  return copy;
+                                });
+                              } else {
+                                setSelectedLeft(isSelected ? null : leftIdx);
+                              }
+                            }}
+                            className={`w-full p-4 rounded-2xl border text-left text-xs sm:text-sm font-semibold transition-all flex items-center justify-between gap-3 ${
+                              isMatched
+                                ? `${colorClass} shadow-md border-transparent`
+                                : isSelected
+                                ? 'bg-amber-100 border-amber-400 ring-2 ring-amber-300 text-amber-900 font-black'
+                                : 'bg-slate-50 border-slate-200 hover:bg-slate-100 text-slate-800'
+                            }`}
+                          >
+                            <div className="flex items-center gap-2.5">
+                              <span className={`w-6 h-6 rounded-lg text-xs font-black flex items-center justify-center shrink-0 ${isMatched ? 'bg-white/20 text-white' : 'bg-black/10 text-slate-700'}`}>
+                                {leftIdx + 1}
+                              </span>
+                              <span><MathLatex text={pair.left} /></span>
+                            </div>
+
+                            {isMatched ? (
+                              <span className="text-[11px] font-black bg-white/20 px-2 py-0.5 rounded-md flex items-center gap-1 shrink-0">
+                                <Link2 className="w-3 h-3" /> Cặp #{leftIdx + 1}
+                              </span>
+                            ) : isSelected ? (
+                              <span className="text-[11px] font-black text-amber-700 animate-pulse shrink-0">Chọn Cột B ➔</span>
+                            ) : (
+                              <span className="text-[11px] font-bold text-slate-400 shrink-0">Bấm ghép ➔</span>
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* COLUMN B */}
+                    <div className="space-y-2.5">
+                      <h4 className="font-black text-xs uppercase tracking-wider text-slate-500 bg-slate-100 px-3 py-1.5 rounded-xl text-center">
+                        CỘT B (KẾT QUẢ / NGHĨA)
+                      </h4>
+                      {shuffledRightItems.map((rightObj, rightIdx) => {
+                        const matchedLeftIdxStr = Object.keys(userMatches).find(k => userMatches[k] === rightIdx);
+                        const matchedLeftIdx = matchedLeftIdxStr !== undefined ? parseInt(matchedLeftIdxStr, 10) : null;
+                        const isMatched = matchedLeftIdx !== null;
+                        const matchPalette = ['bg-indigo-600 text-white', 'bg-emerald-600 text-white', 'bg-amber-600 text-white', 'bg-purple-600 text-white', 'bg-rose-600 text-white'];
+                        const colorClass = isMatched ? matchPalette[matchedLeftIdx % matchPalette.length] : '';
+
+                        return (
+                          <button
+                            key={rightIdx}
+                            disabled={isSubmitted}
+                            onClick={() => {
+                              if (selectedLeft !== null) {
+                                setUserMatches(prev => ({
+                                  ...prev,
+                                  [selectedLeft]: rightIdx
+                                }));
+                                setSelectedLeft(null);
+                              } else if (isMatched) {
+                                setUserMatches(prev => {
+                                  const copy = { ...prev };
+                                  delete copy[matchedLeftIdx];
+                                  return copy;
+                                });
+                              }
+                            }}
+                            className={`w-full p-4 rounded-2xl border text-left text-xs sm:text-sm font-semibold transition-all flex items-center justify-between gap-3 ${
+                              isMatched
+                                ? `${colorClass} shadow-md border-transparent`
+                                : selectedLeft !== null
+                                ? 'bg-sky-50 border-sky-300 hover:bg-sky-100 text-sky-900 border-dashed animate-pulse font-bold'
+                                : 'bg-slate-50 border-slate-200 text-slate-800'
+                            }`}
+                          >
+                            <div className="flex items-center gap-2.5">
+                              <span className={`w-6 h-6 rounded-lg text-xs font-black flex items-center justify-center shrink-0 ${isMatched ? 'bg-white/20 text-white' : 'bg-black/10 text-slate-700'}`}>
+                                {String.fromCharCode(65 + rightIdx)}
+                              </span>
+                              <span><MathLatex text={rightObj.text} /></span>
+                            </div>
+
+                            {isMatched ? (
+                              <span className="text-[11px] font-black bg-white/20 px-2 py-0.5 rounded-md flex items-center gap-1 shrink-0">
+                                <Link2 className="w-3 h-3" /> Cặp #{matchedLeftIdx + 1}
+                              </span>
+                            ) : (
+                              <span className="text-[11px] font-bold text-slate-400 shrink-0">
+                                {selectedLeft !== null ? 'Chạm để ghép 🔗' : 'Chưa ghép'}
+                              </span>
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* DRAG & DROP INTERACTIVE TYPE */}
+              {currentQ?.type === 'drag_drop' && (
+                <div className="space-y-6">
+                  
+                  {/* SUBTYPE 1: FILL BLANKS */}
+                  {currentQ.subtype === 'fill_blanks' && (
+                    <div className="space-y-5">
+                      <div className="bg-sky-50 border border-sky-200 p-3.5 rounded-2xl text-xs sm:text-sm text-sky-900 font-bold">
+                        💡 Bấm/Kéo từ gợi ý ở danh sách bên dưới rồi bấm vào ô trống <strong>[ ... ]</strong> thích hợp trong câu:
+                      </div>
+
+                      {/* TEMPLATE WITH SLOTS */}
+                      <div className="bg-slate-50 border border-slate-200 p-5 rounded-2xl text-slate-800 text-sm sm:text-base leading-loose font-medium">
+                        {currentQ.template.split(/(\[\d+\])/g).map((part, pIdx) => {
+                          const match = part.match(/^\[(\d+)\]$/);
+                          if (!match) {
+                            return <span key={pIdx}>{part}</span>;
+                          }
+
+                          const slotIdx = parseInt(match[1], 10);
+                          const filledWord = placedBlanks[slotIdx];
+
+                          return (
+                            <span
+                              key={pIdx}
+                              onDragOver={(e) => e.preventDefault()}
+                              onDrop={(e) => {
+                                e.preventDefault();
+                                const word = e.dataTransfer.getData('text/plain');
+                                if (word) {
+                                  setPlacedBlanks(prev => {
+                                    const copy = [...prev];
+                                    copy[slotIdx] = word;
+                                    return copy;
+                                  });
+                                }
+                              }}
+                              onClick={() => {
+                                if (isSubmitted) return;
+                                if (selectedChip) {
+                                  setPlacedBlanks(prev => {
+                                    const copy = [...prev];
+                                    copy[slotIdx] = selectedChip;
+                                    return copy;
+                                  });
+                                  setSelectedChip(null);
+                                } else if (filledWord) {
+                                  // Clear slot
+                                  setPlacedBlanks(prev => {
+                                    const copy = [...prev];
+                                    copy[slotIdx] = '';
+                                    return copy;
+                                  });
+                                }
+                              }}
+                              className={`inline-flex items-center justify-center min-w-[90px] px-3 py-1 mx-1.5 rounded-xl border-2 transition-all cursor-pointer font-bold text-xs sm:text-sm ${
+                                filledWord
+                                  ? 'bg-sky-600 border-sky-700 text-white shadow-xs'
+                                  : selectedChip
+                                  ? 'bg-amber-100 border-amber-400 text-amber-900 border-dashed animate-pulse'
+                                  : 'bg-white border-dashed border-sky-400 text-sky-600 hover:bg-sky-50'
+                              }`}
+                            >
+                              {filledWord ? (
+                                <span className="flex items-center gap-1">
+                                  <span>{filledWord}</span>
+                                  {!isSubmitted && <X className="w-3.5 h-3.5 opacity-80 hover:opacity-100 ml-1" />}
+                                </span>
+                              ) : (
+                                <span>[ Chỗ trống #{slotIdx + 1} ]</span>
+                              )}
+                            </span>
+                          );
+                        })}
+                      </div>
+
+                      {/* AVAILABLE OPTIONS WORD CHIPS */}
+                      <div className="bg-white border border-slate-200 p-4 rounded-2xl space-y-2">
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-wide">
+                          Danh sách thẻ từ gợi ý (Bấm thẻ từ rồi chạm ô trống):
+                        </p>
+                        <div className="flex flex-wrap gap-2.5 pt-1">
+                          {currentQ.options.map((word, wIdx) => {
+                            const isUsed = placedBlanks.includes(word);
+                            const isSelected = selectedChip === word;
+
+                            return (
+                              <button
+                                key={wIdx}
+                                disabled={isSubmitted || isUsed}
+                                draggable={!isSubmitted && !isUsed}
+                                onDragStart={(e) => {
+                                  e.dataTransfer.setData('text/plain', word);
+                                }}
+                                onClick={() => {
+                                  setSelectedChip(isSelected ? null : word);
+                                }}
+                                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all shadow-xs flex items-center gap-1.5 cursor-grab active:cursor-grabbing ${
+                                  isUsed
+                                    ? 'bg-slate-100 text-slate-300 border border-slate-200 cursor-not-allowed opacity-50'
+                                    : isSelected
+                                    ? 'bg-amber-500 text-white ring-4 ring-amber-200 shadow-md scale-105'
+                                    : 'bg-sky-100 hover:bg-sky-200 text-sky-800 border border-sky-300'
+                                }`}
+                              >
+                                <PenTool className="w-3.5 h-3.5" />
+                                <span>{word}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* SUBTYPE 2: REORDER ITEMS */}
+                  {currentQ.subtype === 'reorder' && (
+                    <div className="space-y-4">
+                      <div className="bg-purple-50 border border-purple-200 p-3.5 rounded-2xl text-xs sm:text-sm text-purple-900 font-bold flex items-center justify-between">
+                        <span>💡 Bấm nút mũi tên <strong>&lt; &gt;</strong> hoặc chạm 2 thẻ từ liên tiếp để hoán đổi vị trí xếp câu:</span>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2.5 p-4 bg-slate-50 border border-slate-200 rounded-2xl justify-center">
+                        {currentOrder.map((item, idx) => {
+                          const isBeingSwapped = swapSourceIndex === idx;
+
+                          return (
+                            <div
+                              key={idx}
+                              onClick={() => {
+                                if (isSubmitted) return;
+                                if (swapSourceIndex === null) {
+                                  setSwapSourceIndex(idx);
+                                } else {
+                                  // Swap idx and swapSourceIndex
+                                  const copy = [...currentOrder];
+                                  const temp = copy[swapSourceIndex];
+                                  copy[swapSourceIndex] = copy[idx];
+                                  copy[idx] = temp;
+                                  setCurrentOrder(copy);
+                                  setSwapSourceIndex(null);
+                                }
+                              }}
+                              className={`p-3 rounded-2xl border text-xs sm:text-sm font-extrabold flex items-center gap-2 cursor-pointer transition-all shadow-xs ${
+                                isBeingSwapped
+                                  ? 'bg-amber-500 text-white ring-4 ring-amber-200 border-amber-600 scale-105 z-10'
+                                  : 'bg-white border-slate-200 hover:border-purple-400 text-slate-800'
+                              }`}
+                            >
+                              <span className="w-5 h-5 rounded-md bg-slate-100 text-slate-600 text-[11px] font-black flex items-center justify-center">
+                                {idx + 1}
+                              </span>
+                              <span>{item}</span>
+
+                              {!isSubmitted && (
+                                <div className="flex items-center gap-1 ml-1" onClick={(e) => e.stopPropagation()}>
+                                  {idx > 0 && (
+                                    <button
+                                      onClick={() => {
+                                        const copy = [...currentOrder];
+                                        const temp = copy[idx - 1];
+                                        copy[idx - 1] = copy[idx];
+                                        copy[idx] = temp;
+                                        setCurrentOrder(copy);
+                                      }}
+                                      className="w-5 h-5 rounded bg-slate-100 hover:bg-purple-200 text-slate-700 font-black text-xs flex items-center justify-center"
+                                      title="Di chuyển sang trái"
+                                    >
+                                      ‹
+                                    </button>
+                                  )}
+                                  {idx < currentOrder.length - 1 && (
+                                    <button
+                                      onClick={() => {
+                                        const copy = [...currentOrder];
+                                        const temp = copy[idx + 1];
+                                        copy[idx + 1] = copy[idx];
+                                        copy[idx] = temp;
+                                        setCurrentOrder(copy);
+                                      }}
+                                      className="w-5 h-5 rounded bg-slate-100 hover:bg-purple-200 text-slate-700 font-black text-xs flex items-center justify-center"
+                                      title="Di chuyển sang phải"
+                                    >
+                                      ›
+                                    </button>
+                                  )}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                </div>
+              )}
+
               {/* WRITING & SHORT ANSWER / SPEAKING INPUT */}
               {(currentQ?.type === 'short_answer' || currentQ?.type === 'fill_blank' || currentQ?.type === 'speaking') && (
                 <div className="space-y-3">
@@ -692,10 +1104,13 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
                     ) : (
                       <>
                         <XCircle className="w-5 h-5 text-rose-600" />
-                        <span>Chưa chính xác! Đáp án đúng: {
+                        <span>Chưa chính xác! Đáp án chuẩn: {
                           currentQ.type === 'mcq' || currentQ.type === 'listening' ? currentQ.options[currentQ.answerIndex] :
                           currentQ.type === 'true_false' ? (currentQ.isTrue ? 'ĐÚNG' : 'SAI') :
                           currentQ.type === 'speaking' ? currentQ.targetSentence :
+                          currentQ.type === 'matching' ? (currentQ.pairs.map(p => `[${p.left} ➔ ${p.right}]`).join(', ')) :
+                          currentQ.type === 'drag_drop' && currentQ.subtype === 'fill_blanks' ? currentQ.correctAnswers.join(', ') :
+                          currentQ.type === 'drag_drop' && currentQ.subtype === 'reorder' ? currentQ.correctOrder.join(' ') :
                           currentQ.answer
                         }</span>
                       </>
@@ -715,7 +1130,10 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth,
                     disabled={
                       ((currentQ.type === 'mcq' || currentQ.type === 'listening') && selectedMcq === null) ||
                       (currentQ.type === 'true_false' && selectedTf === null) ||
-                      ((currentQ.type === 'fill_blank' || currentQ.type === 'short_answer' || currentQ.type === 'speaking') && !userInputText.trim())
+                      ((currentQ.type === 'fill_blank' || currentQ.type === 'short_answer' || currentQ.type === 'speaking') && !userInputText.trim()) ||
+                      (currentQ.type === 'matching' && currentQ.pairs && Object.keys(userMatches).length < currentQ.pairs.length) ||
+                      (currentQ.type === 'drag_drop' && currentQ.subtype === 'fill_blanks' && placedBlanks.some(b => !b)) ||
+                      (currentQ.type === 'drag_drop' && currentQ.subtype === 'reorder' && currentOrder.length === 0)
                     }
                     className="px-6 py-3 rounded-xl bg-sky-600 hover:bg-sky-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold text-sm shadow-md transition-all flex items-center gap-2"
                   >

@@ -80,6 +80,29 @@ export const tienganhSubject = {
           "question": "Complete the sentence: I love learning ____ because it is fun and useful.",
           "answer": "English",
           "explanation": "Fill in the blank with the target subject 'English'."
+        },
+        {
+          "id": "q_eng_match_1",
+          "type": "matching",
+          "skillLabel": "🧩 MATCH VOCABULARY",
+          "question": "Match English words on Column A with their Vietnamese meanings on Column B:",
+          "pairs": [
+            { "left": "Hometown", "right": "Quê hương" },
+            { "left": "Island", "right": "Hòn đảo" },
+            { "left": "Tower", "right": "Tòa tháp" },
+            { "left": "Countryside", "right": "Vùng nông thôn" }
+          ],
+          "explanation": "Hometown = Quê hương; Island = Hòn đảo; Tower = Tòa tháp; Countryside = Vùng nông thôn."
+        },
+        {
+          "id": "q_eng_reorder_1",
+          "type": "drag_drop",
+          "subtype": "reorder",
+          "skillLabel": "🎯 WORD ORDER DRAG & DROP",
+          "question": "Drag and drop the words to form a correct English sentence:",
+          "initialItems": ["you", "Where", "did", "go", "on", "vacation?"],
+          "correctOrder": ["Where", "did", "you", "go", "on", "vacation?"],
+          "explanation": "Correct sentence structure: Where + did + S + V + on vacation?"
         }
       ]
     },

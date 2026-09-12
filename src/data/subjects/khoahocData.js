@@ -43,6 +43,30 @@ export const khoahocSubject = {
           ],
           "answerIndex": 0,
           "explanation": "Kiến thức trọng tâm Khoa học 5."
+        },
+        {
+          "id": "q_kh_match_1",
+          "type": "matching",
+          "skillLabel": "🧩 NỐI VẬT LIỆU & TÍNH CHẤT",
+          "question": "Nối vật liệu ở Cột A với tính chất nổi bật ở Cột B:",
+          "pairs": [
+            { "left": "Đồng", "right": "Dẫn điện và dẫn nhiệt tốt, màu đỏ đồng" },
+            { "left": "Thủy tinh", "right": "Trong suốt, không gỉ nhưng dễ vỡ" },
+            { "left": "Cao su", "right": "Có tính đàn hồi tốt, không dẫn điện" },
+            { "left": "Nhôm", "right": "Màu trắng bạc, nhẹ, không gỉ" }
+          ],
+          "explanation": "Đồng dẫn điện tốt; Thủy tinh trong suốt dễ vỡ; Cao su đàn hồi; Nhôm nhẹ màu trắng bạc."
+        },
+        {
+          "id": "q_kh_drag_1",
+          "type": "drag_drop",
+          "subtype": "fill_blanks",
+          "skillLabel": "🎯 KÉO THẢ SỰ CHUYỂN THỂ",
+          "question": "Kéo thả các từ thích hợp vào chỗ trống về vòng tuần hoàn của nước:",
+          "template": "Hơi nước bay lên cao gặp lạnh ngưng tụ thành [0], các giọt nước tụ lại thành [1] rồi rơi xuống thành mưa.",
+          "options": ["giọt nước nhỏ", "mây", "băng", "khí"],
+          "correctAnswers": ["giọt nước nhỏ", "mây"],
+          "explanation": "Hơi nước ngưng tụ thành các giọt nước nhỏ, đọng lại tạo thành mây."
         }
       ]
     },

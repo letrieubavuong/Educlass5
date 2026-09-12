@@ -44,6 +44,30 @@ export const lichsuDialiSubject = {
           ],
           "answerIndex": 0,
           "explanation": "Nội dung bài học mang tới tri thức Lịch sử & Địa lý 5."
+        },
+        {
+          "id": "q_ls_match_1",
+          "type": "matching",
+          "skillLabel": "🧩 NỐI MỐC LỊCH SỬ",
+          "question": "Nối mốc thời gian ở Cột A với sự kiện lịch sử trọng đại ở Cột B:",
+          "pairs": [
+            { "left": "2/9/1945", "right": "Bác Hồ đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình" },
+            { "left": "7/5/1954", "right": "Chiến thắng lịch sử Điện Biên Phủ lừng lẫy" },
+            { "left": "30/4/1975", "right": "Giải phóng miền Nam, hoàn toàn thống nhất đất nước" },
+            { "left": "1986", "right": "Đảng ta khởi xướng đường lối Đổi mới toàn diện" }
+          ],
+          "explanation": "2/9/1945: Tuyên ngôn Độc lập; 7/5/1954: Điện Biên Phủ; 30/4/1975: Giải phóng miền Nam; 1986: Đổi mới."
+        },
+        {
+          "id": "q_ls_fill_1",
+          "type": "drag_drop",
+          "subtype": "fill_blanks",
+          "skillLabel": "🎯 KÉO THẢ ĐIỀN ĐỊA LÝ",
+          "question": "Kéo thả từ thích hợp vào chỗ trống trong nhận định về địa hình nước ta:",
+          "template": "Phần đất liền nước ta có [0] diện tích là đồi núi và [1] diện tích là đồng bằng.",
+          "options": ["3/4", "1/4", "1/2", "2/3"],
+          "correctAnswers": ["3/4", "1/4"],
+          "explanation": "Đồi núi chiếm 3/4 diện tích đất liền, đồng bằng chiếm 1/4."
         }
       ]
     },

@@ -44,6 +44,30 @@ export const tiengvietSubject = {
           ],
           "answerIndex": 0,
           "explanation": "Nội dung bài học \"Bài 1: Thanh âm của gió\" giúp rèn luyện và làm phong phú vốn từ Tiếng Việt 5."
+        },
+        {
+          "id": "q_tv_match_1",
+          "type": "matching",
+          "skillLabel": "🧩 NỐI TỪ HÁN VIỆT",
+          "question": "Nối các từ Hán Việt ở Cột A với nghĩa tiếng Việt tương ứng ở Cột B:",
+          "pairs": [
+            { "left": "Thủ đô", "right": "Thành phố đứng đầu cả nước" },
+            { "left": "Tổ quốc", "right": "Đất nước nơi sinh ra của cha ông" },
+            { "left": "Đồng bào", "right": "Những người cùng một giống nòi" },
+            { "left": "Nhiệm màu", "right": "Kỳ diệu như có phép thuật" }
+          ],
+          "explanation": "Thủ đô = Thành phố đứng đầu; Tổ quốc = Đất nước cha ông; Đồng bào = Cùng giống nòi; Nhiệm màu = Kỳ diệu."
+        },
+        {
+          "id": "q_tv_drag_fill_1",
+          "type": "drag_drop",
+          "subtype": "fill_blanks",
+          "skillLabel": "🎯 KÉO THẢ ĐIỀN TỪ",
+          "question": "Kéo thả các từ thích hợp vào chỗ trống trong đoạn văn sau:",
+          "template": "Thành phố [0] là trung tâm kinh tế lớn nhất cả nước, nằm bên bờ sông [1].",
+          "options": ["Hồ Chí Minh", "Sài Gòn", "Hà Nội", "Hồng"],
+          "correctAnswers": ["Hồ Chí Minh", "Sài Gòn"],
+          "explanation": "TP. Hồ Chí Minh nằm bên bờ sông Sài Gòn."
         }
       ]
     },

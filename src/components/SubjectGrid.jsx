@@ -164,6 +164,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                   <div className="p-4 space-y-2.5 max-h-[380px] overflow-y-auto pr-1">
                     {subject.lessons.map((lesson) => {
                       const isLocked = storageService.isLessonLocked(lesson);
+                      const isAdmin = currentUser?.role === 'admin';
                       const isCompleted = currentUser?.completedLessons?.includes(lesson.id);
                       const progress = storageService.getLessonProgress(lesson.id);
 
@@ -171,7 +172,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                         <button
                           key={lesson.id}
                           onClick={() => {
-                            if (isLocked) {
+                            if (isLocked && !isAdmin) {
                               alert(`🔒 Bài học "${lesson.title}" hiện đang bị Giáo viên tạm khóa để kiểm soát tiến độ. Vui lòng quay lại sau!`);
                               return;
                             }
@@ -183,8 +184,10 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                             onSelectLesson(subject, lesson);
                           }}
                           className={`w-full text-left p-3 rounded-xl border transition-all flex flex-col gap-1.5 group/item ${
-                            isLocked
+                            isLocked && !isAdmin
                               ? 'bg-slate-50 border-slate-200 text-slate-400 cursor-not-allowed opacity-85'
+                              : isLocked && isAdmin
+                              ? 'bg-amber-50/70 border-amber-300 hover:border-amber-400 hover:shadow-md text-slate-800'
                               : 'bg-slate-50/50 hover:bg-white border-slate-200 hover:border-sky-300 hover:shadow-md text-slate-800'
                           }`}
                         >
@@ -192,7 +195,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                             <div className="flex items-start gap-2.5 min-w-0 pr-2">
                               <div className="mt-0.5 shrink-0">
                                 {isLocked ? (
-                                  <div className="p-1 rounded-lg bg-slate-200 text-slate-500">
+                                  <div className={`p-1 rounded-lg ${isAdmin ? 'bg-amber-100 text-amber-700' : 'bg-slate-200 text-slate-500'}`}>
                                     <Lock className="w-3.5 h-3.5" />
                                   </div>
                                 ) : isCompleted ? (
@@ -218,8 +221,8 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
 
                             <div className="shrink-0 flex items-center gap-1">
                               {isLocked ? (
-                                <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-600">
-                                  Khóa
+                                <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full shrink-0 ${isAdmin ? 'bg-amber-100 text-amber-800 border border-amber-200' : 'bg-slate-200 text-slate-600'}`}>
+                                  {isAdmin ? '🔒 Khóa (Admin)' : 'Khóa'}
                                 </span>
                               ) : (
                                 <ChevronRight className="w-3.5 h-3.5 text-slate-400 group-hover/item:translate-x-0.5 transition-transform" />
@@ -317,6 +320,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {themeLessons.map((lesson) => {
                       const isLocked = storageService.isLessonLocked(lesson);
+                      const isAdmin = currentUser?.role === 'admin';
                       const isCompleted = currentUser?.completedLessons?.includes(lesson.id);
                       const progress = storageService.getLessonProgress(lesson.id);
 
@@ -324,8 +328,10 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                         <div
                           key={lesson.id}
                           className={`p-4 rounded-2xl border transition-all flex flex-col justify-between group ${
-                            isLocked
+                            isLocked && !isAdmin
                               ? 'bg-slate-50 border-slate-200 text-slate-400 opacity-85'
+                              : isLocked && isAdmin
+                              ? 'bg-amber-50/40 border-amber-200 hover:border-amber-400 hover:shadow-md text-slate-800'
                               : 'bg-white hover:bg-sky-50/40 border-slate-200 hover:border-sky-300 hover:shadow-md text-slate-800'
                           }`}
                         >
@@ -333,7 +339,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                             <div className="flex items-center justify-between mb-2">
                               <span className={`text-[11px] font-extrabold px-2.5 py-0.5 rounded-full ${
                                 isLocked 
-                                  ? 'bg-slate-200 text-slate-600' 
+                                  ? (isAdmin ? 'bg-amber-100 text-amber-800 border border-amber-200' : 'bg-slate-200 text-slate-600')
                                   : progress && progress.percentage < 50
                                   ? 'bg-rose-100 text-rose-800'
                                   : isCompleted 
@@ -341,7 +347,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                                   : 'bg-sky-100 text-sky-800'
                               }`}>
                                 {isLocked 
-                                  ? '🔒 Đã Khóa' 
+                                  ? (isAdmin ? '🔒 Đã Khóa (Admin xem)' : '🔒 Đã Khóa')
                                   : progress && progress.percentage < 50
                                   ? '⚠️ Điểm Thấp - Cần Ôn Lại'
                                   : isCompleted 
@@ -392,7 +398,7 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
 
                           <button
                             onClick={() => {
-                              if (isLocked) {
+                              if (isLocked && !isAdmin) {
                                 alert(`🔒 Bài học "${lesson.title}" hiện đang bị Giáo viên tạm khóa để kiểm soát tiến độ. Vui lòng quay lại sau!`);
                                 return;
                               }
@@ -403,10 +409,12 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                               }
                               onSelectLesson(selectedSubject, lesson);
                             }}
-                            disabled={isLocked}
+                            disabled={isLocked && !isAdmin}
                             className={`w-full py-2.5 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
-                              isLocked
+                              isLocked && !isAdmin
                                 ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                                : isLocked && isAdmin
+                                ? 'bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-sm'
                                 : progress && progress.percentage < 50
                                 ? 'bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white shadow-md animate-bounce'
                                 : progress
@@ -415,8 +423,10 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                             }`}
                           >
                             <span>
-                              {isLocked
+                              {isLocked && !isAdmin
                                 ? 'Tạm Khóa'
+                                : isLocked && isAdmin
+                                ? '👁️ Xem bài (Admin)'
                                 : progress
                                 ? progress.percentage < 50
                                   ? '🔄 Ôn Tập & Làm Lại Ngay'

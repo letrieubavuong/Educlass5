@@ -116,6 +116,14 @@ export function App() {
     const les = sub.lessons.find(l => l.id === lessonId);
     if (!les) return;
 
+    const isLocked = storageService.isLessonLocked(les);
+    const isAdmin = currentUser?.role === 'admin';
+
+    if (isLocked && !isAdmin) {
+      alert(`🔒 Bài học "${les.title}" hiện đang bị Giáo viên tạm khóa để kiểm soát tiến độ. Vui lòng quay lại sau!`);
+      return;
+    }
+
     setSelectedSubject(sub);
     setSelectedLesson(les);
     setCurrentView('lesson');

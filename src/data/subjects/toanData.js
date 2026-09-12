@@ -45,6 +45,30 @@ export const toanSubject = {
             "Hàng nghìn"
           ],
           "answerIndex": 0
+        },
+        {
+          "id": "q_toan_match_1",
+          "type": "matching",
+          "skillLabel": "🧩 NỐI PHÉP TÍNH",
+          "question": "Nối các phép tính ở Cột A với kết quả tương ứng ở Cột B:",
+          "pairs": [
+            { "left": "$125 \\times 8$", "right": "$1000$" },
+            { "left": "$450 : 9$", "right": "$50$" },
+            { "left": "$12.5 + 7.5$", "right": "$20$" },
+            { "left": "$3.6 \\times 2$", "right": "$7.2$" }
+          ],
+          "explanation": "$125 \\times 8 = 1000$; $450 : 9 = 50$; $12.5 + 7.5 = 20$; $3.6 \\times 2 = 7.2$."
+        },
+        {
+          "id": "q_toan_drag_1",
+          "type": "drag_drop",
+          "subtype": "fill_blanks",
+          "skillLabel": "🎯 KÉO THẢ ĐIỀN SỐ",
+          "question": "Kéo thả các số thích hợp vào chỗ trống trong phân tích số thập phân sau:",
+          "template": "Số $45.68$ có phần nguyên là [0] và chữ số ở hàng phần trăm là [1].",
+          "options": ["45", "8", "6", "56"],
+          "correctAnswers": ["45", "8"],
+          "explanation": "Phần nguyên nằm trước dấu phẩy là 45; chữ số hàng phần trăm là chữ số thứ 2 sau dấu phẩy (8)."
         }
       ]
     },

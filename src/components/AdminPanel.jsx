@@ -119,6 +119,19 @@ export const AdminPanel = ({ onBack, onUpdateOverwrites }) => {
   const [qFillAnswer, setQFillAnswer] = useState('');
   const [qExplanation, setQExplanation] = useState('');
 
+  // Interactive Question Types (Matching & Drag-Drop) Admin States
+  const [qMatchingPairs, setQMatchingPairs] = useState([
+    { left: '', right: '' },
+    { left: '', right: '' },
+    { left: '', right: '' }
+  ]);
+  const [qDragSubtype, setQDragSubtype] = useState('fill_blanks');
+  const [qDragTemplate, setQDragTemplate] = useState('');
+  const [qDragOptionsText, setQDragOptionsText] = useState('');
+  const [qDragCorrectAnswersText, setQDragCorrectAnswersText] = useState('');
+  const [qDragInitialItemsText, setQDragInitialItemsText] = useState('');
+  const [qDragCorrectOrderText, setQDragCorrectOrderText] = useState('');
+
   // Handle Image File Upload to Data URL (Base64)
   const handleImageFileUpload = (e) => {
     const file = e.target.files?.[0];
@@ -223,6 +236,36 @@ export const AdminPanel = ({ onBack, onUpdateOverwrites }) => {
         return;
       }
       newQ.answer = qFillAnswer.trim();
+    } else if (qType === 'matching') {
+      const validPairs = qMatchingPairs.filter(p => p.left.trim() && p.right.trim());
+      if (validPairs.length < 2) {
+        alert('Vui lòng nhập tối thiểu 2 cặp nối Cột A <-> Cột B!');
+        return;
+      }
+      newQ.pairs = validPairs.map(p => ({ left: p.left.trim(), right: p.right.trim() }));
+      newQ.skillLabel = '🧩 NỐI CÂU / NỐI VẾ';
+    } else if (qType === 'drag_drop') {
+      newQ.subtype = qDragSubtype;
+      newQ.skillLabel = '🎯 KÉO THẢ TƯƠNG TÁC';
+      if (qDragSubtype === 'fill_blanks') {
+        if (!qDragTemplate.trim() || !qDragOptionsText.trim() || !qDragCorrectAnswersText.trim()) {
+          alert('Vui lòng nhập đầy đủ Đoạn văn mẫu, Danh sách từ gợi ý và Đáp án điền!');
+          return;
+        }
+        newQ.template = qDragTemplate.trim();
+        newQ.options = qDragOptionsText.split(',').map(s => s.trim()).filter(Boolean);
+        newQ.correctAnswers = qDragCorrectAnswersText.split(',').map(s => s.trim()).filter(Boolean);
+      } else if (qDragSubtype === 'reorder') {
+        if (!qDragCorrectOrderText.trim()) {
+          alert('Vui lòng nhập mảng thứ tự các từ/vế chính xác!');
+          return;
+        }
+        const orderArr = qDragCorrectOrderText.split(',').map(s => s.trim()).filter(Boolean);
+        newQ.correctOrder = orderArr;
+        newQ.initialItems = qDragInitialItemsText.trim() 
+          ? qDragInitialItemsText.split(',').map(s => s.trim()).filter(Boolean)
+          : [...orderArr].sort(() => Math.random() - 0.5);
+      }
     }
 
     setExercisesList([...exercisesList, newQ]);
@@ -235,6 +278,12 @@ export const AdminPanel = ({ onBack, onUpdateOverwrites }) => {
     setQOptionD('');
     setQFillAnswer('');
     setQExplanation('');
+    setQMatchingPairs([{ left: '', right: '' }, { left: '', right: '' }, { left: '', right: '' }]);
+    setQDragTemplate('');
+    setQDragOptionsText('');
+    setQDragCorrectAnswersText('');
+    setQDragInitialItemsText('');
+    setQDragCorrectOrderText('');
     showNotification('Đã thêm 1 câu hỏi mới vào danh sách câu hỏi!');
   };
 
@@ -819,7 +868,14 @@ Giải thích: Hiện tượng tạo ra chất mới là sự biến đổi hóa
                       <div className="min-w-0">
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-xs font-black bg-purple-100 text-purple-800 px-2.5 py-0.5 rounded-full">
-                            Câu {qIdx + 1} ({q.type === 'mcq' ? 'Trắc nghiệm' : q.type === 'true_false' ? 'Đúng/Sai' : q.type === 'fill_blank' ? 'Điền từ' : 'Đáp án ngắn'})
+                            Câu {qIdx + 1} ({
+                              q.type === 'mcq' ? 'Trắc nghiệm' : 
+                              q.type === 'true_false' ? 'Đúng/Sai' : 
+                              q.type === 'fill_blank' ? 'Điền từ' : 
+                              q.type === 'matching' ? '🧩 Nối câu' : 
+                              q.type === 'drag_drop' ? '🎯 Kéo thả' : 
+                              'Đáp án ngắn'
+                            })
                           </span>
                         </div>
                         <h4 className="font-extrabold text-sm text-slate-800 mb-1">
@@ -831,13 +887,29 @@ Giải thích: Hiện tượng tạo ra chất mới là sự biến đổi hóa
                             <span className="text-[11px] text-sky-700 font-bold bg-sky-50 px-2 py-0.5 rounded-md">🖼️ Đã có hình minh họa</span>
                           </div>
                         )}
-                        {q.options && (
+                        {q.options && q.type === 'mcq' && (
                           <div className="text-xs text-slate-500 flex flex-wrap gap-2">
                             {q.options.map((opt, oIdx) => (
                               <span key={oIdx} className={oIdx === q.answerIndex ? 'font-black text-emerald-600 underline' : ''}>
                                 {String.fromCharCode(65 + oIdx)}. <MathLatex text={opt} />
                               </span>
                             ))}
+                          </div>
+                        )}
+                        {q.pairs && (
+                          <div className="text-xs text-slate-600 bg-purple-50 p-2 rounded-xl border border-purple-100 flex flex-wrap gap-2 my-1">
+                            {q.pairs.map((p, pIdx) => (
+                              <span key={pIdx} className="bg-white px-2 py-0.5 rounded-md border font-semibold">
+                                {p.left} ➔ {p.right}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                        {q.type === 'drag_drop' && (
+                          <div className="text-xs text-slate-600 bg-sky-50 p-2 rounded-xl border border-sky-100 my-1 space-y-1">
+                            {q.template && <p className="font-medium">Văn mẫu: "{q.template}"</p>}
+                            {q.correctAnswers && <p className="font-bold text-emerald-700">Đáp án chuẩn: {q.correctAnswers.join(', ')}</p>}
+                            {q.correctOrder && <p className="font-bold text-emerald-700">Thứ tự đúng: {q.correctOrder.join(' ')}</p>}
                           </div>
                         )}
                         {q.answer && <p className="text-xs font-bold text-emerald-600">Đáp án chuẩn: {q.answer}</p>}
@@ -875,6 +947,8 @@ Giải thích: Hiện tượng tạo ra chất mới là sự biến đổi hóa
                       <option value="true_false">🟢/🔴 Đúng hay Sai (True / False)</option>
                       <option value="fill_blank">✏️ Điền vào chỗ trống (Fill in blank)</option>
                       <option value="short_answer">🔢 Đáp án ngắn / Số (Short Answer)</option>
+                      <option value="matching">🧩 Nối câu / Nối vế (Matching Pairs)</option>
+                      <option value="drag_drop">🎯 Kéo thả tương tác (Drag & Drop)</option>
                     </select>
                   </div>
 
@@ -1000,6 +1074,134 @@ Giải thích: Hiện tượng tạo ra chất mới là sự biến đổi hóa
                       <option value="true">🟢 ĐÚNG (True)</option>
                       <option value="false">🔴 SAI (False)</option>
                     </select>
+                  </div>
+                )}
+
+                {/* Form fields for Matching */}
+                {qType === 'matching' && (
+                  <div className="space-y-3 pt-2">
+                    <p className="text-xs font-bold text-purple-900">Nhập danh sách các Cặp nối tương ứng (Cột A - Cột B):</p>
+                    {qMatchingPairs.map((pair, pIdx) => (
+                      <div key={pIdx} className="flex items-center gap-2">
+                        <span className="text-xs font-black text-slate-500 w-12">Cặp #{pIdx + 1}:</span>
+                        <input
+                          type="text"
+                          value={pair.left}
+                          onChange={(e) => {
+                            const copy = [...qMatchingPairs];
+                            copy[pIdx].left = e.target.value;
+                            setQMatchingPairs(copy);
+                          }}
+                          placeholder="Mục Cột A..."
+                          className="flex-1 px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-medium"
+                        />
+                        <span className="text-xs font-bold text-slate-400">➔</span>
+                        <input
+                          type="text"
+                          value={pair.right}
+                          onChange={(e) => {
+                            const copy = [...qMatchingPairs];
+                            copy[pIdx].right = e.target.value;
+                            setQMatchingPairs(copy);
+                          }}
+                          placeholder="Mục Cột B tương ứng..."
+                          className="flex-1 px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-medium"
+                        />
+                        {qMatchingPairs.length > 2 && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setQMatchingPairs(qMatchingPairs.filter((_, i) => i !== pIdx));
+                            }}
+                            className="p-1 text-rose-500 hover:text-rose-700 text-xs font-black"
+                          >
+                            ✕
+                          </button>
+                        )}
+                      </div>
+                    ))}
+                    <button
+                      type="button"
+                      onClick={() => setQMatchingPairs([...qMatchingPairs, { left: '', right: '' }])}
+                      className="px-3 py-1.5 bg-purple-100 hover:bg-purple-200 text-purple-800 rounded-lg text-xs font-bold"
+                    >
+                      + Thêm Cặp Nối
+                    </button>
+                  </div>
+                )}
+
+                {/* Form fields for Drag & Drop */}
+                {qType === 'drag_drop' && (
+                  <div className="space-y-3 pt-2">
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">Loại Kéo thả</label>
+                      <select
+                        value={qDragSubtype}
+                        onChange={(e) => setQDragSubtype(e.target.value)}
+                        className="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-bold bg-white"
+                      >
+                        <option value="fill_blanks">✏️ Điền từ vào ô trống (Fill Blanks)</option>
+                        <option value="reorder">🧩 Sắp xếp thứ tự các từ/vế (Reorder)</option>
+                      </select>
+                    </div>
+
+                    {qDragSubtype === 'fill_blanks' ? (
+                      <div className="space-y-2">
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Đoạn văn có vị trí thả [0], [1], [2]...</label>
+                          <input
+                            type="text"
+                            value={qDragTemplate}
+                            onChange={(e) => setQDragTemplate(e.target.value)}
+                            placeholder="Ví dụ: Thành phố [0] là thủ đô của [1]."
+                            className="w-full px-3 py-1.5 rounded-lg border border-slate-300 text-xs"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Danh sách thẻ từ gợi ý (phân cách bằng dấu phẩy)</label>
+                          <input
+                            type="text"
+                            value={qDragOptionsText}
+                            onChange={(e) => setQDragOptionsText(e.target.value)}
+                            placeholder="Ví dụ: Hà Nội, Việt Nam, Đà Nẵng, Lào"
+                            className="w-full px-3 py-1.5 rounded-lg border border-slate-300 text-xs"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Đáp án đúng cho [0], [1]... (phân cách bằng dấu phẩy)</label>
+                          <input
+                            type="text"
+                            value={qDragCorrectAnswersText}
+                            onChange={(e) => setQDragCorrectAnswersText(e.target.value)}
+                            placeholder="Ví dụ: Hà Nội, Việt Nam"
+                            className="w-full px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-bold text-emerald-800"
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="space-y-2">
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Thứ tự chuẩn (phân cách bằng dấu phẩy)</label>
+                          <input
+                            type="text"
+                            value={qDragCorrectOrderText}
+                            onChange={(e) => setQDragCorrectOrderText(e.target.value)}
+                            placeholder="Ví dụ: Where, did, you, go, yesterday?"
+                            className="w-full px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-bold text-emerald-800"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-600 mb-1">Thứ tự xáo trộn ban đầu (tùy chọn, phân cách bằng dấu phẩy)</label>
+                          <input
+                            type="text"
+                            value={qDragInitialItemsText}
+                            onChange={(e) => setQDragInitialItemsText(e.target.value)}
+                            placeholder="Ví dụ: go, Where, yesterday?, you, did"
+                            className="w-full px-3 py-1.5 rounded-lg border border-slate-300 text-xs"
+                          />
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
 

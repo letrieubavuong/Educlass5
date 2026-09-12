@@ -44,6 +44,29 @@ export const tinhocSubject = {
           ],
           "answerIndex": 0,
           "explanation": "Nội dung bài học hướng tới rèn luyện năng lực Tin học 5."
+        },
+        {
+          "id": "q_th_match_1",
+          "type": "matching",
+          "skillLabel": "🧩 NỐI PHÍM TẮT MÁY TÍNH",
+          "question": "Nối các tổ hợp phím tắt ở Cột A với chức năng tương ứng ở Cột B:",
+          "pairs": [
+            { "left": "Ctrl + C", "right": "Sao chép (Copy) văn bản hoặc tệp" },
+            { "left": "Ctrl + V", "right": "Dán (Paste) nội dung đã sao chép" },
+            { "left": "Ctrl + Z", "right": "Hoàn tác (Undo) thao tác vừa thực hiện" },
+            { "left": "Ctrl + S", "right": "Lưu tệp (Save) đang làm việc" }
+          ],
+          "explanation": "Ctrl+C: Copy; Ctrl+V: Paste; Ctrl+Z: Undo; Ctrl+S: Save."
+        },
+        {
+          "id": "q_th_drag_reorder_1",
+          "type": "drag_drop",
+          "subtype": "reorder",
+          "skillLabel": "🎯 KÉO THẢ QUY TRÌNH TÌM KIẾM WEB",
+          "question": "Kéo thả các bước để sắp xếp đúng quy trình tìm kiếm thông tin trên Internet:",
+          "initialItems": ["Gõ từ khóa vào ô tìm kiếm", "Mở trình duyệt web", "Nhấn Enter", "Chọn trang web phù hợp"],
+          "correctOrder": ["Mở trình duyệt web", "Gõ từ khóa vào ô tìm kiếm", "Nhấn Enter", "Chọn trang web phù hợp"],
+          "explanation": "Quy trình chuẩn: Mở trình duyệt ➔ Gõ từ khóa ➔ Nhấn Enter ➔ Chọn trang web."
         }
       ]
     },
