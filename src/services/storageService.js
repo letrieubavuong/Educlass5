@@ -400,7 +400,7 @@ export const storageService = {
     return getJSON(KEYS.LESSON_LOCK_OVERWRITES, {});
   },
 
-  toggleLessonLock: (lessonId) => {
+  toggleLessonLock: async (lessonId) => {
     const overwrites = storageService.getLockOverwrites();
     delete overwrites._allLocked;
     const allSubjects = storageService.getAllSubjects();
@@ -435,13 +435,17 @@ export const storageService = {
       });
     }
 
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('cloud-sync-updated'));
+    }
+
     // Push state to Cloud for all student devices
-    storageService.pushToCloudSync();
+    await storageService.pushToCloudSync();
 
     return isNowLocked;
   },
 
-  unlockAllLessons: () => {
+  unlockAllLessons: async () => {
     const overwrites = { _allLocked: false };
     const allSubjects = storageService.getAllSubjects();
     for (const sub of allSubjects) {
@@ -457,13 +461,17 @@ export const storageService = {
       type: 'unlock_all'
     });
 
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('cloud-sync-updated'));
+    }
+
     // Push state to Cloud for all student devices
-    storageService.pushToCloudSync();
+    await storageService.pushToCloudSync();
 
     return overwrites;
   },
 
-  lockAllLessons: () => {
+  lockAllLessons: async () => {
     const overwrites = { _allLocked: true };
     const allSubjects = storageService.getAllSubjects();
     for (const sub of allSubjects) {
@@ -473,8 +481,12 @@ export const storageService = {
     }
     setJSON(KEYS.LESSON_LOCK_OVERWRITES, overwrites);
 
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('cloud-sync-updated'));
+    }
+
     // Push state to Cloud for all student devices
-    storageService.pushToCloudSync();
+    await storageService.pushToCloudSync();
 
     return overwrites;
   },

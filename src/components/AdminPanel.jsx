@@ -168,21 +168,21 @@ export const AdminPanel = ({ onBack, onUpdateOverwrites }) => {
     setTimeout(() => setNotification(''), 3500);
   };
 
-  const handleToggleLock = (lessonId) => {
-    const isNowLocked = storageService.toggleLessonLock(lessonId);
+  const handleToggleLock = async (lessonId) => {
+    const isNowLocked = await storageService.toggleLessonLock(lessonId);
     onUpdateOverwrites();
     showNotification(`Đã ${isNowLocked ? 'KHÓA 🔒' : 'MỞ 🔓'} bài học!`);
   };
 
-  const handleUnlockAll = () => {
-    storageService.unlockAllLessons();
+  const handleUnlockAll = async () => {
+    await storageService.unlockAllLessons();
     onUpdateOverwrites();
     showNotification('Đã MỞ TẤT CẢ 🔓 bài học cho học sinh!');
   };
 
-  const handleLockAll = () => {
+  const handleLockAll = async () => {
     if (window.confirm('Bạn có chắc chắn muốn KHÓA TẤT CẢ các bài học trên hệ thống không?')) {
-      storageService.lockAllLessons();
+      await storageService.lockAllLessons();
       onUpdateOverwrites();
       showNotification('Đã KHÓA TẤT CẢ 🔒 bài học trên hệ thống!');
     }
