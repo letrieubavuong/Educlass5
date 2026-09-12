@@ -17,7 +17,7 @@ export function App() {
   const [selectedLesson, setSelectedLesson] = useState(null);
 
   // Lock overwrites tick state to trigger rerender when admin changes locks
-  const [, setLockTick] = useState(0);
+  const [lockTick, setLockTick] = useState(0);
 
   // PWA installation prompt listener
   const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -30,6 +30,29 @@ export function App() {
       setCurrentUser(sessionUser);
     }
 
+    // 1. Initial Cloud Sync Fetch on Mount
+    storageService.fetchFromCloudSync();
+
+    // 2. Real-time background polling (every 3 seconds)
+    const syncInterval = setInterval(() => {
+      storageService.fetchFromCloudSync();
+    }, 3000);
+
+    // 3. Listen for window focus / tab visibility change to sync immediately
+    const handleFocusOrVisibility = () => {
+      if (!document.hidden) {
+        storageService.fetchFromCloudSync();
+      }
+    };
+    window.addEventListener('focus', handleFocusOrVisibility);
+    document.addEventListener('visibilitychange', handleFocusOrVisibility);
+
+    // 4. Custom event listener for cloud sync updates
+    const handleCloudSyncUpdated = () => {
+      setLockTick(prev => prev + 1);
+    };
+    window.addEventListener('cloud-sync-updated', handleCloudSyncUpdated);
+
     // PWA install prompt handler
     const handleBeforeInstall = (e) => {
       e.preventDefault();
@@ -40,6 +63,10 @@ export function App() {
     window.addEventListener('beforeinstallprompt', handleBeforeInstall);
 
     return () => {
+      clearInterval(syncInterval);
+      window.removeEventListener('focus', handleFocusOrVisibility);
+      document.removeEventListener('visibilitychange', handleFocusOrVisibility);
+      window.removeEventListener('cloud-sync-updated', handleCloudSyncUpdated);
       window.removeEventListener('beforeinstallprompt', handleBeforeInstall);
     };
   }, []);
@@ -92,6 +119,7 @@ export function App() {
       
       {/* Navigation Header */}
       <Navbar
+        key={`nav-${lockTick}`}
         currentUser={currentUser}
         onOpenAuth={() => setIsAuthOpen(true)}
         onLogout={handleLogout}
@@ -107,6 +135,7 @@ export function App() {
       <main className="flex-1 pb-12">
         {currentView === 'grid' && (
           <SubjectGrid
+            key={`grid-${lockTick}`}
             currentUser={currentUser}
             onSelectLesson={handleSelectLesson}
             onOpenAuth={() => setIsAuthOpen(true)}
@@ -115,6 +144,7 @@ export function App() {
 
         {currentView === 'admin' && (
           <AdminPanel
+            key={`admin-${lockTick}`}
             onBack={() => setCurrentView('grid')}
             onUpdateOverwrites={() => setLockTick(prev => prev + 1)}
           />
@@ -122,6 +152,7 @@ export function App() {
 
         {currentView === 'leaderboard' && (
           <LeaderboardView
+            key={`leaderboard-${lockTick}`}
             onBack={() => setCurrentView('grid')}
             currentUser={currentUser}
             onUpdateUser={(updated) => setCurrentUser(updated)}

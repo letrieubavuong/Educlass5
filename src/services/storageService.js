@@ -83,6 +83,47 @@ const setJSON = (key, value) => {
   }
 };
 
+// Helpers to merge multi-device data without data loss
+const mergeStudents = (localList, cloudList) => {
+  const map = new Map();
+
+  const addOrMerge = (std) => {
+    if (!std || !std.id) return;
+    const existing = map.get(std.id);
+    if (!existing) {
+      map.set(std.id, { ...std });
+    } else {
+      const mergedCompleted = Array.from(new Set([...(existing.completedLessons || []), ...(std.completedLessons || [])]));
+      map.set(std.id, {
+        ...existing,
+        ...std,
+        stars: Math.max(existing.stars || 0, std.stars || 0),
+        xp: Math.max(existing.xp || 0, std.xp || 0),
+        completedLessons: mergedCompleted,
+        avatarBadge: std.avatarBadge || existing.avatarBadge || '🌱 Tân Binh Lớp 5'
+      });
+    }
+  };
+
+  (localList || []).forEach(addOrMerge);
+  (cloudList || []).forEach(addOrMerge);
+
+  return Array.from(map.values());
+};
+
+const mergeScores = (localList, cloudList) => {
+  const map = new Map();
+  [...(localList || []), ...(cloudList || [])].forEach(s => {
+    if (s && s.studentId && s.lessonId && s.timestamp) {
+      const key = `${s.studentId}_${s.lessonId}_${s.timestamp}`;
+      if (!map.has(key)) {
+        map.set(key, s);
+      }
+    }
+  });
+  return Array.from(map.values()).sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+};
+
 export const storageService = {
   // --- AUTHENTICATION ---
   getCurrentUser: () => {
@@ -112,7 +153,7 @@ export const storageService = {
       throw new Error('Tên đăng nhập này đã tồn tại!');
     }
     const newStudent = {
-      id: 'std_' + Date.now(),
+      id: 'std_' + Date.now() + '_' + Math.random().toString(36).substring(2, 6),
       name: studentData.name,
       username: studentData.username,
       password: studentData.password,
@@ -127,6 +168,9 @@ export const storageService = {
     students.push(newStudent);
     setJSON(KEYS.REGISTERED_STUDENTS, students);
     setJSON(KEYS.CURRENT_USER, newStudent);
+    
+    // Sync new student account to cloud immediately!
+    storageService.pushToCloudSync();
     return newStudent;
   },
 
@@ -158,26 +202,63 @@ export const storageService = {
   },
 
   // --- CLOUD MULTI-DEVICE SYNC ENGINE ---
+  getCloudSyncUrl: () => {
+    const customId = localStorage.getItem('edu_lop5_sync_id');
+    const objectId = customId || 'ff808181a067127101a093c800377ec3';
+    return `https://api.restful-api.dev/objects/${objectId}`;
+  },
+
+  recreateCloudSyncObject: async (payload) => {
+    try {
+      const res = await fetch('https://api.restful-api.dev/objects', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        const created = await res.json();
+        if (created?.id) {
+          localStorage.setItem('edu_lop5_sync_id', created.id);
+        }
+      }
+    } catch (e) {
+      console.warn('Failed to recreate cloud sync object:', e);
+    }
+  },
+
   pushToCloudSync: async () => {
     try {
-      const CLOUD_SYNC_URL = 'https://api.restful-api.dev/objects/ff808181a067127101a093c800377ec3';
       const lock_overwrites = getJSON(KEYS.LESSON_LOCK_OVERWRITES, {});
+      const registered_students = getJSON(KEYS.REGISTERED_STUDENTS, SEED_STUDENTS);
+      const student_scores = getJSON(KEYS.STUDENT_SCORES, []);
       const notifications = getJSON(KEYS.NOTIFICATIONS, []);
       const custom_curriculum = getJSON(KEYS.CUSTOM_CURRICULUM, null);
+      const payload = {
+        name: 'educlass5_class_sync_v1',
+        data: {
+          lock_overwrites,
+          registered_students,
+          student_scores,
+          notifications,
+          custom_curriculum,
+          lastSync: new Date().toISOString()
+        }
+      };
 
-      await fetch(CLOUD_SYNC_URL, {
+      const syncUrl = storageService.getCloudSyncUrl();
+      const res = await fetch(syncUrl, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: 'educlass5_class_sync_v1',
-          data: {
-            lock_overwrites,
-            notifications,
-            custom_curriculum,
-            lastSync: new Date().toISOString()
-          }
-        })
+        body: JSON.stringify(payload)
       });
+
+      if (!res.ok && res.status === 404) {
+        await storageService.recreateCloudSyncObject(payload);
+      }
+
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new Event('cloud-sync-updated'));
+      }
     } catch (e) {
       console.warn('Cloud sync push offline:', e);
     }
@@ -185,29 +266,72 @@ export const storageService = {
 
   fetchFromCloudSync: async () => {
     try {
-      const CLOUD_SYNC_URL = 'https://api.restful-api.dev/objects/ff808181a067127101a093c800377ec3';
-      const res = await fetch(CLOUD_SYNC_URL);
+      const syncUrl = storageService.getCloudSyncUrl();
+      const res = await fetch(syncUrl);
       if (!res.ok) return null;
       const result = await res.json();
       const cloudData = result?.data;
-      if (cloudData) {
-        if (cloudData.lock_overwrites) {
+      if (!cloudData) return null;
+
+      let hasChanged = false;
+
+      // 1. Sync lock_overwrites
+      if (cloudData.lock_overwrites) {
+        const localLocks = getJSON(KEYS.LESSON_LOCK_OVERWRITES, {});
+        if (JSON.stringify(localLocks) !== JSON.stringify(cloudData.lock_overwrites)) {
           setJSON(KEYS.LESSON_LOCK_OVERWRITES, cloudData.lock_overwrites);
+          hasChanged = true;
         }
-        if (cloudData.notifications && Array.isArray(cloudData.notifications)) {
-          const localNotifs = getJSON(KEYS.NOTIFICATIONS, []);
-          const mergedMap = {};
-          [...localNotifs, ...cloudData.notifications].forEach(n => {
-            if (!mergedMap[n.id]) mergedMap[n.id] = n;
-          });
-          const mergedList = Object.values(mergedMap).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-          setJSON(KEYS.NOTIFICATIONS, mergedList.slice(0, 30));
-        }
-        if (cloudData.custom_curriculum) {
-          setJSON(KEYS.CUSTOM_CURRICULUM, cloudData.custom_curriculum);
-        }
-        return cloudData;
       }
+
+      // 2. Sync notifications
+      if (cloudData.notifications && Array.isArray(cloudData.notifications)) {
+        const localNotifs = getJSON(KEYS.NOTIFICATIONS, []);
+        const mergedMap = {};
+        [...localNotifs, ...cloudData.notifications].forEach(n => {
+          if (!mergedMap[n.id]) mergedMap[n.id] = n;
+        });
+        const mergedList = Object.values(mergedMap).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)).slice(0, 30);
+        if (JSON.stringify(localNotifs) !== JSON.stringify(mergedList)) {
+          setJSON(KEYS.NOTIFICATIONS, mergedList);
+          hasChanged = true;
+        }
+      }
+
+      // 3. Sync custom_curriculum
+      if (cloudData.custom_curriculum) {
+        const localCustom = getJSON(KEYS.CUSTOM_CURRICULUM, null);
+        if (JSON.stringify(localCustom) !== JSON.stringify(cloudData.custom_curriculum)) {
+          setJSON(KEYS.CUSTOM_CURRICULUM, cloudData.custom_curriculum);
+          hasChanged = true;
+        }
+      }
+
+      // 4. Sync registered_students
+      if (cloudData.registered_students && Array.isArray(cloudData.registered_students)) {
+        const localStudents = getJSON(KEYS.REGISTERED_STUDENTS, SEED_STUDENTS);
+        const mergedStudents = mergeStudents(localStudents, cloudData.registered_students);
+        if (JSON.stringify(localStudents) !== JSON.stringify(mergedStudents)) {
+          setJSON(KEYS.REGISTERED_STUDENTS, mergedStudents);
+          hasChanged = true;
+        }
+      }
+
+      // 5. Sync student_scores
+      if (cloudData.student_scores && Array.isArray(cloudData.student_scores)) {
+        const localScores = getJSON(KEYS.STUDENT_SCORES, []);
+        const mergedScores = mergeScores(localScores, cloudData.student_scores);
+        if (JSON.stringify(localScores) !== JSON.stringify(mergedScores)) {
+          setJSON(KEYS.STUDENT_SCORES, mergedScores);
+          hasChanged = true;
+        }
+      }
+
+      if (hasChanged && typeof window !== 'undefined') {
+        window.dispatchEvent(new Event('cloud-sync-updated'));
+      }
+
+      return { hasChanged, data: cloudData };
     } catch (e) {
       console.warn('Cloud sync fetch offline:', e);
     }
@@ -382,6 +506,9 @@ export const storageService = {
       const updatedSession = { ...currentUser, stars: std.stars, xp: std.xp, completedLessons: std.completedLessons };
       setJSON(KEYS.CURRENT_USER, updatedSession);
     }
+    
+    // Push updated scores & student XP/stars to Cloud
+    storageService.pushToCloudSync();
   },
 
   getStudentScores: () => {
@@ -440,6 +567,7 @@ export const storageService = {
 
       const updated = { ...currentUser, stars: students[idx].stars, avatarBadge: badgeName };
       setJSON(KEYS.CURRENT_USER, updated);
+      storageService.pushToCloudSync();
       return updated;
     }
   },
@@ -481,6 +609,7 @@ export const storageService = {
     }
 
     setJSON(KEYS.CUSTOM_CURRICULUM, custom);
+    storageService.pushToCloudSync();
     return custom;
   },
 
@@ -496,6 +625,7 @@ export const storageService = {
       if (lesIdx !== -1) {
         custom[subIdx].lessons[lesIdx].exercises = (custom[subIdx].lessons[lesIdx].exercises || []).filter(q => q.id !== questionId);
         setJSON(KEYS.CUSTOM_CURRICULUM, custom);
+        storageService.pushToCloudSync();
       }
     }
     return custom;
