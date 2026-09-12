@@ -33,10 +33,10 @@ export function App() {
     // 1. Initial Cloud Sync Fetch on Mount
     storageService.fetchFromCloudSync();
 
-    // 2. Real-time background polling (every 3 seconds)
+    // 2. High-frequency real-time background polling (every 1 second)
     const syncInterval = setInterval(() => {
       storageService.fetchFromCloudSync();
-    }, 3000);
+    }, 1000);
 
     // 3. Listen for window focus / tab visibility change to sync immediately
     const handleFocusOrVisibility = () => {
@@ -53,11 +53,20 @@ export function App() {
     };
     window.addEventListener('cloud-sync-updated', handleCloudSyncUpdated);
 
+    // 5. Cross-tab instant localStorage sync listener (0ms delay across tabs on same machine)
+    const handleStorageEvent = (e) => {
+      if (e.key === 'edu_lop5_lock_overwrites' || e.key === 'edu_lop5_students' || e.key === 'edu_lop5_custom_curriculum') {
+        setLockTick(prev => prev + 1);
+      }
+    };
+    window.addEventListener('storage', handleStorageEvent);
+
     return () => {
       clearInterval(syncInterval);
       window.removeEventListener('focus', handleFocusOrVisibility);
       document.removeEventListener('visibilitychange', handleFocusOrVisibility);
       window.removeEventListener('cloud-sync-updated', handleCloudSyncUpdated);
+      window.removeEventListener('storage', handleStorageEvent);
     };
   }, []);
 

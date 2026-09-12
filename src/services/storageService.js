@@ -227,6 +227,10 @@ export const storageService = {
   },
 
   pushToCloudSync: async () => {
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('cloud-sync-updated'));
+    }
+
     try {
       const lock_overwrites = getJSON(KEYS.LESSON_LOCK_OVERWRITES, {});
       const registered_students = getJSON(KEYS.REGISTERED_STUDENTS, SEED_STUDENTS);
@@ -254,10 +258,6 @@ export const storageService = {
 
       if (!res.ok && res.status === 404) {
         await storageService.recreateCloudSyncObject(payload);
-      }
-
-      if (typeof window !== 'undefined') {
-        window.dispatchEvent(new Event('cloud-sync-updated'));
       }
     } catch (e) {
       console.warn('Cloud sync push offline:', e);
@@ -345,6 +345,7 @@ export const storageService = {
 
   toggleLessonLock: (lessonId) => {
     const overwrites = storageService.getLockOverwrites();
+    delete overwrites._allLocked;
     const allSubjects = storageService.getAllSubjects();
     let defaultLocked = false;
     let foundLesson = null;
@@ -384,7 +385,7 @@ export const storageService = {
   },
 
   unlockAllLessons: () => {
-    const overwrites = {};
+    const overwrites = { _allLocked: false };
     const allSubjects = storageService.getAllSubjects();
     for (const sub of allSubjects) {
       for (const les of sub.lessons) {
@@ -406,7 +407,7 @@ export const storageService = {
   },
 
   lockAllLessons: () => {
-    const overwrites = {};
+    const overwrites = { _allLocked: true };
     const allSubjects = storageService.getAllSubjects();
     for (const sub of allSubjects) {
       for (const les of sub.lessons) {
@@ -423,6 +424,7 @@ export const storageService = {
 
   isLessonLocked: (lesson) => {
     const overwrites = storageService.getLockOverwrites();
+    if (overwrites._allLocked === true) return true;
     if (overwrites[lesson.id] !== undefined) {
       return overwrites[lesson.id];
     }
