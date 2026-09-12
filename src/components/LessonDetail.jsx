@@ -213,6 +213,22 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-6 animate-fadeIn font-sans">
       
+      {/* Unauthenticated Guest Mode Warning Banner */}
+      {!currentUser && (
+        <div className="bg-amber-50 border border-amber-200 p-3.5 rounded-2xl text-amber-900 text-xs sm:text-sm font-bold flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+          <div className="flex items-center gap-2">
+            <span className="text-base">⚠️</span>
+            <span>Bạn đang xem bài học ở chế độ Khách. Hãy <strong>Đăng nhập</strong> hoặc <strong>Đăng ký</strong> để được hệ thống tự động lưu lại điểm số và số ⭐ Sao nhé!</span>
+          </div>
+          <button
+            onClick={onOpenAuth}
+            className="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-extrabold rounded-xl text-xs shadow-xs shrink-0 w-full sm:w-auto text-center transition-all"
+          >
+            🔑 Đăng Nhập / Đăng Ký Ngay
+          </button>
+        </div>
+      )}
+
       {/* Top Bar Navigation */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-xs">
         <div className="flex items-center gap-3">

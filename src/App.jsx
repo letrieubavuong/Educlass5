@@ -23,6 +23,11 @@ export function App() {
     const sessionUser = storageService.getCurrentUser();
     if (sessionUser) {
       setCurrentUser(sessionUser);
+    } else {
+      // Auto open Auth Modal after short delay if user is not logged in
+      const timer = setTimeout(() => {
+        setIsAuthOpen(true);
+      }, 600);
     }
 
     // 1. Initial Cloud Sync Fetch on Mount

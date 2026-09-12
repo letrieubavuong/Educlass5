@@ -54,14 +54,50 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
             <div className="mt-5 flex flex-wrap items-center gap-3">
               <button
                 onClick={onOpenAuth}
-                className="px-5 py-2.5 bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold rounded-xl text-sm shadow-lg transition-transform transform active:scale-95"
+                className="px-5 py-2.5 bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold rounded-xl text-sm shadow-lg transition-transform transform active:scale-95 flex items-center gap-1.5"
               >
-                Đăng Nhập Học Sinh Ngay 🚀
+                <span>🔑 Đăng Nhập Học Sinh</span>
+              </button>
+              <button
+                onClick={onOpenAuth}
+                className="px-5 py-2.5 bg-white/20 hover:bg-white/30 text-white font-extrabold rounded-xl text-sm border border-white/30 transition-transform transform active:scale-95 flex items-center gap-1.5"
+              >
+                <span>✨ Đăng Ký Tài Khoản Mới</span>
               </button>
             </div>
           )}
         </div>
       </div>
+
+      {/* Eye-Catching Unauthenticated Warning Banner */}
+      {!currentUser && (
+        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white rounded-3xl p-5 shadow-lg border-2 border-amber-300 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 animate-fadeIn">
+          <div className="flex items-start gap-3.5">
+            <div className="p-2.5 bg-white/20 backdrop-blur-md rounded-2xl shrink-0 mt-0.5">
+              <Sparkles className="w-6 h-6 text-amber-200" />
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-[11px] font-black text-white uppercase tracking-wider mb-1">
+                ⚠️ Cảnh báo tiến độ học tập
+              </div>
+              <h3 className="font-black text-base sm:text-lg tracking-tight">
+                Em chưa đăng nhập tài khoản Học sinh!
+              </h3>
+              <p className="text-xs sm:text-sm text-amber-50 mt-1 leading-relaxed font-medium">
+                Hãy <strong>Đăng ký tài khoản mới</strong> hoặc <strong>Đăng nhập</strong> để được hệ thống tự động tích lũy <strong>Điểm XP, Số ⭐ Sao, Huy hiệu</strong> và lưu tiến độ làm bài nhé!
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-2.5 shrink-0 w-full md:w-auto">
+            <button
+              onClick={onOpenAuth}
+              className="w-full sm:w-auto px-5 py-2.5 bg-white text-slate-900 hover:bg-amber-100 font-black rounded-xl text-xs sm:text-sm shadow-md transition-all transform active:scale-95 flex items-center justify-center gap-2"
+            >
+              <span>🔑 ĐĂNG NHẬP / ĐĂNG KÝ NGAY</span>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Subject Filter Bar */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
@@ -137,6 +173,11 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                           onClick={() => {
                             if (isLocked) {
                               alert(`🔒 Bài học "${lesson.title}" hiện đang bị Giáo viên tạm khóa để kiểm soát tiến độ. Vui lòng quay lại sau!`);
+                              return;
+                            }
+                            if (!currentUser) {
+                              alert(`💡 Yêu cầu Đăng nhập: Em cần Đăng ký hoặc Đăng nhập tài khoản để vào học và tích sao nhé!`);
+                              onOpenAuth();
                               return;
                             }
                             onSelectLesson(subject, lesson);
@@ -353,6 +394,11 @@ export const SubjectGrid = ({ currentUser, onSelectLesson, onOpenAuth }) => {
                             onClick={() => {
                               if (isLocked) {
                                 alert(`🔒 Bài học "${lesson.title}" hiện đang bị Giáo viên tạm khóa để kiểm soát tiến độ. Vui lòng quay lại sau!`);
+                                return;
+                              }
+                              if (!currentUser) {
+                                alert(`💡 Yêu cầu Đăng nhập: Em cần Đăng ký hoặc Đăng nhập tài khoản để vào học và tích sao nhé!`);
+                                onOpenAuth();
                                 return;
                               }
                               onSelectLesson(selectedSubject, lesson);
