@@ -1,17 +1,31 @@
 import React, { useState } from 'react';
 import { 
   Trophy, Medal, Crown, Star, Flame, Sparkles, ShoppingBag, 
-  ArrowLeft, CheckCircle2, ShieldAlert, Award
+  ArrowLeft, CheckCircle2, ShieldAlert, Award, Clock
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { storageService, getStudentTitle } from '../services/storageService';
 
 const STORE_BADGES = [
-  { id: 'b1', name: '🚀 Tàu Vũ Trụ Tri Thức', cost: 20, desc: 'Dành cho học sinh khám phá tri thức không giới hạn' },
-  { id: 'b2', name: '🧙‍♂️ Phù Thủy Toán Học', cost: 30, desc: 'Biểu tượng của học sinh xuất sắc môn Toán' },
-  { id: 'b3', name: '🦉 Cú Mèo Thông Thái', cost: 40, desc: 'Huy hiệu tri thức và tư duy logic đỉnh cao' },
-  { id: 'b4', name: '👑 Vương Miện Kim Cương', cost: 50, desc: 'Danh hiệu tối cao cho Trạng Nguyên Lớp 5' }
+  { id: 'b1', name: '🌱 Tân Binh Lớp 5', cost: 50, desc: 'Huy hiệu khởi đầu hành trình tích sao thi đua' },
+  { id: 'b2', name: '🚀 Tàu Vũ Trụ Tri Thức', cost: 150, desc: 'Dành cho học sinh khám phá không giới hạn bài học Lớp 5' },
+  { id: 'b3', name: '🧙‍♂️ Phù Thủy Toán Học', cost: 300, desc: 'Biểu tượng xuất sắc bài tập Toán Lớp 5' },
+  { id: 'b4', name: '🦉 Cú Mèo Thông Thái', cost: 500, desc: 'Tư duy logic phản xạ siêu tốc và chính xác' },
+  { id: 'b5', name: '🔬 Nhà Khoa Học Nhí', cost: 800, desc: 'Làm chủ các khám phá Khoa học & Tự nhiên' },
+  { id: 'b6', name: '🗣️ Thần Đồng Ngôn Ngữ', cost: 1200, desc: 'Xuất sắc Tiếng Việt & Luyện 4 kỹ năng Tiếng Anh' },
+  { id: 'b7', name: '💻 Phù Thủy Tin Học', cost: 1800, desc: 'Làm chủ công nghệ & tư duy thuật toán' },
+  { id: 'b8', name: '👑 Vương Miện Trạng Nguyên', cost: 2500, desc: 'Danh hiệu tôn vinh Trạng Nguyên đỉnh cao Lớp 5' },
+  { id: 'b9', name: '🐉 Rồng Thần Tri Thức', cost: 3500, desc: 'Huy hiệu huyền thoại dành cho học sinh giỏi toàn diện' },
+  { id: 'b10', name: '💎 Vương Miện Kim Cương Tối Cao', cost: 5000, desc: 'Danh hiệu cao quý nhất dành cho Ngôi sao kiệt xuất' }
 ];
+
+const formatTotalTime = (totalSecs) => {
+  if (!totalSecs || totalSecs <= 0) return 'Mới bắt đầu';
+  const m = Math.floor(totalSecs / 60);
+  const s = totalSecs % 60;
+  if (m === 0) return `${s}s`;
+  return `${m}m ${s}s`;
+};
 
 export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
   const [selectedClass, setSelectedClass] = useState('all');
@@ -228,8 +242,9 @@ export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
                     <th className="px-4 py-3 text-center">Hạng</th>
                     <th className="px-4 py-3">Học Sinh</th>
                     <th className="px-4 py-3">Lớp</th>
-                    <th className="px-4 py-3">Huy Hiệu</th>
+                    <th className="px-4 py-3">Huy Hiệu Đổi Quà</th>
                     <th className="px-4 py-3">Danh Hiệu Xếp Loại</th>
+                    <th className="px-4 py-3 text-center">Tốc độ làm bài ⏱️</th>
                     <th className="px-4 py-3 text-right">Điểm XP ⚡</th>
                     <th className="px-4 py-3 text-right">Sao ⭐</th>
                   </tr>
@@ -257,6 +272,12 @@ export const LeaderboardView = ({ onBack, currentUser, onUpdateUser }) => {
                         <td className="px-4 py-3.5">
                           <span className={`px-2.5 py-1 rounded-full text-xs font-extrabold bg-gradient-to-r ${rankTitle.color}`}>
                             {rankTitle.title}
+                          </span>
+                        </td>
+                        <td className="px-4 py-3.5 text-center">
+                          <span className="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-sky-50 text-sky-800 border border-sky-200 inline-flex items-center gap-1">
+                            <Clock className="w-3.5 h-3.5 text-sky-500" />
+                            <span>{formatTotalTime(std.totalTimeSeconds)}</span>
                           </span>
                         </td>
                         <td className="px-4 py-3.5 text-right font-black text-slate-900">{std.xp || 0} ⚡</td>

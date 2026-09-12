@@ -1181,8 +1181,9 @@ Giải thích: Hiện tượng tạo ra chất mới là sự biến đổi hóa
                         <th className="px-4 py-3">Mã bài học</th>
                         <th className="px-4 py-3">Điểm số</th>
                         <th className="px-4 py-3">Tỷ lệ đúng</th>
+                        <th className="px-4 py-3">Tốc độ làm bài ⏱️</th>
                         <th className="px-4 py-3">Sao thưởng</th>
-                        <th className="px-4 py-3">Thời gian</th>
+                        <th className="px-4 py-3">Ngày làm bài</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 bg-white">
@@ -1198,6 +1199,11 @@ Giải thích: Hiện tượng tạo ra chất mới là sự biến đổi hóa
                                 sc.percentage >= 80 ? 'bg-emerald-100 text-emerald-800' : sc.percentage >= 50 ? 'bg-amber-100 text-amber-800' : 'bg-rose-100 text-rose-800'
                               }`}>
                                 {sc.percentage}%
+                              </span>
+                            </td>
+                            <td className="px-4 py-3">
+                              <span className="px-2 py-0.5 rounded-md font-bold text-xs bg-sky-50 text-sky-800 border border-sky-200 inline-flex items-center gap-1">
+                                ⏱️ {sc.timeSpentFormatted || '00:45'}
                               </span>
                             </td>
                             <td className="px-4 py-3 font-bold text-amber-600">+{sc.starsEarned} ⭐</td>

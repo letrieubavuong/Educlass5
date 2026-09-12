@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   ArrowLeft, BookOpen, CheckCircle2, XCircle, Volume2, VolumeX, 
   HelpCircle, Star, Sparkles, Trophy, RotateCcw, Send, ChevronRight, Check,
-  Mic, MicOff, Headphones, FileText, PenTool, Maximize2, X, Image
+  Mic, MicOff, Headphones, FileText, PenTool, Maximize2, X, Image, Clock
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { storageService } from '../services/storageService';
@@ -13,7 +13,7 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [zoomImageUrl, setZoomImageUrl] = useState(null);
 
-  // Practice Quiz State
+  // Practice Quiz State & Realtime Timer
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedMcq, setSelectedMcq] = useState(null);
   const [selectedTf, setSelectedTf] = useState(null);
@@ -22,6 +22,26 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [timeElapsedSeconds, setTimeElapsedSeconds] = useState(0);
+
+  // Live Timer for Quiz
+  useEffect(() => {
+    let timer = null;
+    if (activeTab === 'practice' && !isFinished) {
+      timer = setInterval(() => {
+        setTimeElapsedSeconds(prev => prev + 1);
+      }, 1000);
+    }
+    return () => {
+      if (timer) clearInterval(timer);
+    };
+  }, [activeTab, isFinished]);
+
+  const formatTimer = (secs) => {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+  };
 
   // Speaking AI Voice Recognition State
   const [isListeningVoice, setIsListeningVoice] = useState(false);
@@ -182,6 +202,7 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
       setIsFinished(true);
       const finalScore = Math.min(questions.length, score);
       const starsEarned = finalScore * 5;
+      const formattedTime = formatTimer(timeElapsedSeconds);
 
       try {
         confetti({
@@ -193,7 +214,14 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
         console.error(e);
       }
 
-      storageService.saveExerciseResult(lesson.id, finalScore, questions.length, starsEarned);
+      storageService.saveExerciseResult(
+        lesson.id, 
+        finalScore, 
+        questions.length, 
+        starsEarned, 
+        timeElapsedSeconds, 
+        formattedTime
+      );
     }
   };
 
@@ -206,6 +234,7 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
     setIsCorrect(false);
     setScore(0);
     setIsFinished(false);
+    setTimeElapsedSeconds(0);
     setTranscript('');
     setSpeakingAccuracy(null);
   };
@@ -387,14 +416,21 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 max-w-md mx-auto grid grid-cols-2 gap-4">
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 max-w-lg mx-auto grid grid-cols-3 gap-3">
                 <div>
                   <p className="text-xs text-slate-400 font-bold uppercase">Số câu đúng</p>
-                  <p className="text-2xl font-black text-emerald-600">{score} / {questions.length}</p>
+                  <p className="text-xl sm:text-2xl font-black text-emerald-600 mt-1">{score} / {questions.length}</p>
+                </div>
+                <div>
+                  <p className="text-xs text-slate-400 font-bold uppercase">Thời gian</p>
+                  <p className="text-xl sm:text-2xl font-black text-sky-600 mt-1 flex items-center justify-center gap-1">
+                    <Clock className="w-4 h-4 text-sky-500" />
+                    <span>{formatTimer(timeElapsedSeconds)}</span>
+                  </p>
                 </div>
                 <div>
                   <p className="text-xs text-slate-400 font-bold uppercase">Thưởng Sao</p>
-                  <p className="text-2xl font-black text-amber-500">+{score * 5} ⭐</p>
+                  <p className="text-xl sm:text-2xl font-black text-amber-500 mt-1">+{score * 5} ⭐</p>
                 </div>
               </div>
 
@@ -419,9 +455,13 @@ export const LessonDetail = ({ subject, lesson, onBack, currentUser, onOpenAuth 
               
               {/* Stepper Progress Header */}
               <div className="flex items-center justify-between border-b border-slate-100 pb-4">
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   <span className="text-xs font-black px-2.5 py-1 rounded-lg bg-sky-100 text-sky-700">
                     Câu {currentIndex + 1} / {questions.length}
+                  </span>
+                  <span className="text-xs font-extrabold bg-amber-50 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                    <Clock className="w-3.5 h-3.5 text-amber-500" />
+                    <span>{formatTimer(timeElapsedSeconds)}</span>
                   </span>
                   <span className="text-xs font-extrabold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-lg">
                     {currentQ?.skillLabel || (

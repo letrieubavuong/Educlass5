@@ -60,9 +60,10 @@ const SEED_STUDENTS = [
 
 // Helper to calculate academic rank title based on XP
 export const getStudentTitle = (xp = 0) => {
-  if (xp >= 400) return { title: '👑 Siêu Sao Học Tập Lớp 5', color: 'from-amber-400 to-amber-600 text-amber-900 border-amber-300' };
-  if (xp >= 250) return { title: '🟣 Học Sinh Xuất Sắc', color: 'from-purple-500 to-indigo-600 text-white border-purple-300' };
-  if (xp >= 100) return { title: '🔵 Học Sinh Tiên Tiến', color: 'from-sky-500 to-blue-600 text-white border-sky-300' };
+  if (xp >= 2500) return { title: '👑 Trạng Nguyên Lớp 5 Tối Cao', color: 'from-amber-400 via-orange-500 to-red-600 text-amber-950 border-amber-300' };
+  if (xp >= 1200) return { title: '🟣 Siêu Sao Học Tập Lớp 5', color: 'from-purple-600 to-indigo-700 text-white border-purple-300' };
+  if (xp >= 600) return { title: '🔵 Học Sinh Xuất Sắc', color: 'from-sky-500 to-blue-600 text-white border-sky-300' };
+  if (xp >= 200) return { title: '🟡 Học Sinh Tiên Tiến', color: 'from-amber-500 to-yellow-600 text-white border-amber-300' };
   return { title: '🟢 Học Sinh Khởi Đầu', color: 'from-emerald-500 to-teal-600 text-white border-emerald-300' };
 };
 
@@ -541,7 +542,7 @@ export const storageService = {
   },
 
   // --- STUDENT PROGRESS & SCORES ---
-  saveExerciseResult: (lessonId, rawScore, totalQuestions, starsEarned) => {
+  saveExerciseResult: (lessonId, rawScore, totalQuestions, starsEarned, timeSpentSeconds = 0, timeSpentFormatted = '00:00') => {
     const currentUser = storageService.getCurrentUser();
     if (!currentUser || currentUser.role !== 'student') return;
 
@@ -558,6 +559,8 @@ export const storageService = {
       totalQuestions: validTotal,
       percentage,
       starsEarned,
+      timeSpentSeconds: timeSpentSeconds || 0,
+      timeSpentFormatted: timeSpentFormatted || '00:00',
       timestamp: new Date().toISOString()
     });
     setJSON(KEYS.STUDENT_SCORES, scores);
@@ -568,13 +571,21 @@ export const storageService = {
       const std = students[studentIdx];
       std.stars = (std.stars || 0) + starsEarned;
       std.xp = (std.xp || 0) + (score * 20);
+      std.totalTimeSeconds = (std.totalTimeSeconds || 0) + (timeSpentSeconds || 0);
+      
       if (!std.completedLessons.includes(lessonId)) {
         std.completedLessons.push(lessonId);
       }
       students[studentIdx] = std;
       setJSON(KEYS.REGISTERED_STUDENTS, students);
       
-      const updatedSession = { ...currentUser, stars: std.stars, xp: std.xp, completedLessons: std.completedLessons };
+      const updatedSession = { 
+        ...currentUser, 
+        stars: std.stars, 
+        xp: std.xp, 
+        totalTimeSeconds: std.totalTimeSeconds, 
+        completedLessons: std.completedLessons 
+      };
       setJSON(KEYS.CURRENT_USER, updatedSession);
     }
     
@@ -618,8 +629,17 @@ export const storageService = {
   // --- GAMIFICATION & LEADERBOARD ---
   getLeaderboard: () => {
     const students = storageService.getStudents();
-    // Sort descending by XP, then Stars
-    return [...students].sort((a, b) => (b.xp || 0) - (a.xp || 0) || (b.stars || 0) - (a.stars || 0));
+    // Sort descending by XP, then Stars, then ascending by total completion time (faster speed ranks higher!)
+    return [...students].sort((a, b) => {
+      if ((b.xp || 0) !== (a.xp || 0)) {
+        return (b.xp || 0) - (a.xp || 0);
+      }
+      if ((b.stars || 0) !== (a.stars || 0)) {
+        return (b.stars || 0) - (a.stars || 0);
+      }
+      // Faster completion time (lower total seconds) gets higher rank
+      return (a.totalTimeSeconds || 999999) - (b.totalTimeSeconds || 999999);
+    });
   },
 
   buyAvatarBadge: (badgeName, cost) => {
